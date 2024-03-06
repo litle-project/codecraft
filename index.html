@@ -39,10 +39,10 @@
                     <div class="flex flex-col inter gap-3">
                         <span class="text-indigo-400 text-sm font-bold">Professional Design Service</span>
                         <span class="text-md text-5xl text-wrap font-bold leading-tight">Crafting Creative Digital Experience</span>
-                        <span class="text-xs text-gray-400 font-medium">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium maiores animi possimus. Nihil placeat error exercitationem magnam praesentium impedit assumenda, recusandae rerum explicabo, quod sequi quis id eius hic necessitatibus?</span>
+                        <span class="text-sm text-gray-400 font-medium">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium maiores animi possimus. Nihil placeat error exercitationem magnam praesentium impedit assumenda, recusandae rerum explicabo, quod sequi quis id eius hic necessitatibus?</span>
                         <div class="flex gap-7 pt-5">
-                            <button class="bg-indigo-400 px-6 py-1 text-white rounded-md text-xs font-medium">Learn More</button>
-                            <button class="flex flex-col gap-1 text-xs font-medium items-center">
+                            <button class="bg-indigo-400 px-6 py-1 text-white rounded-md text-sm font-medium">Learn More</button>
+                            <button class="flex flex-col gap-1 text-sm font-medium items-center">
                                 <span class="text-gray-400">Call Us Now!</span>
                                 <span class="text-indigo-400 font-bold">+123 456 789</span>
                             </button>
@@ -123,71 +123,113 @@
             <div id="service" class="py-24 px-48 flex flex-col gap-5 items-center inter" style="background-image: url('assets/images/gradient.jpg');">
                 <div class="text-4xl font-bold text-center leading-tight">Get Better Result With Our <br> Digital Services</div>
                 <div class="text-sm text-gray-400 text-center max-w-[40rem]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda impedit esse earum quod adipisci tenetur autem, ad quam omnis corrupti ipsa sit accusamus in ut itaque iusto consequatur laborum explicabo!</div>
-                <div class="grid grid-cols-3 pt-5 gap-5">
-                    <div class="flex gap-4 justify-between px-4 py-5 bg-white/50 drop-shadow-xl rounded-xl">
-                        <div class="bg-indigo-400 rounded-full flex items-center h-fit p-2">
-                            <img src="assets/images/eye-check.svg" class="w-5 h-5 object-fit">
+                <div class="grid grid-cols-3 pt-5 gap-5 border-b">
+                    <div class="flex gap-4 justify-between px-4 py-5 bg-white/50 drop-shadow-xl rounded-xl group hover:bg-indigo-400">
+                        <div class="bg-indigo-400 rounded-full flex items-center h-fit p-2 group-hover:bg-white/70">
+                            <img src="assets/images/eye-check-white.svg" class="w-5 h-5 object-fit group-hover:hidden">
+                            <img src="assets/images/eye-check-blue.svg" class="w-5 h-5 object-fit hidden group-hover:block">
                         </div>
-                        <div class="flex flex-col gap-2">
+                        <div class="flex flex-col gap-2 group-hover:text-white">
                             <span class="text-sm font-bold">Enhance Visibility</span>
-                            <span class="text-xs line-clamp-2 text-gray-400 max-w-72">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum saepe neque, culpa cum ipsam ea repellat maxime dolore quia nihil natus repudiandae dicta id consequatur ullam reprehenderit esse fuga sed!</span>
-                            <span class="text-[11px] hover:underline cursor-pointer font-bold text-indigo-400">Try Blog Content</span>
+                            <span class="text-xs line-clamp-2 text-gray-400 group-hover:text-white max-w-72">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum saepe neque, culpa cum ipsam ea repellat maxime dolore quia nihil natus repudiandae dicta id consequatur ullam reprehenderit esse fuga sed!</span>
+                            <span class="text-[11px] hover:underline cursor-pointer font-bold text-indigo-400 group-hover:text-white">Try Blog Content</span>
                         </div>
                     </div>
-                    <div class="flex gap-4 justify-between px-4 py-5 bg-white/50 drop-shadow-xl rounded-xl">
-                        <div class="bg-indigo-400 rounded-full flex items-center h-fit p-2">
-                            <img src="assets/images/loudspeaker.svg" class="w-5 h-5 object-fit">
+                    <div class="flex gap-4 justify-between px-4 py-5 bg-white/50 drop-shadow-xl rounded-xl group hover:bg-indigo-400">
+                        <div class="bg-indigo-400 rounded-full flex items-center h-fit p-2 group-hover:bg-white/70">
+                            <img src="assets/images/loudspeaker-blue.svg" class="w-5 h-5 object-fit hidden group-hover:block">
+                            <img src="assets/images/loudspeaker-white.svg" class="w-5 h-5 object-fit group-hover:hidden">
                         </div>
-                        <div class="flex flex-col gap-2">
+                        <div class="flex flex-col gap-2 group-hover:text-white">
                             <span class="text-sm font-bold">Target Marketing</span>
-                            <span class="text-xs line-clamp-2 text-gray-400 max-w-72">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum saepe neque, culpa cum ipsam ea repellat maxime dolore quia nihil natus repudiandae dicta id consequatur ullam reprehenderit esse fuga sed!</span>
-                            <span class="text-[11px] hover:underline cursor-pointer font-bold text-indigo-400">Try Blog Content</span>
+                            <span class="text-xs line-clamp-2 text-gray-400 max-w-72 group-hover:text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum saepe neque, culpa cum ipsam ea repellat maxime dolore quia nihil natus repudiandae dicta id consequatur ullam reprehenderit esse fuga sed!</span>
+                            <span class="text-[11px] hover:underline cursor-pointer font-bold text-indigo-400 group-hover:text-white ">Try Blog Content</span>
                         </div>
                     </div>
-                    <div class="flex gap-4 justify-between px-4 py-5 bg-white/50 drop-shadow-xl rounded-xl">
-                        <div class="bg-indigo-400 rounded-full flex items-center h-fit p-2">
-                            <img src="assets/images/data-visualization.svg" class="w-5 h-5 object-fit">
+                    <div class="flex gap-4 justify-between px-4 py-5 bg-white/50 drop-shadow-xl rounded-xl group hover:bg-indigo-400">
+                        <div class="bg-indigo-400 rounded-full flex items-center h-fit p-2 group-hover:bg-white/70">
+                            <img src="assets/images/data-visualization-blue.svg" class="w-5 h-5 object-fit hidden group-hover:block">
+                            <img src="assets/images/data-visualization-white.svg" class="w-5 h-5 object-fit group-hover:hidden">
                         </div>
-                        <div class="flex flex-col gap-2">
+                        <div class="flex flex-col gap-2 group-hover:text-white">
                             <span class="text-sm font-bold">Data Driven Insight</span>
-                            <span class="text-xs line-clamp-2 text-gray-400 max-w-72">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum saepe neque, culpa cum ipsam ea repellat maxime dolore quia nihil natus repudiandae dicta id consequatur ullam reprehenderit esse fuga sed!</span>
-                            <span class="text-[11px] hover:underline cursor-pointer font-bold text-indigo-400">Try Blog Content</span>
+                            <span class="text-xs line-clamp-2 text-gray-400 max-w-72 group-hover:text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum saepe neque, culpa cum ipsam ea repellat maxime dolore quia nihil natus repudiandae dicta id consequatur ullam reprehenderit esse fuga sed!</span>
+                            <span class="text-[11px] hover:underline cursor-pointer font-bold text-indigo-400 group-hover:text-white">Try Blog Content</span>
                         </div>
                     </div>
-                    <div class="flex gap-4 justify-between px-4 py-5 bg-white/50 drop-shadow-xl rounded-xl">
-                        <div class="bg-indigo-400 rounded-full flex items-center h-fit p-2">
-                            <img src="assets/images/line-chart.svg" class="w-5 h-5 object-fit">
+                    <div class="flex gap-4 justify-between px-4 py-5 bg-white/50 drop-shadow-xl rounded-xl group hover:bg-indigo-400">
+                        <div class="bg-indigo-400 rounded-full flex items-center h-fit p-2 group-hover:bg-white/70">
+                            <img src="assets/images/line-chart-blue.svg" class="w-5 h-5 object-fit hidden group-hover:block">
+                            <img src="assets/images/line-chart-white.svg" class="w-5 h-5 object-fit group-hover:hidden">
                         </div>
-                        <div class="flex flex-col gap-2">
+                        <div class="flex flex-col gap-2 group-hover:text-white">
                             <span class="text-sm font-bold">Increased Communication</span>
-                            <span class="text-xs line-clamp-2 text-gray-400 max-w-72">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum saepe neque, culpa cum ipsam ea repellat maxime dolore quia nihil natus repudiandae dicta id consequatur ullam reprehenderit esse fuga sed!</span>
-                            <span class="text-[11px] hover:underline cursor-pointer font-bold text-indigo-400">Try Blog Content</span>
+                            <span class="text-xs line-clamp-2 text-gray-400 max-w-72 group-hover:text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum saepe neque, culpa cum ipsam ea repellat maxime dolore quia nihil natus repudiandae dicta id consequatur ullam reprehenderit esse fuga sed!</span>
+                            <span class="text-[11px] hover:underline cursor-pointer font-bold text-indigo-400 group-hover:text-white">Try Blog Content</span>
                         </div>
                     </div>
-                    <div class="flex gap-4 justify-between px-4 py-5 bg-white/50 drop-shadow-xl rounded-xl">
-                        <div class="bg-indigo-400 rounded-full flex items-center h-fit p-2">
-                            <img src="assets/images/people.svg" class="w-5 h-5 object-fit">
+                    <div class="flex gap-4 justify-between px-4 py-5 bg-white/50 drop-shadow-xl rounded-xl group hover:bg-indigo-400">
+                        <div class="bg-indigo-400 rounded-full flex items-center h-fit p-2 group-hover:bg-white/70">
+                            <img src="assets/images/people-blue.svg" class="w-5 h-5 object-fit hidden group-hover:block">
+                            <img src="assets/images/people-white.svg" class="w-5 h-5 object-fit group-hover:hidden">
                         </div>
-                        <div class="flex flex-col gap-2">
+                        <div class="flex flex-col gap-2 group-hover:text-white">
                             <span class="text-sm font-bold">User Friendly</span>
-                            <span class="text-xs line-clamp-2 text-gray-400 max-w-72">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum saepe neque, culpa cum ipsam ea repellat maxime dolore quia nihil natus repudiandae dicta id consequatur ullam reprehenderit esse fuga sed!</span>
-                            <span class="text-[11px] hover:underline cursor-pointer font-bold text-indigo-400">Try Blog Content</span>
+                            <span class="text-xs line-clamp-2 text-gray-400 max-w-72 group-hover:text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum saepe neque, culpa cum ipsam ea repellat maxime dolore quia nihil natus repudiandae dicta id consequatur ullam reprehenderit esse fuga sed!</span>
+                            <span class="text-[11px] hover:underline cursor-pointer font-bold text-indigo-400 group-hover:text-white">Try Blog Content</span>
                         </div>
                     </div>
-                    <div class="flex gap-4 justify-between px-4 py-5 bg-white/50 drop-shadow-xl rounded-xl">
-                        <div class="bg-indigo-400 rounded-full flex items-center h-fit p-2">
-                            <img src="assets/images/message-square.svg" class="w-5 h-5 object-fit">
+                    <div class="flex gap-4 justify-between px-4 py-5 bg-white/50 drop-shadow-xl rounded-xl group hover:bg-indigo-400">
+                        <div class="bg-indigo-400 rounded-full flex items-center h-fit p-2 group-hover:bg-white/70">
+                            <img src="assets/images/message-square-blue.svg" class="w-5 h-5 object-fit hidden group-hover:block">
+                            <img src="assets/images/message-square-white.svg" class="w-5 h-5 object-fit group-hover:hidden">
                         </div>
-                        <div class="flex flex-col gap-2">
+                        <div class="flex flex-col gap-2 group-hover:text-white">
                             <span class="text-sm font-bold">Ongoing Support</span>
-                            <span class="text-xs line-clamp-2 text-gray-400 max-w-72">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum saepe neque, culpa cum ipsam ea repellat maxime dolore quia nihil natus repudiandae dicta id consequatur ullam reprehenderit esse fuga sed!</span>
-                            <span class="text-[11px] hover:underline cursor-pointer font-bold text-indigo-400">Try Blog Content</span>
+                            <span class="text-xs line-clamp-2 text-gray-400 max-w-72 group-hover:text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum saepe neque, culpa cum ipsam ea repellat maxime dolore quia nihil natus repudiandae dicta id consequatur ullam reprehenderit esse fuga sed!</span>
+                            <span class="text-[11px] hover:underline cursor-pointer font-bold text-indigo-400 group-hover:text-white">Try Blog Content</span>
                         </div>
+                    </div>
+                </div>
+                <div class="w-full h-fit border-t border-white mt-5"></div>
+            </div>
+            <div id="projects" class="py-24 px-48 flex flex-col gap-10 inter">
+                <div class="flex justify-between items-center">
+                    <div class="flex flex-col gap-3">
+                        <span class="text-3xl font-bold">Our Projects</span>
+                        <span class="text-gray-400 text-sm text-wrap max-w-96 line-clamp-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste eos quos dicta amet? Vitae iste labore animi accusamus odit amet, id, reiciendis excepturi quos ratione non praesentium fugit officiis modi.</span>
+                    </div>
+                    <button class="px-5 py-2.5 bg-indigo-400 hover:bg-indigo-500 text-white rounded h-fit text-sm rounded-md font-medium">See All Project</button>
+                </div>
+                <div class="grid grid-cols-3 gap-5 items-center mt-3">
+                    <img src="assets/images/design-process.jpeg" class="w-full h-72 object-cover rounded-xl">
+                    <img src="assets/images/design-process-2.jpeg" class="w-full h-72 object-cover rounded-xl">
+                    <div class="flex flex-col gap-10">
+                        <span class="text-3xl font-bold">UI/UX Development Process</span>
+                        <span class="text-sm text-gray-400">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus alias expedita natus optio aliquam suscipit? Iusto vero, autem aspernatur iure, ea repellendus eaque qui harum consequuntur laudantium iste obcaecati quas.</span>
+                        <span class="text-xs hover:underline cursor-pointer font-bold text-indigo-400">Discover Now</span>
+                    </div>
+                </div>
+                <div class="grid grid-cols-3 gap-5 items-center mt-3">
+                    <div class="flex flex-col gap-10">
+                        <span class="text-3xl font-bold">Website Development</span>
+                        <span class="text-sm text-gray-400">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus alias expedita natus optio aliquam suscipit? Iusto vero, autem aspernatur iure, ea repellendus eaque qui harum consequuntur laudantium iste obcaecati quas.</span>
+                        <span class="text-xs hover:underline cursor-pointer font-bold text-indigo-400">Discover Now</span>
+                    </div>
+                    <img src="assets/images/website-development.jpeg" class="w-full h-72 object-cover rounded-xl">
+                    <img src="assets/images/website-development-2.webp" class="w-full h-72 object-cover rounded-xl">
+                </div>
+                <div class="grid grid-cols-3 gap-5 items-center mt-3">
+                    <img src="assets/images/marketing-process.webp" class="w-full h-72 object-cover rounded-xl">
+                    <img src="assets/images/marketing-process-2.jpeg" class="w-full h-72 object-cover rounded-xl">
+                    <div class="flex flex-col gap-10">
+                        <span class="text-3xl font-bold">Digital Marketing Service</span>
+                        <span class="text-sm text-gray-400">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus alias expedita natus optio aliquam suscipit? Iusto vero, autem aspernatur iure, ea repellendus eaque qui harum consequuntur laudantium iste obcaecati quas.</span>
+                        <span class="text-xs hover:underline cursor-pointer font-bold text-indigo-400">Discover Now</span>
                     </div>
                 </div>
             </div>
         </main>
         
-        <script src="" async defer></script>
     </body>
 </html>
