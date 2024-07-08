@@ -18,8 +18,9 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         <header class="flex items-center py-4 px-48 bg-white sticky top-0 z-50 drop-shadow-xl">
-            <div id="logo" class="w-10 h-10 object-cover">
+            <div id="logo" class="w-16 h-8 object-cover flex items-end gap-3">
                 <img src="assets/images/logo.png">
+                <span class="font-bold text-2xl text-gray-500">Codecraft</span>
             </div>
             <ul class="flex flex-1 gap-10 text-sm justify-center inter font-medium">
                 <li class="active"><a href="#">Home</a></li>
@@ -33,7 +34,7 @@
             </div>
         </header>
         <main>
-            <div id="banner">
+            <section id="banner">
                 <img src="assets/images/engineer.jpg" class="w-full h-[800px] object-cover">
                 <div class="absolute top-0 px-48 py-60 w-1/2">
                     <div class="flex flex-col inter gap-3">
@@ -49,8 +50,8 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div id="portofolio" class="flex flex-col gap-10 inter px-48 pb-24">
+            </section>
+            <section id="portofolio" class="flex flex-col gap-10 inter px-48 pb-24">
                 <div class="absolute top-[800px] left-72 bg-indigo-400 rounded-xl">
                     <div class="flex gap-4">
                         <div class="flex flex-col text-center text-white py-5 px-10 items-center max-w-64">
@@ -119,8 +120,8 @@
                         <span class="font-bold text-xl">Web Server</span>
                     </div>
                 </div>
-            </div>
-            <div id="service" class="py-24 px-48 flex flex-col gap-5 items-center inter" style="background-image: url('assets/images/gradient.jpg');">
+            </section>
+            <section id="service" class="py-24 px-48 flex flex-col gap-5 items-center inter" style="background-image: url('assets/images/gradient.jpg');">
                 <div class="text-4xl font-bold text-center leading-tight">Get Better Result With Our <br> Digital Services</div>
                 <div class="text-sm text-gray-400 text-center max-w-[40rem]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda impedit esse earum quod adipisci tenetur autem, ad quam omnis corrupti ipsa sit accusamus in ut itaque iusto consequatur laborum explicabo!</div>
                 <div class="grid grid-cols-3 pt-5 gap-5 border-b">
@@ -192,8 +193,8 @@
                     </div>
                 </div>
                 <div class="w-full h-fit border-t border-white mt-5"></div>
-            </div>
-            <div id="projects" class="py-24 px-48 flex flex-col gap-10 inter">
+            </section>
+            <section id="projects" class="py-24 px-48 flex flex-col gap-10 inter">
                 <div class="flex justify-between items-center">
                     <div class="flex flex-col gap-3">
                         <span class="text-3xl font-bold">Our Projects</span>
@@ -228,8 +229,212 @@
                         <span class="text-xs hover:underline cursor-pointer font-bold text-indigo-400">Discover Now</span>
                     </div>
                 </div>
-            </div>
+            </section>
+            <section id="achivement" class="py-24 px-48" style="background-image: url('assets/images/gradient.jpg');">
+                <div class="grid grid-cols-2 gap-10 items-center border-b-2 border-white pb-10">
+                    <div class="text-3xl font-bold leading-tight capitalize">
+                        We have working foreign <br>
+                        market 10 years successful <br>
+                        developed 5000+ projects
+                    </div>
+                    <div class="flex gap-5">
+                        <div class="flex flex-col items-center gap-4 px-10 py-20 hover:bg-indigo-400 bg-white/40 rounded-xl group">
+                            <div class="bg-indigo-400 group-hover:bg-white/40 p-2 rounded-full">
+                                <img src="assets/images/badge.svg" class="w-8 h-8 object-fit invert">
+                            </div>
+                            <div class="flex flex-col gap-2 text-center">
+                                <span class="font-bold text-lg group-hover:text-white">Best Achivement</span>
+                                <span class="text-sm max-w-48 text-gray-400 group-hover:text-white">Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+                                <a class="py-2 text-xs text-indigo-400 hover:underline font-medium group-hover:text-white" href="#">Try blog content</a>
+                            </div>
+                        </div>
+                        <div class="flex flex-col items-center gap-4 px-10 py-20 hover:bg-indigo-400 bg-white/40 rounded-xl group">
+                            <div class="bg-indigo-400 group-hover:bg-white/40 p-2 rounded-full">
+                                <img src="assets/images/badge.svg" class="w-8 h-8 object-fit invert">
+                            </div>
+                            <div class="flex flex-col gap-2 text-center">
+                                <span class="font-bold text-lg group-hover:text-white">Smart Design Project</span>
+                                <span class="text-sm max-w-48 text-gray-400 group-hover:text-white">Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+                                <a class="py-2 text-xs text-indigo-400 hover:underline font-medium group-hover:text-white" href="#">Try blog content</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="py-10 px-48 bg-indigo-400 grid grid-cols-4 gap-10 justify-center" id="summary">
+                <div class="text-white flex flex-col gap-2 text-center">
+                    <div>Clients</div>
+                    <div class="text-4xl font-bold">5,208+</div>
+                </div>
+                <div class="text-white flex flex-col gap-2 text-center">
+                    <div>Projects</div>
+                    <div class="text-4xl font-bold">7,448+</div>
+                </div>
+                <div class="text-white flex flex-col gap-2 text-center">
+                    <div>Followers</div>
+                    <div class="text-4xl font-bold">10,291+</div>
+                </div>
+                <div class="text-white flex flex-col gap-2 text-center">
+                    <div>Happy Clients</div>
+                    <div class="text-4xl font-bold">100%</div>
+                </div>
+            </section>
+            <section class="px-48 py-24 border-white flex flex-col gap-10 items-center" id="member">
+                <div class="flex flex-col gap-5">
+                    <div class="text-4xl font-bold text-center leading-tight">Our Teams Member</div>
+                    <div class="text-sm text-gray-400 text-center max-w-[40rem]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda impedit esse earum quod adipisci tenetur autem.</div>
+                </div>
+                <div class="grid grid-cols-4 gap-5">
+                    <div class="bg-white shadow-xl px-8 py-14 rounded-xl flex flex-col gap-3 items-center min-w-60 max-w-60 border border-gray-100 hover:bg-indigo-400 group">
+                        <img src="assets/images/member-1.jpeg" class="w-28 h-28 object-cover rounded-full">
+                        <div class="flex flex-col text-center group-hover:text-white">
+                            <div class="font-bold">M. Ilham Pratama</div>
+                            <div class="text-gray-400 text-xs group-hover:text-white">Web Developer</div>
+                        </div>
+                        <div class="flex gap-2">
+                            <div class="bg-indigo-400 group-hover:bg-white rounded-full p-1">
+                                <img src="assets/images/facebook.svg" class="w-4 h-4 object-fit invert group-hover:invert-0">
+                            </div>
+                            <div class="bg-indigo-400 group-hover:bg-white rounded-full p-1">
+                                <img src="assets/images/instagram.svg" class="w-4 h-4 object-fit invert group-hover:invert-0">
+                            </div>
+                            <div class="bg-indigo-400 group-hover:bg-white rounded-full p-1">
+                                <img src="assets/images/linkedin.svg" class="w-4 h-4 object-fit invert group-hover:invert-0">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white shadow-xl px-8 py-14 rounded-xl flex flex-col gap-3 items-center min-w-60 max-w-60 border border-gray-100 hover:bg-indigo-400 group">
+                        <img src="assets/images/member-2.jpeg" class="w-28 h-28 object-cover rounded-full">
+                        <div class="flex flex-col text-center group-hover:text-white">
+                            <div class="font-bold">Enita A. Dhea Lestari</div>
+                            <div class="text-gray-400 text-xs group-hover:text-white">Project Manager</div>
+                        </div>
+                        <div class="flex gap-2">
+                            <div class="bg-indigo-400 group-hover:bg-white rounded-full p-1">
+                                <img src="assets/images/facebook.svg" class="w-4 h-4 object-fit invert group-hover:invert-0">
+                            </div>
+                            <div class="bg-indigo-400 group-hover:bg-white rounded-full p-1">
+                                <img src="assets/images/instagram.svg" class="w-4 h-4 object-fit invert group-hover:invert-0">
+                            </div>
+                            <div class="bg-indigo-400 group-hover:bg-white rounded-full p-1">
+                                <img src="assets/images/linkedin.svg" class="w-4 h-4 object-fit invert group-hover:invert-0">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white shadow-xl px-8 py-14 rounded-xl flex flex-col gap-3 items-center min-w-60 max-w-60 border border-gray-100 hover:bg-indigo-400 group">
+                        <img src="assets/images/member-3.jpeg" class="w-28 h-28 object-cover rounded-full">
+                        <div class="flex flex-col text-center group-hover:text-white">
+                            <div class="font-bold">Paulus B. Nomi</div>
+                            <div class="text-gray-400 text-xs group-hover:text-white">Food Eater</div>
+                        </div>
+                        <div class="flex gap-2">
+                            <div class="bg-indigo-400 group-hover:bg-white rounded-full p-1">
+                                <img src="assets/images/facebook.svg" class="w-4 h-4 object-fit invert group-hover:invert-0">
+                            </div>
+                            <div class="bg-indigo-400 group-hover:bg-white rounded-full p-1">
+                                <img src="assets/images/instagram.svg" class="w-4 h-4 object-fit invert group-hover:invert-0">
+                            </div>
+                            <div class="bg-indigo-400 group-hover:bg-white rounded-full p-1">
+                                <img src="assets/images/linkedin.svg" class="w-4 h-4 object-fit invert group-hover:invert-0">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white shadow-xl px-8 py-14 rounded-xl flex flex-col gap-3 items-center min-w-60 max-w-60 border border-gray-100 hover:bg-indigo-400 group">
+                        <img src="assets/images/member-4.jpeg" class="w-28 h-28 object-cover rounded-full">
+                        <div class="flex flex-col text-center group-hover:text-white">
+                            <div class="font-bold">Suliswati Cery B.</div>
+                            <div class="text-gray-400 text-xs group-hover:text-white">Bug Hunter</div>
+                        </div>
+                        <div class="flex gap-2">
+                            <div class="bg-indigo-400 group-hover:bg-white rounded-full p-1">
+                                <img src="assets/images/facebook.svg" class="w-4 h-4 object-fit invert group-hover:invert-0">
+                            </div>
+                            <div class="bg-indigo-400 group-hover:bg-white rounded-full p-1">
+                                <img src="assets/images/instagram.svg" class="w-4 h-4 object-fit invert group-hover:invert-0">
+                            </div>
+                            <div class="bg-indigo-400 group-hover:bg-white rounded-full p-1">
+                                <img src="assets/images/linkedin.svg" class="w-4 h-4 object-fit invert group-hover:invert-0">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="px-48 py-24 bg-indigo-400" id="stories">
+                <div class="flex gap-32 items-center">
+                    <div class="text-3xl font-bold leading-tight capitalize text-white/90 min-w-48 whitespace-nowrap">
+                        Real Stories From <br>
+                        Our Customers
+                    </div>
+                    <div class="flex gap-4 overflow-x-scroll px-5">
+                        <div class="bg-white border border-gray-100 flex flex-col px-8 py-5 gap-5 rounded-xl">
+                            <div class="flex gap-3 items-center">
+                                <div class="flex gap-1">
+                                    <img src="assets/images/star.svg" class="w-4 h-4 object-cover">
+                                    <img src="assets/images/star.svg" class="w-4 h-4 object-cover">
+                                    <img src="assets/images/star.svg" class="w-4 h-4 object-cover">
+                                    <img src="assets/images/star.svg" class="w-4 h-4 object-cover">
+                                    <img src="assets/images/star.svg" class="w-4 h-4 object-cover">
+                                </div>
+                                <div class="text-sm text-gray-400">5 star rating</div>
+                            </div>
+                            <div class="text-sm text-gray-400 max-w-96 min-w-96 text-wrap whitespace-nowrap line-clamp-3">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo ducimus, laudantium quibusdam in officiis consequuntur incidunt ullam, totam inventore placeat quos! Similique, doloribus quasi. Sit suscipit nisi accusantium odio possimus.
+                            </div>
+                            <div class="flex gap-5 items-center">
+                                <img src="assets/images/member-3.jpeg" class="w-16 h-16 object-cover rounded-full">
+                                <div class="flex flex-col">
+                                    <span class="font-medium">Numuy</span>
+                                    <span class="text-xs text-gray-400">Kochen Brutal</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white border border-gray-100 flex flex-col px-8 py-5 gap-5 rounded-xl">
+                            <div class="flex gap-3 items-center">
+                                <div class="flex gap-1">
+                                    <img src="assets/images/star.svg" class="w-4 h-4 object-cover">
+                                    <img src="assets/images/star.svg" class="w-4 h-4 object-cover">
+                                    <img src="assets/images/star.svg" class="w-4 h-4 object-cover">
+                                    <img src="assets/images/star.svg" class="w-4 h-4 object-cover">
+                                    <img src="assets/images/star.svg" class="w-4 h-4 object-cover">
+                                </div>
+                                <div class="text-sm text-gray-400">5 star rating</div>
+                            </div>
+                            <div class="text-sm text-gray-400 max-w-96 min-w-96 text-wrap whitespace-nowrap line-clamp-3">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo ducimus, laudantium quibusdam in officiis consequuntur incidunt ullam, totam inventore placeat quos! Similique, doloribus quasi. Sit suscipit nisi accusantium odio possimus.
+                            </div>
+                            <div class="flex gap-5 items-center">
+                                <img src="assets/images/member-3.jpeg" class="w-16 h-16 object-cover rounded-full">
+                                <div class="flex flex-col">
+                                    <span class="font-medium">Numuy</span>
+                                    <span class="text-xs text-gray-400">Kochen Brutal</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white border border-gray-100 flex flex-col px-8 py-5 gap-5 rounded-xl">
+                            <div class="flex gap-3 items-center">
+                                <div class="flex gap-1">
+                                    <img src="assets/images/star.svg" class="w-4 h-4 object-cover">
+                                    <img src="assets/images/star.svg" class="w-4 h-4 object-cover">
+                                    <img src="assets/images/star.svg" class="w-4 h-4 object-cover">
+                                    <img src="assets/images/star.svg" class="w-4 h-4 object-cover">
+                                    <img src="assets/images/star.svg" class="w-4 h-4 object-cover">
+                                </div>
+                                <div class="text-sm text-gray-400">5 star rating</div>
+                            </div>
+                            <div class="text-sm text-gray-400 max-w-96 min-w-96 text-wrap whitespace-nowrap line-clamp-3">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo ducimus, laudantium quibusdam in officiis consequuntur incidunt ullam, totam inventore placeat quos! Similique, doloribus quasi. Sit suscipit nisi accusantium odio possimus.
+                            </div>
+                            <div class="flex gap-5 items-center">
+                                <img src="assets/images/member-3.jpeg" class="w-16 h-16 object-cover rounded-full">
+                                <div class="flex flex-col">
+                                    <span class="font-medium">Numuy</span>
+                                    <span class="text-xs text-gray-400">Kochen Brutal</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
-        
     </body>
 </html>
