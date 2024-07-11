@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Codecraft</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="assets/styles/style.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <header class="flex items-center py-4 px-48 bg-white sticky top-0 z-50 drop-shadow-xl">
+            <div id="logo" class="w-16 h-8 object-cover flex items-end gap-3">
+                <img src="assets/images/logo.png">
+                <span class="font-bold text-2xl text-gray-500">Codecraft</span>
+            </div>
+            <ul class="flex flex-1 gap-10 text-sm justify-center inter font-medium">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+            <div id="action">
+                <button class="px-6 py-3 bg-indigo-400 rounded-md text-xs text-white font-medium">Contact Us</button>
+            </div>
+        </header>
+        <main>
+            <section id="page" class="px-48 py-36 text-center" style="background-image: url('assets/images/gradient.jpg');">
+                <div class="text-4xl font-bold">Contact</div>
+            </section>
+            <section id="contact" class="px-48 py-24 bg-white flex gap-20 justify-center">
+                <div class="flex flex-col gap-4">
+                    <div class="text-4xl font-bold leading-tight capitalize">Let's start your <br> project with us</div>
+                    <div class="text-sm text-gray-400 max-w-[500px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos earum blanditiis veniam, suscipit, eius minima nemo deserunt architecto incidunt maiores totam quis? Sapiente ducimus deleniti ab doloribus, nihil hic laborum.</div>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <input
+                        type="text"
+                        placeholder="Enter Your Name Here"
+                        class="bg-white rounded-md border border-indigo-400/70 px-3 py-2 min-w-96 placeholder:text-indigo-400/70 text-sm focus:outline-none text-indigo-400 shadow-2xl"
+                    />
+                    <input
+                        type="email"
+                        placeholder="Enter Your Email Here"
+                        class="bg-white rounded-md border border-indigo-400/70 px-3 py-2 min-w-96 placeholder:text-indigo-400/70 text-sm focus:outline-none text-indigo-400 shadow-2xl"
+                    />
+                    <textarea
+                        rows="5"
+                        placeholder="Enter Your Message Here"
+                        class="bg-white rounded-md border border-indigo-400/70 px-3 py-2 min-w-96 placeholder:text-indigo-400/70 text-sm focus:outline-none text-indigo-400 shadow-2xl"
+                    ></textarea>
+                    <button type="button" class="px-10 py-2.5 w-fit text-xs text-white bg-indigo-400 rounded-md">Send Message</button>
+                </div>
+            </section>
+            <section id="get-in-touch" class="px-72 pb-14 bg-white">
+                <div class="bg-indigo-400 rounded-xl p-16 flex gap-20">
+                    <div class="w-96 h-96 object-cover">
+                        <img src="assets/images/office.webp" class="rounded-xl">
+                    </div>
+                    <div class="flex flex-col gap-10 max-w-96">
+                        <div class="flex flex-col gap-2">
+                            <span class="text-sm text-white font-medium">Detail Information</span>
+                            <span class="text-3xl text-white font-bold">Get In Touch</span>
+                        </div>
+                        <div class="text-sm font-light text-white text-wrap line-clamp-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium porro ut nobis libero maiores tempora obcaecati, ea veniam soluta sapiente necessitatibus minima cupiditate tempore eligendi atque dolores numquam, saepe omnis.</div>
+                        <div class="grid grid-cols-2 gap-10">
+                            <div class="flex gap-2 items-start w-48">
+                                <div class="bg-white/50 rounded-full p-1.5 w-10">
+                                    <img src="assets/images/loudspeaker-blue.svg" class="w-5 h-5 object-fit">
+                                </div>
+                                <div class="flex flex-col gap-2">
+                                    <div class="text-sm font-bold text-white">Main Office</div>
+                                    <div class="text-white text-sm">Jl. Vinolia No.2, Malang Indonesia</div>
+                                </div>
+                            </div>
+                            <div class="flex gap-2 items-start w-48">
+                                <div class="bg-white/50 rounded-full p-1.5 max-w-10">
+                                    <img src="assets/images/loudspeaker-blue.svg" class="w-5 h-5 object-fit">
+                                </div>
+                                <div class="flex flex-col gap-2">
+                                    <div class="text-sm font-bold text-white">Email</div>
+                                    <div class="flex flex-col">
+                                        <div class="text-white text-sm">yourapp@mail.com</div>
+                                        <div class="text-white text-sm">info@mail.com</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex gap-2 items-start w-48">
+                                <div class="bg-white/50 rounded-full p-1.5 max-w-10">
+                                    <img src="assets/images/loudspeaker-blue.svg" class="w-5 h-5 object-fit">
+                                </div>
+                                <div class="flex flex-col gap-2">
+                                    <div class="text-sm font-bold text-white">Phone</div>
+                                    <div class="text-white text-sm">+62 000 0000</div>
+                                </div>
+                            </div>
+                            <div class="flex gap-2 items-start w-48">
+                                <div class="bg-white/50 rounded-full p-1.5 max-w-10">
+                                    <img src="assets/images/loudspeaker-blue.svg" class="w-5 h-5 object-fit">
+                                </div>
+                                <div class="flex flex-col gap-2">
+                                    <div class="text-sm font-bold text-white">Work Hours</div>
+                                    <div class="text-white text-sm">09:00 - 17:00</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="px-48 py-24 flex flex-col gap-5" style="background-image: url('assets/images/gradient.jpg');">
+            <div class="grid grid-cols-5 gap-10 border-b-2 border-white pb-14">
+                <div class="flex flex-col gap-6 col-span-2">
+                    <div id="logo" class="w-16 h-8 object-cover flex items-end gap-3">
+                        <img src="assets/images/logo.png">
+                        <span class="font-bold text-2xl text-gray-500">Codecraft</span>
+                    </div>
+                    <div class="text-sm text-gray-400">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo, quia magni sint unde tenetur veniam accusamus fuga doloremque libero numquam minima fugit suscipit quas debitis quae porro dolorem placeat delectus!</div>
+                    <div class="flex gap-2">
+                        <div class="bg-indigo-400 group-hover:bg-white rounded-full p-1">
+                            <img src="assets/images/facebook.svg" class="w-4 h-4 object-fit invert group-hover:invert-0">
+                        </div>
+                        <div class="bg-indigo-400 group-hover:bg-white rounded-full p-1">
+                            <img src="assets/images/instagram.svg" class="w-4 h-4 object-fit invert group-hover:invert-0">
+                        </div>
+                        <div class="bg-indigo-400 group-hover:bg-white rounded-full p-1">
+                            <img src="assets/images/linkedin.svg" class="w-4 h-4 object-fit invert group-hover:invert-0">
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-3">
+                    <span class="font-bold text-lg">Pages</span>
+                    <a class="font-medium text-sm text-gray-500 hover:underline" href="#">Home</a>
+                    <a class="font-medium text-sm text-gray-500 hover:underline" href="#">Service</a>
+                    <a class="font-medium text-sm text-gray-500 hover:underline" href="#">Studio</a>
+                    <a class="font-medium text-sm text-gray-500 hover:underline" href="#">Portofolio</a>
+                    <a class="font-medium text-sm text-gray-500 hover:underline" href="#">Contact</a>
+                </div>
+                <div class="flex flex-col gap-3">
+                    <span class="font-bold text-lg">Utility Pages</span>
+                    <a class="font-medium text-sm text-gray-500 hover:underline" href="#">404 Error Pages</a>
+                    <a class="font-medium text-sm text-gray-500 hover:underline" href="#">Password Protected</a>
+                    <a class="font-medium text-sm text-gray-500 hover:underline" href="#">Style Guide</a>
+                    <a class="font-medium text-sm text-gray-500 hover:underline" href="#">Licensing</a>
+                    <a class="font-medium text-sm text-gray-500 hover:underline" href="#">Changelog</a>
+                    <a class="font-medium text-sm text-gray-500 hover:underline" href="#">Blog</a>
+                </div>
+                <div class="flex flex-col justify-between">
+                    <div class="flex flex-col gap-3">
+                        <span class="font-bold text-lg">Our Address</span>
+                        <span class="text-sm text-gray-400">Jl. Vinolia No. 1, Lowokwaru, Malang</span>
+                    </div>
+                    <div class="flex flex-col gap-3">
+                        <span class="font-bold text-lg">Stay Connected</span>
+                        <div class="flex">
+                            <input type="text" class="bg-white/20 py-3 px-6 border border-indigo-400 rounded-l-lg text-sm placeholder:text-indigo-400 text-indigo-400 focus:outline-none" placeholder="Enter your email here">
+                            <button class="text-white text-sm bg-indigo-400 py-3 px-3 rounded-r-lg border border-indigo-400">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-between pt-8">
+                <div class="text-sm text-gray-400">Copyright&copy; 2024 codecraft, All Rights Reserved, Made by ❤️</div>
+                <div class="flex gap-5">
+                    <a href="#" class="text-sm text-gray-400">Term of use</a>
+                    <a href="#" class="text-sm text-gray-400">Cookie Policy</a>
+                    <a href="#" class="text-sm text-gray-400">Privacy Policy</a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
