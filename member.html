@@ -18,19 +18,24 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         <header class="flex items-center py-4 px-48 bg-white sticky top-0 z-50 drop-shadow-xl">
-            <div id="logo" class="w-16 h-8 object-cover flex items-end gap-3">
+            <div id="logo" class="w-16 h-8 object-cover flex items-end gap-3 cursor-pointer" onclick="window.location.href = 'index.html'">
                 <img src="assets/images/logo.png">
-                <span class="font-bold text-2xl text-gray-500">Codecraft</span>
+                <span class="font-bold text-2xl text-gray-500 cursor-pointer">Codecraft</span>
             </div>
             <ul class="flex flex-1 gap-10 text-sm justify-center inter font-medium">
-                <li class="active"><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="#">Pages</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Blog</a></li>
+                <li id="home"><a href="index.html">Home</a></li>
+                <li id="about"><a href="about.html">About Us</a></li>
+                <li id="service"><a href="service.html">Services</a></li>
+                <li id="member"><a href="member.html">Member</a></li>
             </ul>
             <div id="action">
-                <button class="px-6 py-3 bg-indigo-400 rounded-md text-xs text-white font-medium">Contact Us</button>
+                <button
+                    type="button"
+                    class="px-6 py-3 bg-indigo-400 rounded-md text-xs text-white font-medium"
+                    onclick="window.location.href = 'contact.html'"
+                >
+                    Contact Us
+                </button>
             </div>
         </header>
         <main>
@@ -280,4 +285,5 @@
             </div>
         </footer>
     </body>
+    <script src="assets/script/script.js"></script>
 </html>
