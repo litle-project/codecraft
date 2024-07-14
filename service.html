@@ -66,208 +66,599 @@
             <section id="page" class="px-48 py-36 text-center" style="background-image: url('assets/images/gradient.jpg');">
                 <div class="text-4xl font-bold">Our Service</div>
             </section>
-            <section id="menu-service" class="px-48 py-8 bg-indigo-400 flex justify-center items-center gap-10">
-                <button type="button" class="px-12 py-2.5 text-white text-sm bg-white/20 hover:bg-white hover:text-indigo-400 rounded-lg border border-white/80 font-medium">Marketing Service</button>
-                <button type="button" class="px-12 py-2.5 text-white text-sm bg-white/20 hover:bg-white hover:text-indigo-400 rounded-lg border border-white/80 font-medium">Design Service</button>
-                <button type="button" class="px-12 py-2.5 text-white text-sm bg-white/20 hover:bg-white hover:text-indigo-400 rounded-lg border border-white/80 font-medium">Development Service</button>
+            <section id="menu-service" class="px-48 py-8 bg-indigo-400 flex justify-center items-center gap-5">
+                <button
+                    id="rnd"
+                    type="button"
+                    onclick="toggleService('rnd')"
+                    class="service-filter px-12 py-2.5 text-white text-sm bg-white/20 hover:bg-white hover:text-indigo-400 rounded-lg border border-white/80 font-medium"
+                >
+                    Research & Development
+                </button>
+                <button
+                    id="sde"
+                    type="button"
+                    onclick="toggleService('sde')"
+                    class="service-filter px-12 py-2.5 text-white text-sm bg-white/20 hover:bg-white hover:text-indigo-400 rounded-lg border border-white/80 font-medium"
+                >
+                    Software Development
+                </button>
+                <button
+                    id="adi"
+                    type="button"
+                    onclick="toggleService('adi')"
+                    class="service-filter px-12 py-2.5 text-white text-sm bg-white/20 hover:bg-white hover:text-indigo-400 rounded-lg border border-white/80 font-medium"
+                >
+                    Analytics & Data Integration
+                </button>
+                <button
+                    id="tns"
+                    type="button"
+                    onclick="toggleService('tns')"
+                    class="service-filter px-12 py-2.5 text-white text-sm bg-white/20 hover:bg-white hover:text-indigo-400 rounded-lg border border-white/80 font-medium"
+                >
+                    Testing & Security
+                </button>
+                <button
+                    id="dte"
+                    type="button"
+                    onclick="toggleService('dte')"
+                    class="service-filter px-12 py-2.5 text-white text-sm bg-white/20 hover:bg-white hover:text-indigo-400 rounded-lg border border-white/80 font-medium"
+                >
+                    Design Trend & Enhance
+                </button>
+                <button
+                    id="fsm"
+                    type="button"
+                    onclick="toggleService('fsm')"
+                    class="service-filter px-12 py-2.5 text-white text-sm bg-white/20 hover:bg-white hover:text-indigo-400 rounded-lg border border-white/80 font-medium"
+                >
+                    Full Support & Maintenance
+                </button>
             </section>
-            <section id="service" class="px-48 py-24 grid grid-cols-3 gap-10">
-                <div class="p-10 flex flex-col bg-white/70 rounded-xl gap-5 shadow-xl max-w-96 hover:bg-indigo-400 group border border-gray-100">
-                    <div class="p-5 bg-indigo-400 group-hover:bg-white/30 rounded-full w-fit">
-                        <img src="assets/images/loudspeaker-white.svg" class="w-auto h-16 object-cover">
+            <section id="service-rnd" class="px-48 py-24 grid grid-cols-4 gap-5 service-content">
+                <div class="py-5 px-5 flex flex-col items-start bg-white/70 rounded-xl gap-5 shadow-xl hover:bg-indigo-400 group border border-gray-100 max-h-96">
+                    <div class="bg-indigo-400 rounded-full flex items-center h-fit px-3 py-2.5 group-hover:bg-white/70">
+                        <span class="material-symbols-outlined text-4xl text-white group-hover:text-indigo-400">experiment</span>
                     </div>
-                    <div class="text-xl font-bold group-hover:text-white">Design Thinking</div>
-                    <div class="text-sm text-gray-400 group-hover:text-white line-clamp-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae molestias ad asperiores sed alias at, ratione optio hic corporis praesentium quos esse vero sit autem ullam illum quaerat est illo.</div>
-                    <div class="flex flex-col gap-2">
-                        <div class="flex items-center gap-4">
-                            <div class="bg-indigo-400 group-hover:bg-white rounded-full flex items-center p-1">
-                                <img src="assets/images/check.svg" class="w-4 h-4 object-cover invert group-hover:invert-0">
-                            </div>
-                            <div class="flex flex-col gap-2 group-hover:text-white max-w-80">
-                                <div class="font-bold text-sm capitalize">Chunk as Necessary</div>
-                            </div>
-                        </div>
-                        <div class="flex items-center gap-4">
-                            <div class="bg-indigo-400 group-hover:bg-white rounded-full flex items-center p-1">
-                                <img src="assets/images/check.svg" class="w-4 h-4 object-cover invert group-hover:invert-0">
-                            </div>
-                            <div class="flex flex-col gap-2 group-hover:text-white max-w-80">
-                                <div class="font-bold text-sm capitalize">Generatiors Internet</div>
-                            </div>
-                        </div>
-                        <div class="flex items-center gap-4">
-                            <div class="bg-indigo-400 group-hover:bg-white rounded-full flex items-center p-1">
-                                <img src="assets/images/check.svg" class="w-4 h-4 object-cover invert group-hover:invert-0">
-                            </div>
-                            <div class="flex flex-col gap-2 group-hover:text-white max-w-80">
-                                <div class="font-bold text-sm capitalize">Optimal Digital Marketing</div>
-                            </div>
-                        </div>
+                    <div class="text-lg font-bold group-hover:text-white">Usability Testing</div>
+                    <div class="text-sm text-gray-400 group-hover:text-white overflow-y-scroll">
+                        <p>Usability testing focuses on evaluating how users interact with a product to identify usability issues and improve user experience through direct observation and feedback.</p>
+                        <br>
+                        <b>Advantages:</b>
+                        <p>Provides actionable insights into user behavior and preferences; facilitates iterative improvements to enhance product usability.</p>
+                        <br>
+                        <b>Disadvantages:</b>
+                        <p>Requires recruiting representative user samples; findings may not generalize to all user groups or contexts.</p>
                     </div>
                 </div>
-                <div class="p-10 flex flex-col bg-white/70 rounded-xl gap-5 shadow-xl max-w-96 hover:bg-indigo-400 group border border-gray-100">
-                    <div class="p-5 bg-indigo-400 group-hover:bg-white/30 rounded-full w-fit">
-                        <img src="assets/images/loudspeaker-white.svg" class="w-auto h-16 object-cover">
+                <div class="py-5 px-5 flex flex-col items-start bg-white/70 rounded-xl gap-5 shadow-xl hover:bg-indigo-400 group border border-gray-100 max-h-96">
+                    <div class="bg-indigo-400 rounded-full flex items-center h-fit px-3 py-2.5 group-hover:bg-white/70">
+                        <span class="material-symbols-outlined text-4xl text-white group-hover:text-indigo-400">labs</span>
                     </div>
-                    <div class="text-xl font-bold group-hover:text-white">Design Thinking</div>
-                    <div class="text-sm text-gray-400 group-hover:text-white line-clamp-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae molestias ad asperiores sed alias at, ratione optio hic corporis praesentium quos esse vero sit autem ullam illum quaerat est illo.</div>
-                    <div class="flex flex-col gap-2">
-                        <div class="flex items-center gap-4">
-                            <div class="bg-indigo-400 group-hover:bg-white rounded-full flex items-center p-1">
-                                <img src="assets/images/check.svg" class="w-4 h-4 object-cover invert group-hover:invert-0">
-                            </div>
-                            <div class="flex flex-col gap-2 group-hover:text-white max-w-80">
-                                <div class="font-bold text-sm capitalize">Chunk as Necessary</div>
-                            </div>
-                        </div>
-                        <div class="flex items-center gap-4">
-                            <div class="bg-indigo-400 group-hover:bg-white rounded-full flex items-center p-1">
-                                <img src="assets/images/check.svg" class="w-4 h-4 object-cover invert group-hover:invert-0">
-                            </div>
-                            <div class="flex flex-col gap-2 group-hover:text-white max-w-80">
-                                <div class="font-bold text-sm capitalize">Generatiors Internet</div>
-                            </div>
-                        </div>
-                        <div class="flex items-center gap-4">
-                            <div class="bg-indigo-400 group-hover:bg-white rounded-full flex items-center p-1">
-                                <img src="assets/images/check.svg" class="w-4 h-4 object-cover invert group-hover:invert-0">
-                            </div>
-                            <div class="flex flex-col gap-2 group-hover:text-white max-w-80">
-                                <div class="font-bold text-sm capitalize">Optimal Digital Marketing</div>
-                            </div>
-                        </div>
+                    <div class="text-lg font-bold group-hover:text-white">A/B Testing</div>
+                    <div class="text-sm text-gray-400 group-hover:text-white overflow-y-scroll">
+                        <p>A/B testing compares two versions of a product or feature to determine which one performs better based on predefined metrics, helping to optimize design decisions and user engagement.</p>
+                        <br>
+                        <b>Advantages:</b>
+                        <p>Employs data-driven decision-making; identifies effective design elements or features through controlled experimentation.</p>
+                        <br>
+                        <b>Disadvantages:</b>
+                        <p>Requires significant traffic or user base for statistically significant results; potential for bias in metric selection or interpretation.</p>
                     </div>
                 </div>
-                <div class="p-10 flex flex-col bg-white/70 rounded-xl gap-5 shadow-xl max-w-96 hover:bg-indigo-400 group border border-gray-100">
-                    <div class="p-5 bg-indigo-400 group-hover:bg-white/30 rounded-full w-fit">
-                        <img src="assets/images/loudspeaker-white.svg" class="w-auto h-16 object-cover">
+                <div class="py-5 px-5 flex flex-col items-start bg-white/70 rounded-xl gap-5 shadow-xl hover:bg-indigo-400 group border border-gray-100 max-h-96">
+                    <div class="bg-indigo-400 rounded-full flex items-center h-fit px-3 py-2.5 group-hover:bg-white/70">
+                        <span class="material-symbols-outlined text-4xl text-white group-hover:text-indigo-400">query_stats</span>
                     </div>
-                    <div class="text-xl font-bold group-hover:text-white">Design Thinking</div>
-                    <div class="text-sm text-gray-400 group-hover:text-white line-clamp-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae molestias ad asperiores sed alias at, ratione optio hic corporis praesentium quos esse vero sit autem ullam illum quaerat est illo.</div>
-                    <div class="flex flex-col gap-2">
-                        <div class="flex items-center gap-4">
-                            <div class="bg-indigo-400 group-hover:bg-white rounded-full flex items-center p-1">
-                                <img src="assets/images/check.svg" class="w-4 h-4 object-cover invert group-hover:invert-0">
-                            </div>
-                            <div class="flex flex-col gap-2 group-hover:text-white max-w-80">
-                                <div class="font-bold text-sm capitalize">Chunk as Necessary</div>
-                            </div>
-                        </div>
-                        <div class="flex items-center gap-4">
-                            <div class="bg-indigo-400 group-hover:bg-white rounded-full flex items-center p-1">
-                                <img src="assets/images/check.svg" class="w-4 h-4 object-cover invert group-hover:invert-0">
-                            </div>
-                            <div class="flex flex-col gap-2 group-hover:text-white max-w-80">
-                                <div class="font-bold text-sm capitalize">Generatiors Internet</div>
-                            </div>
-                        </div>
-                        <div class="flex items-center gap-4">
-                            <div class="bg-indigo-400 group-hover:bg-white rounded-full flex items-center p-1">
-                                <img src="assets/images/check.svg" class="w-4 h-4 object-cover invert group-hover:invert-0">
-                            </div>
-                            <div class="flex flex-col gap-2 group-hover:text-white max-w-80">
-                                <div class="font-bold text-sm capitalize">Optimal Digital Marketing</div>
-                            </div>
-                        </div>
+                    <div class="text-lg font-bold group-hover:text-white">Ethnographic Research</div>
+                    <div class="text-sm text-gray-400 group-hover:text-white overflow-y-scroll">
+                        <p>Ethnographic research involves observing and documenting user behaviors in their natural environments to gain deep insights into their needs, preferences, and daily routines.</p>
+                        <br>
+                        <b>Advantages:</b>
+                        <p>Provides rich qualitative data on user context and motivations; uncovers unmet needs and innovative opportunities.</p>
+                        <br>
+                        <b>Disadvantages:</b>
+                        <p>Time-consuming and resource-intensive; challenges in maintaining objectivity and capturing comprehensive data.</p>
                     </div>
                 </div>
-                <div class="p-10 flex flex-col bg-white/70 rounded-xl gap-5 shadow-xl max-w-96 hover:bg-indigo-400 group border border-gray-100">
-                    <div class="p-5 bg-indigo-400 group-hover:bg-white/30 rounded-full w-fit">
-                        <img src="assets/images/loudspeaker-white.svg" class="w-auto h-16 object-cover">
+                <div class="py-5 px-5 flex flex-col items-start bg-white/70 rounded-xl gap-5 shadow-xl hover:bg-indigo-400 group border border-gray-100 max-h-96">
+                    <div class="bg-indigo-400 rounded-full flex items-center h-fit px-3 py-2.5 group-hover:bg-white/70">
+                        <span class="material-symbols-outlined text-4xl text-white group-hover:text-indigo-400">stacked_bar_chart</span>
                     </div>
-                    <div class="text-xl font-bold group-hover:text-white">Design Thinking</div>
-                    <div class="text-sm text-gray-400 group-hover:text-white line-clamp-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae molestias ad asperiores sed alias at, ratione optio hic corporis praesentium quos esse vero sit autem ullam illum quaerat est illo.</div>
-                    <div class="flex flex-col gap-2">
-                        <div class="flex items-center gap-4">
-                            <div class="bg-indigo-400 group-hover:bg-white rounded-full flex items-center p-1">
-                                <img src="assets/images/check.svg" class="w-4 h-4 object-cover invert group-hover:invert-0">
-                            </div>
-                            <div class="flex flex-col gap-2 group-hover:text-white max-w-80">
-                                <div class="font-bold text-sm capitalize">Chunk as Necessary</div>
-                            </div>
-                        </div>
-                        <div class="flex items-center gap-4">
-                            <div class="bg-indigo-400 group-hover:bg-white rounded-full flex items-center p-1">
-                                <img src="assets/images/check.svg" class="w-4 h-4 object-cover invert group-hover:invert-0">
-                            </div>
-                            <div class="flex flex-col gap-2 group-hover:text-white max-w-80">
-                                <div class="font-bold text-sm capitalize">Generatiors Internet</div>
-                            </div>
-                        </div>
-                        <div class="flex items-center gap-4">
-                            <div class="bg-indigo-400 group-hover:bg-white rounded-full flex items-center p-1">
-                                <img src="assets/images/check.svg" class="w-4 h-4 object-cover invert group-hover:invert-0">
-                            </div>
-                            <div class="flex flex-col gap-2 group-hover:text-white max-w-80">
-                                <div class="font-bold text-sm capitalize">Optimal Digital Marketing</div>
-                            </div>
-                        </div>
+                    <div class="text-lg font-bold group-hover:text-white">Competitive Analysis</div>
+                    <div class="text-sm text-gray-400 group-hover:text-white overflow-y-scroll">
+                        <p>Competitive analysis examines competitors' products, strategies, and market positioning to identify trends, gaps, and opportunities for differentiation or innovation.</p>
+                        <br>
+                        <b>Advantages:</b>
+                        <p>Informs strategic decision-making; benchmarks against industry standards and identifies market trends.</p>
+                        <br>
+                        <b>Disadvantages:</b>
+                        <p>Relies on publicly available information; may overlook non-public strategies or emerging competitors.</p>
                     </div>
                 </div>
-                <div class="p-10 flex flex-col bg-white/70 rounded-xl gap-5 shadow-xl max-w-96 hover:bg-indigo-400 group border border-gray-100">
-                    <div class="p-5 bg-indigo-400 group-hover:bg-white/30 rounded-full w-fit">
-                        <img src="assets/images/loudspeaker-white.svg" class="w-auto h-16 object-cover">
+                <div class="py-5 px-5 flex flex-col items-start bg-white/70 rounded-xl gap-5 shadow-xl hover:bg-indigo-400 group border border-gray-100 max-h-96">
+                    <div class="bg-indigo-400 rounded-full flex items-center h-fit px-3 py-2.5 group-hover:bg-white/70">
+                        <span class="material-symbols-outlined text-4xl text-white group-hover:text-indigo-400">screen_search_desktop</span>
                     </div>
-                    <div class="text-xl font-bold group-hover:text-white">Design Thinking</div>
-                    <div class="text-sm text-gray-400 group-hover:text-white line-clamp-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae molestias ad asperiores sed alias at, ratione optio hic corporis praesentium quos esse vero sit autem ullam illum quaerat est illo.</div>
-                    <div class="flex flex-col gap-2">
-                        <div class="flex items-center gap-4">
-                            <div class="bg-indigo-400 group-hover:bg-white rounded-full flex items-center p-1">
-                                <img src="assets/images/check.svg" class="w-4 h-4 object-cover invert group-hover:invert-0">
-                            </div>
-                            <div class="flex flex-col gap-2 group-hover:text-white max-w-80">
-                                <div class="font-bold text-sm capitalize">Chunk as Necessary</div>
-                            </div>
-                        </div>
-                        <div class="flex items-center gap-4">
-                            <div class="bg-indigo-400 group-hover:bg-white rounded-full flex items-center p-1">
-                                <img src="assets/images/check.svg" class="w-4 h-4 object-cover invert group-hover:invert-0">
-                            </div>
-                            <div class="flex flex-col gap-2 group-hover:text-white max-w-80">
-                                <div class="font-bold text-sm capitalize">Generatiors Internet</div>
-                            </div>
-                        </div>
-                        <div class="flex items-center gap-4">
-                            <div class="bg-indigo-400 group-hover:bg-white rounded-full flex items-center p-1">
-                                <img src="assets/images/check.svg" class="w-4 h-4 object-cover invert group-hover:invert-0">
-                            </div>
-                            <div class="flex flex-col gap-2 group-hover:text-white max-w-80">
-                                <div class="font-bold text-sm capitalize">Optimal Digital Marketing</div>
-                            </div>
-                        </div>
+                    <div class="text-lg font-bold group-hover:text-white">Technology Scouting</div>
+                    <div class="text-sm text-gray-400 group-hover:text-white overflow-y-scroll">
+                        <p>Technology scouting involves actively searching for emerging technologies, innovations, or intellectual property externally to integrate into existing products or develop new ones.</p>
+                        <br>
+                        <b>Advantages:</b>
+                        <p>Accelerates innovation by leveraging external expertise and resources; expands technology portfolio and competitive advantage.</p>
+                        <br>
+                        <b>Disadvantages:</b>
+                        <p>Requires effective technology evaluation and integration strategies; potential for intellectual property conflicts or technology misalignment.</p>
                     </div>
                 </div>
-                <div class="p-10 flex flex-col bg-white/70 rounded-xl gap-5 shadow-xl max-w-96 hover:bg-indigo-400 group border border-gray-100">
-                    <div class="p-5 bg-indigo-400 group-hover:bg-white/30 rounded-full w-fit">
-                        <img src="assets/images/loudspeaker-white.svg" class="w-auto h-16 object-cover">
+                <div class="py-5 px-5 flex flex-col items-start bg-white/70 rounded-xl gap-5 shadow-xl hover:bg-indigo-400 group border border-gray-100 max-h-96">
+                    <div class="bg-indigo-400 rounded-full flex items-center h-fit px-3 py-2.5 group-hover:bg-white/70">
+                        <span class="material-symbols-outlined text-4xl text-white group-hover:text-indigo-400">model_training</span>
                     </div>
-                    <div class="text-xl font-bold group-hover:text-white">Design Thinking</div>
-                    <div class="text-sm text-gray-400 group-hover:text-white line-clamp-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae molestias ad asperiores sed alias at, ratione optio hic corporis praesentium quos esse vero sit autem ullam illum quaerat est illo.</div>
-                    <div class="flex flex-col gap-2">
-                        <div class="flex items-center gap-4">
-                            <div class="bg-indigo-400 group-hover:bg-white rounded-full flex items-center p-1">
-                                <img src="assets/images/check.svg" class="w-4 h-4 object-cover invert group-hover:invert-0">
-                            </div>
-                            <div class="flex flex-col gap-2 group-hover:text-white max-w-80">
-                                <div class="font-bold text-sm capitalize">Chunk as Necessary</div>
-                            </div>
-                        </div>
-                        <div class="flex items-center gap-4">
-                            <div class="bg-indigo-400 group-hover:bg-white rounded-full flex items-center p-1">
-                                <img src="assets/images/check.svg" class="w-4 h-4 object-cover invert group-hover:invert-0">
-                            </div>
-                            <div class="flex flex-col gap-2 group-hover:text-white max-w-80">
-                                <div class="font-bold text-sm capitalize">Generatiors Internet</div>
-                            </div>
-                        </div>
-                        <div class="flex items-center gap-4">
-                            <div class="bg-indigo-400 group-hover:bg-white rounded-full flex items-center p-1">
-                                <img src="assets/images/check.svg" class="w-4 h-4 object-cover invert group-hover:invert-0">
-                            </div>
-                            <div class="flex flex-col gap-2 group-hover:text-white max-w-80">
-                                <div class="font-bold text-sm capitalize">Optimal Digital Marketing</div>
-                            </div>
-                        </div>
+                    <div class="text-lg font-bold group-hover:text-white">Simulation-Based Design</div>
+                    <div class="text-sm text-gray-400 group-hover:text-white overflow-y-scroll">
+                        <p>Simulation-based design uses computer simulations to model and optimize product designs, predict performance under various conditions, and reduce reliance on physical prototypes.</p>
+                        <br>
+                        <b>Advantages:</b>
+                        <p>Reduces time and costs associated with prototyping; allows for iterative design improvements and performance optimization.</p>
+                        <br>
+                        <b>Disadvantages:</b>
+                        <p>Dependent on accurate simulation models; challenges in representing complex real-world behaviors.</p>
+                    </div>
+                </div>
+                <div class="py-5 px-5 flex flex-col items-start bg-white/70 rounded-xl gap-5 shadow-xl hover:bg-indigo-400 group border border-gray-100 max-h-96">
+                    <div class="bg-indigo-400 rounded-full flex items-center h-fit px-3 py-2.5 group-hover:bg-white/70">
+                        <span class="material-symbols-outlined text-4xl text-white group-hover:text-indigo-400">biotech</span>
+                    </div>
+                    <div class="text-lg font-bold group-hover:text-white">Failure Mode and Effects Analysis (FMEA)</div>
+                    <div class="text-sm text-gray-400 group-hover:text-white overflow-y-scroll">
+                        <p>FMEA systematically evaluates potential failure modes of a product or process to prioritize improvements, enhance reliability, and reduce risks through proactive mitigation strategies.</p>
+                        <br>
+                        <b>Advantages:</b>
+                        <p>Improves product reliability and safety; prioritizes critical areas for design or process enhancements.</p>
+                        <br>
+                        <b>Disadvantages:</b>
+                        <p>Requires multidisciplinary collaboration; extensive documentation and analysis can be time-consuming.</p>
+                    </div>
+                </div>
+                <div class="py-5 px-5 flex flex-col items-start bg-white/70 rounded-xl gap-5 shadow-xl hover:bg-indigo-400 group border border-gray-100 max-h-96">
+                    <div class="bg-indigo-400 rounded-full flex items-center h-fit px-3 py-2.5 group-hover:bg-white/70">
+                        <span class="material-symbols-outlined text-4xl text-white group-hover:text-indigo-400">manufacturing</span>
+                    </div>
+                    <div class="text-lg font-bold group-hover:text-white">Design for Manufacturing and Assembly (DFMA)</div>
+                    <div class="text-sm text-gray-400 group-hover:text-white overflow-y-scroll">
+                        <p>DFMA optimizes product designs for efficient manufacturing and assembly processes, reducing production costs and time-to-market by integrating manufacturability considerations early in the design phase.</p>
+                        <br>
+                        <b>Advantages:</b>
+                        <p>Enhances production scalability and cost-effectiveness; minimizes design changes and manufacturing errors.</p>
+                        <br>
+                        <b>Disadvantages:</b>
+                        <p>Requires expertise in both design and manufacturing processes; potential constraints on design creativity.</p>
+                    </div>
+                </div>
+                <div class="py-5 px-5 flex flex-col items-start bg-white/70 rounded-xl gap-5 shadow-xl hover:bg-indigo-400 group border border-gray-100 max-h-96">
+                    <div class="bg-indigo-400 rounded-full flex items-center h-fit px-3 py-2.5 group-hover:bg-white/70">
+                        <span class="material-symbols-outlined text-4xl text-white group-hover:text-indigo-400">edit_audio</span>
+                    </div>
+                    <div class="text-lg font-bold group-hover:text-white">Quality Function Deployment (QFD)</div>
+                    <div class="text-sm text-gray-400 group-hover:text-white overflow-y-scroll">
+                        <p>QFD translates customer requirements into specific product features and manufacturing processes to ensure alignment with customer needs and preferences throughout the product development lifecycle.</p>
+                        <br>
+                        <b>Advantages:</b>
+                        <p>Improves customer satisfaction and product quality; enhances cross-functional collaboration and alignment.</p>
+                        <br>
+                        <b>Disadvantages:</b>
+                        <p>Requires comprehensive customer input and feedback; challenges in prioritizing and balancing competing requirements.</p>
+                    </div>
+                </div>
+                <div class="py-5 px-5 flex flex-col items-start bg-white/70 rounded-xl gap-5 shadow-xl hover:bg-indigo-400 group border border-gray-100 max-h-96">
+                    <div class="bg-indigo-400 rounded-full flex items-center h-fit px-3 py-2.5 group-hover:bg-white/70">
+                        <span class="material-symbols-outlined text-4xl text-white group-hover:text-indigo-400">open_in_full</span>
+                    </div>
+                    <div class="text-lg font-bold group-hover:text-white">Open Innovation</div>
+                    <div class="text-sm text-gray-400 group-hover:text-white overflow-y-scroll">
+                        <p>Open innovation involves collaborating with external partners, customers, or communities to co-create new products, solutions, or technologies, leveraging external expertise and resources.</p>
+                        <br>
+                        <b>Advantages:</b>
+                        <p>Fosters innovation and accelerates time-to-market; taps into diverse perspectives and complementary capabilities.</p>
+                        <br>
+                        <b>Disadvantages:</b>
+                        <p>Requires effective partnership and IP management strategies; challenges in maintaining competitive advantage and confidentiality.</p>
+                    </div>
+                </div>
+                <div class="py-5 px-5 flex flex-col items-start bg-white/70 rounded-xl gap-5 shadow-xl hover:bg-indigo-400 group border border-gray-100 max-h-96">
+                    <div class="bg-indigo-400 rounded-full flex items-center h-fit px-3 py-2.5 group-hover:bg-white/70">
+                        <span class="material-symbols-outlined text-4xl text-white group-hover:text-indigo-400">analytics</span>
+                    </div>
+                    <div class="text-lg font-bold group-hover:text-white">Risk Assessment and Management</div>
+                    <div class="text-sm text-gray-400 group-hover:text-white overflow-y-scroll">
+                        <p>Risk assessment and management involves identifying, evaluating, and prioritizing potential risks and uncertainties associated with product development or implementation. It focuses on mitigating risks to ensure project success and minimize negative impacts.</p>
+                        <br>
+                        <b>Advantages:</b>
+                        <p>Enhances project resilience and reliability; improves decision-making by anticipating and addressing potential challenges early in the development process.</p>
+                        <br>
+                        <b>Disadvantages:</b>
+                        <p>Requires expertise in risk identification and analysis; time-consuming to implement comprehensive risk management strategies.</p>
+                    </div>
+                </div>
+                <div class="py-5 px-5 flex flex-col items-start bg-white/70 rounded-xl gap-5 shadow-xl hover:bg-indigo-400 group border border-gray-100 max-h-96">
+                    <div class="bg-indigo-400 rounded-full flex items-center h-fit px-3 py-2.5 group-hover:bg-white/70">
+                        <span class="material-symbols-outlined text-4xl text-white group-hover:text-indigo-400">emoji_objects</span>
+                    </div>
+                    <div class="text-lg font-bold group-hover:text-white">Design Thinking</div>
+                    <div class="text-sm text-gray-400 group-hover:text-white overflow-y-scroll">
+                        <p>Design thinking is a human-centered approach to innovation that emphasizes empathy, ideation, prototyping, and testing to solve complex problems and generate creative solutions. It integrates user needs, technical feasibility, and business viability to drive iterative design improvements.</p>
+                        <br>
+                        <b>Advantages:</b>
+                        <p>Promotes innovative thinking and collaboration; prioritizes user empathy and insights to create meaningful and user-centric solutions.</p>
+                        <br>
+                        <b>Disadvantages:</b>
+                        <p>Can be time-intensive and iterative; requires a cultural shift towards interdisciplinary collaboration and iterative feedback loops.</p>
+                    </div>
+                </div>
+            </section>
+            <section id="service-sde" class="px-48 py-24 grid grid-cols-4 gap-5 hidden service-content">
+                <div class="py-5 px-5 flex flex-col items-start bg-white/70 rounded-xl gap-5 shadow-xl hover:bg-indigo-400 group border border-gray-100 max-h-96">
+                    <div class="bg-indigo-400 rounded-full flex items-center h-fit px-3 py-2.5 group-hover:bg-white/70">
+                        <span class="material-symbols-outlined text-4xl text-white group-hover:text-indigo-400">waterfall_chart</span>
+                    </div>
+                    <div class="text-lg font-bold group-hover:text-white">Waterfall Model</div>
+                    <div class="text-sm text-gray-400 group-hover:text-white overflow-y-scroll">
+                        <p>The Waterfall model is a linear sequential approach where software development progresses through predefined phases—requirements, design, implementation, testing, deployment, and maintenance—in a strict order.</p>
+                        <br>
+                        <b>Advantages:</b>
+                        <p>Follows a structured approach from requirements to deployment, providing clarity in project scope and timeline.</p>
+                        <br>
+                        <b>Disadvantages:</b>
+                        <p>Limited flexibility for changes and high risk of customer dissatisfaction due to late feedback.</p>
+                    </div>
+                </div>
+                <div class="py-5 px-5 flex flex-col items-start bg-white/70 rounded-xl gap-5 shadow-xl hover:bg-indigo-400 group border border-gray-100 max-h-96">
+                    <div class="bg-indigo-400 rounded-full flex items-center h-fit px-3 py-2.5 group-hover:bg-white/70">
+                        <span class="material-symbols-outlined text-4xl text-white group-hover:text-indigo-400">partner_exchange</span>
+                    </div>
+                    <div class="text-lg font-bold group-hover:text-white">Agile Development</div>
+                    <div class="text-sm text-gray-400 group-hover:text-white overflow-y-scroll">
+                        <p>Agile development is an iterative approach that emphasizes collaboration, flexibility, and rapid iterations based on feedback from stakeholders and end-users.</p>
+                        <br>
+                        <b>Advantages:</b>
+                        <p>Adaptable to changing requirements, facilitating early and continuous delivery of valuable software.</p>
+                        <br>
+                        <b>Disadvantages:</b>
+                        <p>Requires active customer collaboration and can lead to scope creep without proper management.</p>
+                    </div>
+                </div>
+                <div class="py-5 px-5 flex flex-col items-start bg-white/70 rounded-xl gap-5 shadow-xl hover:bg-indigo-400 group border border-gray-100 max-h-96">
+                    <div class="bg-indigo-400 rounded-full flex items-center h-fit px-3 py-2.5 group-hover:bg-white/70">
+                        <span class="material-symbols-outlined text-4xl text-white group-hover:text-indigo-400">sprint</span>
+                    </div>
+                    <div class="text-lg font-bold group-hover:text-white">Scrum</div>
+                    <div class="text-sm text-gray-400 group-hover:text-white overflow-y-scroll">
+                        <p>Scrum is a specific Agile framework that divides work into short iterations called sprints, typically lasting 1-4 weeks. It focuses on delivering usable software at the end of each sprint.</p>
+                        <br>
+                        <b>Advantages:</b>
+                        <p>Promotes teamwork and accountability, delivering usable software in short iterations.</p>
+                        <br>
+                        <b>Disadvantages:</b>
+                        <p>Challenges in scaling for large projects and dependency on experienced Scrum Masters and Product Owners.</p>
+                    </div>
+                </div>
+                <div class="py-5 px-5 flex flex-col items-start bg-white/70 rounded-xl gap-5 shadow-xl hover:bg-indigo-400 group border border-gray-100 max-h-96">
+                    <div class="bg-indigo-400 rounded-full flex items-center h-fit px-3 py-2.5 group-hover:bg-white/70">
+                        <span class="material-symbols-outlined text-4xl text-white group-hover:text-indigo-400">web_stories</span>
+                    </div>
+                    <div class="text-lg font-bold group-hover:text-white">Kanban</div>
+                    <div class="text-sm text-gray-400 group-hover:text-white overflow-y-scroll">
+                        <p>Kanban is a visual framework that emphasizes continuous delivery by limiting work in progress (WIP). Tasks are visualized on a Kanban board, moving through stages from backlog to completion.</p>
+                        <br>
+                        <b>Advantages:</b>
+                        <p>Enhances workflow visibility and efficiency, allowing flexibility in handling work priorities.</p>
+                        <br>
+                        <b>Disadvantages:</b>
+                        <p>Lacks structured planning and timeboxing, requiring disciplined WIP management.</p>
+                    </div>
+                </div>
+                <div class="py-5 px-5 flex flex-col items-start bg-white/70 rounded-xl gap-5 shadow-xl hover:bg-indigo-400 group border border-gray-100 max-h-96">
+                    <div class="bg-indigo-400 rounded-full flex items-center h-fit px-3 py-2.5 group-hover:bg-white/70">
+                        <span class="material-symbols-outlined text-4xl text-white group-hover:text-indigo-400">jump_to_element</span>
+                    </div>
+                    <div class="text-lg font-bold group-hover:text-white">Lean Software Development</div>
+                    <div class="text-sm text-gray-400 group-hover:text-white overflow-y-scroll">
+                        <p>Lean Software Development applies principles from Lean manufacturing to software development, focusing on eliminating waste, optimizing processes, and delivering value to customers quickly.</p>
+                        <br>
+                        <b>Advantages:</b>
+                        <p>Reduces waste and focuses on value delivery, promoting continuous improvement and efficiency.</p>
+                        <br>
+                        <b>Disadvantages:</b>
+                        <p>Requires cultural and organizational alignment and may need adaptation for complex projects.</p>
+                    </div>
+                </div>
+                <div class="py-5 px-5 flex flex-col items-start bg-white/70 rounded-xl gap-5 shadow-xl hover:bg-indigo-400 group border border-gray-100 max-h-96">
+                    <div class="bg-indigo-400 rounded-full flex items-center h-fit px-3 py-2.5 group-hover:bg-white/70">
+                        <span class="material-symbols-outlined text-4xl text-white group-hover:text-indigo-400">rule_settings</span>
+                    </div>
+                    <div class="text-lg font-bold group-hover:text-white">Extreme Programming (XP)</div>
+                    <div class="text-sm text-gray-400 group-hover:text-white overflow-y-scroll">
+                        <p>Extreme Programming (XP) is an Agile methodology that emphasizes engineering practices such as pair programming, test-driven development (TDD), continuous integration, and frequent releases.</p>
+                        <br>
+                        <b>Advantages:</b>
+                        <p>Improves software quality through engineering practices, enhancing collaboration and team communication.</p>
+                        <br>
+                        <b>Disadvantages:</b>
+                        <p>Requires skilled developers and adherence to practices, with challenges in adoption for non-XP environments.</p>
+                    </div>
+                </div>
+                <div class="py-5 px-5 flex flex-col items-start bg-white/70 rounded-xl gap-5 shadow-xl hover:bg-indigo-400 group border border-gray-100 max-h-96">
+                    <div class="bg-indigo-400 rounded-full flex items-center h-fit px-3 py-2.5 group-hover:bg-white/70">
+                        <span class="material-symbols-outlined text-4xl text-white group-hover:text-indigo-400">terminal</span>
+                    </div>
+                    <div class="text-lg font-bold group-hover:text-white">DevOps</div>
+                    <div class="text-sm text-gray-400 group-hover:text-white overflow-y-scroll">
+                        <p>DevOps is a cultural and technical approach that integrates development (Dev) and operations (Ops) teams to automate processes, improve collaboration, and deliver software more reliably and quickly.</p>
+                        <br>
+                        <b>Advantages:</b>
+                        <p>Automates deployment processes for faster releases, improving collaboration between development and operations.</p>
+                        <br>
+                        <b>Disadvantages:</b>
+                        <p>Requires investment in tools and infrastructure, with cultural resistance and integration challenges.</p>
+                    </div>
+                </div>
+                <div class="py-5 px-5 flex flex-col items-start bg-white/70 rounded-xl gap-5 shadow-xl hover:bg-indigo-400 group border border-gray-100 max-h-96">
+                    <div class="bg-indigo-400 rounded-full flex items-center h-fit px-3 py-2.5 group-hover:bg-white/70">
+                        <span class="material-symbols-outlined text-4xl text-white group-hover:text-indigo-400">category_search</span>
+                    </div>
+                    <div class="text-lg font-bold group-hover:text-white">Rapid Application Development (RAD)</div>
+                    <div class="text-sm text-gray-400 group-hover:text-white overflow-y-scroll">
+                        <p>Rapid Application Development (RAD) focuses on rapid prototyping and iterative development to quickly produce high-quality software solutions.</p>
+                        <br>
+                        <b>Advantages:</b>
+                        <p>Accelerates software development cycles and enhances user involvement and feedback.</p>
+                        <br>
+                        <b>Disadvantages:</b>
+                        <p>Risks compromising scalability or long-term maintainability, dependent on skilled developers and effective management.</p>
+                    </div>
+                </div>
+                <div class="py-5 px-5 flex flex-col items-start bg-white/70 rounded-xl gap-5 shadow-xl hover:bg-indigo-400 group border border-gray-100 max-h-96">
+                    <div class="bg-indigo-400 rounded-full flex items-center h-fit px-3 py-2.5 group-hover:bg-white/70">
+                        <span class="material-symbols-outlined text-4xl text-white group-hover:text-indigo-400">motion_photos_on</span>
+                    </div>
+                    <div class="text-lg font-bold group-hover:text-white">Spiral Model</div>
+                    <div class="text-sm text-gray-400 group-hover:text-white overflow-y-scroll">
+                        <p>The Spiral model combines elements of both iterative and waterfall models, emphasizing risk analysis and gradual refinement through multiple iterations or spirals of the software development lifecycle.</p>
+                        <br>
+                        <b>Advantages:</b>
+                        <p>Incorporates risk management throughout the lifecycle and allows for iterative development based on feedback.</p>
+                        <br>
+                        <b>Disadvantages:</b>
+                        <p>Complexity and resource-intensiveness due to risk analysis, with challenges in accurate project estimation.</p>
+                    </div>
+                </div>
+                <div class="py-5 px-5 flex flex-col items-start bg-white/70 rounded-xl gap-5 shadow-xl hover:bg-indigo-400 group border border-gray-100 max-h-96">
+                    <div class="bg-indigo-400 rounded-full flex items-center h-fit px-3 py-2.5 group-hover:bg-white/70">
+                        <span class="material-symbols-outlined text-4xl text-white group-hover:text-indigo-400">pivot_table_chart</span>
+                    </div>
+                    <div class="text-lg font-bold group-hover:text-white">Feature-Driven Development (FDD)</div>
+                    <div class="text-sm text-gray-400 group-hover:text-white overflow-y-scroll">
+                        <p>Feature-Driven Development (FDD) is an Agile methodology that focuses on designing and building software features incrementally, based on domain object modeling and feature lists.</p>
+                        <br>
+                        <b>Advantages:</b>
+                        <p>Scales well for large and complex projects, enhancing clarity and productivity through feature-centric development.</p>
+                        <br>
+                        <b>Disadvantages:</b>
+                        <p>Requires upfront domain modeling and feature list creation, with challenges in adapting to rapidly changing requirements.</p>
+                    </div>
+                </div>
+                <div class="py-5 px-5 flex flex-col items-start bg-white/70 rounded-xl gap-5 shadow-xl hover:bg-indigo-400 group border border-gray-100 max-h-96">
+                    <div class="bg-indigo-400 rounded-full flex items-center h-fit px-3 py-2.5 group-hover:bg-white/70">
+                        <span class="material-symbols-outlined text-4xl text-white group-hover:text-indigo-400">all_inclusive</span>
+                    </div>
+                    <div class="text-lg font-bold group-hover:text-white">Continuous Integration/Continuous Delivery (CI/CD)</div>
+                    <div class="text-sm text-gray-400 group-hover:text-white overflow-y-scroll">
+                        <p>CI/CD is a set of practices that enable frequent integration of code changes into a shared repository (CI) and automated deployment of applications to production environments (CD).</p>
+                        <br>
+                        <b>Advantages:</b>
+                        <p>Reduces integration issues and deployment risks, accelerates delivery cycles and time-to-market.</p>
+                        <br>
+                        <b>Disadvantages:</b>
+                        <p>Dependent on robust automation and infrastructure, with cultural resistance to continuous changes and deployments.</p>
+                    </div>
+                </div>
+                <div class="py-5 px-5 flex flex-col items-start bg-white/70 rounded-xl gap-5 shadow-xl hover:bg-indigo-400 group border border-gray-100 max-h-96">
+                    <div class="bg-indigo-400 rounded-full flex items-center h-fit px-3 py-2.5 group-hover:bg-white/70">
+                        <span class="material-symbols-outlined text-4xl text-white group-hover:text-indigo-400">format_color_fill</span>
+                    </div>
+                    <div class="text-lg font-bold group-hover:text-white">Design Thinking in Software Development</div>
+                    <div class="text-sm text-gray-400 group-hover:text-white overflow-y-scroll">
+                        <p>Design Thinking applies human-centered design principles to software development, focusing on understanding user needs, rapid prototyping, and iterating based on user feedback to create innovative solutions.</p>
+                        <br>
+                        <b>Advantages:</b>
+                        <p>Prioritizes user needs and engagement, promoting creativity and iterative problem-solving.</p>
+                        <br>
+                        <b>Disadvantages:</b>
+                        <p>Time-intensive and iterative process, requiring organizational commitment to user-centered design.</p>
+                    </div>
+                </div>
+            </section>
+            <section id="service-adi" class="px-48 py-24 grid grid-cols-4 gap-5 hidden service-content">
+                <div class="py-5 px-5 flex flex-col items-start bg-white/70 rounded-xl gap-5 shadow-xl hover:bg-indigo-400 group border border-gray-100 max-h-96">
+                    <div class="bg-indigo-400 rounded-full flex items-center h-fit px-3 py-2.5 group-hover:bg-white/70">
+                        <span class="material-symbols-outlined text-4xl text-white group-hover:text-indigo-400">waterfall_chart</span>
+                    </div>
+                    <div class="text-lg font-bold group-hover:text-white">Data Warehousing</div>
+                    <div class="text-sm text-gray-400 group-hover:text-white overflow-y-scroll">
+                        <p>Data warehousing involves collecting, storing, and managing large volumes of structured data from various sources into a centralized repository for analysis and reporting.</p>
+                        <br>
+                        <b>Advantages:</b>
+                        <p>Provides a unified view of data across the organization, enabling comprehensive analysis and reporting.</p>
+                        <br>
+                        <b>Disadvantages:</b>
+                        <p>Requires significant investment in infrastructure and maintenance, and can be complex to implement.</p>
+                    </div>
+                </div>
+                <div class="py-5 px-5 flex flex-col items-start bg-white/70 rounded-xl gap-5 shadow-xl hover:bg-indigo-400 group border border-gray-100 max-h-96">
+                    <div class="bg-indigo-400 rounded-full flex items-center h-fit px-3 py-2.5 group-hover:bg-white/70">
+                        <span class="material-symbols-outlined text-4xl text-white group-hover:text-indigo-400">partner_exchange</span>
+                    </div>
+                    <div class="text-lg font-bold group-hover:text-white">ETL (Extract, Transform, Load)</div>
+                    <div class="text-sm text-gray-400 group-hover:text-white overflow-y-scroll">
+                        <p>ETL is a process that extracts data from various sources, transforms it to fit operational needs, and loads it into a data warehouse or other destination for analysis.</p>
+                        <br>
+                        <b>Advantages:</b>
+                        <p>Standardizes and consolidates data from multiple sources, improving data quality and accessibility.</p>
+                        <br>
+                        <b>Disadvantages:</b>
+                        <p>Can be time-consuming and resource-intensive, especially with large data volumes and complex transformations.</p>
+                    </div>
+                </div>
+                <div class="py-5 px-5 flex flex-col items-start bg-white/70 rounded-xl gap-5 shadow-xl hover:bg-indigo-400 group border border-gray-100 max-h-96">
+                    <div class="bg-indigo-400 rounded-full flex items-center h-fit px-3 py-2.5 group-hover:bg-white/70">
+                        <span class="material-symbols-outlined text-4xl text-white group-hover:text-indigo-400">sprint</span>
+                    </div>
+                    <div class="text-lg font-bold group-hover:text-white">Real-Time Data Integration</div>
+                    <div class="text-sm text-gray-400 group-hover:text-white overflow-y-scroll">
+                        <p>Real-time data integration involves continuously updating and synchronizing data from multiple sources in real time to ensure current and consistent information across systems.</p>
+                        <br>
+                        <b>Advantages:</b>
+                        <p>Provides up-to-date information for timely decision-making and operational efficiency.</p>
+                        <br>
+                        <b>Disadvantages:</b>
+                        <p>Requires robust infrastructure and can be challenging to implement and maintain.</p>
+                    </div>
+                </div>
+                <div class="py-5 px-5 flex flex-col items-start bg-white/70 rounded-xl gap-5 shadow-xl hover:bg-indigo-400 group border border-gray-100 max-h-96">
+                    <div class="bg-indigo-400 rounded-full flex items-center h-fit px-3 py-2.5 group-hover:bg-white/70">
+                        <span class="material-symbols-outlined text-4xl text-white group-hover:text-indigo-400">web_stories</span>
+                    </div>
+                    <div class="text-lg font-bold group-hover:text-white">Data Virtualization</div>
+                    <div class="text-sm text-gray-400 group-hover:text-white overflow-y-scroll">
+                        <p>Data virtualization allows users to access and query data across multiple sources without requiring physical data movement, providing a unified, virtual view of data.</p>
+                        <br>
+                        <b>Advantages:</b>
+                        <p>Reduces data redundancy and storage costs, enabling faster and more flexible access to data.</p>
+                        <br>
+                        <b>Disadvantages:</b>
+                        <p>May face performance issues with large or complex queries, and requires a consistent data schema across sources.</p>
+                    </div>
+                </div>
+                <div class="py-5 px-5 flex flex-col items-start bg-white/70 rounded-xl gap-5 shadow-xl hover:bg-indigo-400 group border border-gray-100 max-h-96">
+                    <div class="bg-indigo-400 rounded-full flex items-center h-fit px-3 py-2.5 group-hover:bg-white/70">
+                        <span class="material-symbols-outlined text-4xl text-white group-hover:text-indigo-400">jump_to_element</span>
+                    </div>
+                    <div class="text-lg font-bold group-hover:text-white">Data Lake</div>
+                    <div class="text-sm text-gray-400 group-hover:text-white overflow-y-scroll">
+                        <p>A data lake is a centralized repository that allows the storage of structured, semi-structured, and unstructured data at any scale, enabling diverse analytics and machine learning.</p>
+                        <br>
+                        <b>Advantages:</b>
+                        <p>Accommodates large volumes and diverse types of data, supporting advanced analytics and data science.</p>
+                        <br>
+                        <b>Disadvantages:</b>
+                        <p>Requires robust governance and management to avoid becoming a "data swamp," with challenges in data quality and organization.</p>
+                    </div>
+                </div>
+                <div class="py-5 px-5 flex flex-col items-start bg-white/70 rounded-xl gap-5 shadow-xl hover:bg-indigo-400 group border border-gray-100 max-h-96">
+                    <div class="bg-indigo-400 rounded-full flex items-center h-fit px-3 py-2.5 group-hover:bg-white/70">
+                        <span class="material-symbols-outlined text-4xl text-white group-hover:text-indigo-400">rule_settings</span>
+                    </div>
+                    <div class="text-lg font-bold group-hover:text-white">Data Cleansing</div>
+                    <div class="text-sm text-gray-400 group-hover:text-white overflow-y-scroll">
+                        <p>Data cleansing involves detecting and correcting (or removing) corrupt or inaccurate records from a dataset to improve data quality and reliability.</p>
+                        <br>
+                        <b>Advantages:</b>
+                        <p>Enhances data accuracy and consistency, leading to more reliable analysis and insights.</p>
+                        <br>
+                        <b>Disadvantages:</b>
+                        <p>Can be labor-intensive and requires continuous monitoring and updating.</p>
+                    </div>
+                </div>
+                <div class="py-5 px-5 flex flex-col items-start bg-white/70 rounded-xl gap-5 shadow-xl hover:bg-indigo-400 group border border-gray-100 max-h-96">
+                    <div class="bg-indigo-400 rounded-full flex items-center h-fit px-3 py-2.5 group-hover:bg-white/70">
+                        <span class="material-symbols-outlined text-4xl text-white group-hover:text-indigo-400">terminal</span>
+                    </div>
+                    <div class="text-lg font-bold group-hover:text-white">Data Governance</div>
+                    <div class="text-sm text-gray-400 group-hover:text-white overflow-y-scroll">
+                        <p>Data governance encompasses the policies, procedures, and standards for managing data assets to ensure data quality, privacy, security, and compliance.</p>
+                        <br>
+                        <b>Advantages:</b>
+                        <p>Ensures data integrity, security, and compliance, promoting trust in data-driven decisions.</p>
+                        <br>
+                        <b>Disadvantages:</b>
+                        <p>Requires significant effort to establish and maintain governance frameworks and policies.</p>
+                    </div>
+                </div>
+                <div class="py-5 px-5 flex flex-col items-start bg-white/70 rounded-xl gap-5 shadow-xl hover:bg-indigo-400 group border border-gray-100 max-h-96">
+                    <div class="bg-indigo-400 rounded-full flex items-center h-fit px-3 py-2.5 group-hover:bg-white/70">
+                        <span class="material-symbols-outlined text-4xl text-white group-hover:text-indigo-400">category_search</span>
+                    </div>
+                    <div class="text-lg font-bold group-hover:text-white">Master Data Management (MDM)</div>
+                    <div class="text-sm text-gray-400 group-hover:text-white overflow-y-scroll">
+                        <p>MDM involves creating a single, authoritative source of truth for critical business data, such as customer or product information, to ensure consistency and accuracy across systems.</p>
+                        <br>
+                        <b>Advantages:</b>
+                        <p>Improves data consistency and accuracy, enhancing operational efficiency and decision-making.</p>
+                        <br>
+                        <b>Disadvantages:</b>
+                        <p>Can be complex to implement and requires ongoing maintenance and governance.</p>
+                    </div>
+                </div>
+                <div class="py-5 px-5 flex flex-col items-start bg-white/70 rounded-xl gap-5 shadow-xl hover:bg-indigo-400 group border border-gray-100 max-h-96">
+                    <div class="bg-indigo-400 rounded-full flex items-center h-fit px-3 py-2.5 group-hover:bg-white/70">
+                        <span class="material-symbols-outlined text-4xl text-white group-hover:text-indigo-400">motion_photos_on</span>
+                    </div>
+                    <div class="text-lg font-bold group-hover:text-white">Data Mining</div>
+                    <div class="text-sm text-gray-400 group-hover:text-white overflow-y-scroll">
+                        <p>Data mining is the process of discovering patterns, correlations, and insights from large datasets using statistical, machine learning, and data visualization techniques.</p>
+                        <br>
+                        <b>Advantages:</b>
+                        <p>Uncovers valuable insights and patterns that can drive strategic decisions and innovation.</p>
+                        <br>
+                        <b>Disadvantages:</b>
+                        <p>Requires expertise in data analysis and can be computationally intensive.</p>
+                    </div>
+                </div>
+                <div class="py-5 px-5 flex flex-col items-start bg-white/70 rounded-xl gap-5 shadow-xl hover:bg-indigo-400 group border border-gray-100 max-h-96">
+                    <div class="bg-indigo-400 rounded-full flex items-center h-fit px-3 py-2.5 group-hover:bg-white/70">
+                        <span class="material-symbols-outlined text-4xl text-white group-hover:text-indigo-400">pivot_table_chart</span>
+                    </div>
+                    <div class="text-lg font-bold group-hover:text-white">Predictive Analytics</div>
+                    <div class="text-sm text-gray-400 group-hover:text-white overflow-y-scroll">
+                        <p>Predictive analytics uses historical data, statistical algorithms, and machine learning techniques to predict future outcomes and trends.</p>
+                        <br>
+                        <b>Advantages:</b>
+                        <p>Provides actionable insights for proactive decision-making and risk management.</p>
+                        <br>
+                        <b>Disadvantages:</b>
+                        <p>Depends on the quality and relevance of historical data, and requires skilled analysts to interpret results.</p>
+                    </div>
+                </div>
+                <div class="py-5 px-5 flex flex-col items-start bg-white/70 rounded-xl gap-5 shadow-xl hover:bg-indigo-400 group border border-gray-100 max-h-96">
+                    <div class="bg-indigo-400 rounded-full flex items-center h-fit px-3 py-2.5 group-hover:bg-white/70">
+                        <span class="material-symbols-outlined text-4xl text-white group-hover:text-indigo-400">all_inclusive</span>
+                    </div>
+                    <div class="text-lg font-bold group-hover:text-white">Big Data Analytics</div>
+                    <div class="text-sm text-gray-400 group-hover:text-white overflow-y-scroll">
+                        <p>Big data analytics involves analyzing vast volumes of data from diverse sources to uncover hidden patterns, correlations, and insights using advanced analytics techniques.</p>
+                        <br>
+                        <b>Advantages:</b>
+                        <p>Enables the analysis of large and complex datasets, providing deep insights and competitive advantage.</p>
+                        <br>
+                        <b>Disadvantages:</b>
+                        <p>Requires substantial computational resources and expertise in big data technologies.</p>
+                    </div>
+                </div>
+                <div class="py-5 px-5 flex flex-col items-start bg-white/70 rounded-xl gap-5 shadow-xl hover:bg-indigo-400 group border border-gray-100 max-h-96">
+                    <div class="bg-indigo-400 rounded-full flex items-center h-fit px-3 py-2.5 group-hover:bg-white/70">
+                        <span class="material-symbols-outlined text-4xl text-white group-hover:text-indigo-400">format_color_fill</span>
+                    </div>
+                    <div class="text-lg font-bold group-hover:text-white">Data Integration Platforms</div>
+                    <div class="text-sm text-gray-400 group-hover:text-white overflow-y-scroll">
+                        <p>Data integration platforms provide tools and technologies to combine data from different sources into a cohesive and unified view for analysis and reporting.</p>
+                        <br>
+                        <b>Advantages:</b>
+                        <p>Streamlines data integration processes, enhancing data accessibility and usability across the organization.</p>
+                        <br>
+                        <b>Disadvantages:</b>
+                        <p>Can be costly to implement and maintain, and requires alignment with organizational data architecture and strategy.</p>
                     </div>
                 </div>
             </section>
@@ -321,10 +712,10 @@
                     </div>
                 </div>
             </section>
-            <section id="contact" class="px-48 py-24 bg-white flex gap-20 justify-center">
+            <section id="contact" class="px-48 py-24 bg-white flex gap-20 justify-around">
                 <div class="flex flex-col gap-4">
                     <div class="text-4xl font-bold leading-tight capitalize">Let's start your <br> project with us</div>
-                    <div class="text-sm text-gray-400 max-w-[500px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos earum blanditiis veniam, suscipit, eius minima nemo deserunt architecto incidunt maiores totam quis? Sapiente ducimus deleniti ab doloribus, nihil hic laborum.</div>
+                    <div class="text-sm text-gray-400 max-w-[500px]">Kickstart Your Project with Our Expert Team and watch your vision come to life. We provide tailored solutions, expert guidance, and unwavering support to ensure your project's success from start to finish</div>
                 </div>
                 <div class="flex flex-col gap-4">
                     <input
