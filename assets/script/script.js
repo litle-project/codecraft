@@ -75,3 +75,16 @@
         });
     }
  }
+
+ const toggleMenu = (selector) => {
+    const element = document.getElementById(selector);
+    const isHide = element.classList.contains('hidden');
+
+    if (isHide) {
+        element.classList.remove('hidden')
+        element.classList.add('flex')
+    } else {
+        element.classList.remove('flex')
+        element.classList.add('hidden')
+    }
+ };
