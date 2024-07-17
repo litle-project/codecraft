@@ -40,19 +40,21 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <header class="flex items-center py-4 px-48 bg-white sticky top-0 z-50 drop-shadow-xl">
-            <div id="logo" class="w-24 h-8 object-cover flex items-end gap-3 cursor-pointer" onclick="window.location.href = 'index.html'">
+        <header class="flex items-center py-4 sm:px-48 px-5 bg-white sticky top-0 z-50 drop-shadow-xl">
+            <div id="logo" class="sm:w-24 w-20 h-8 object-cover flex items-end gap-3 cursor-pointer" onclick="window.location.href = 'index.html'">
                 <img src="assets/images/logo.png">
             </div>
-            <ul class="flex flex-1 gap-10 text-sm justify-center inter font-medium">
+            <div class="sm:hidden flex flex-1 justify-end cursor-pointer" onclick="toggleMenu('menu-list')">
+                <span class="material-symbols-outlined text-4xl text-black">menu</span>
+            </div>
+            <ul class="sm:flex hidden flex-1 gap-10 text-sm justify-center inter font-medium">
                 <li id="home"><a href="index.html">Home</a></li>
                 <li id="about"><a href="about.html">About Us</a></li>
                 <li id="service"><a href="service.html">Services</a></li>
                 <li id="project"><a href="project.html">Project</a></li>
                 <li id="member"><a href="member.html">Member</a></li>
-                <!-- <li id="product"><a href="product.html">Product</a></li> -->
             </ul>
-            <div id="action">
+            <div class="sm:block hidden" id="action">
                 <button
                     type="button"
                     class="px-6 py-3 bg-indigo-400 rounded-md text-xs text-white font-medium"
@@ -61,27 +63,39 @@
                     Contact Us
                 </button>
             </div>
+            <div class="w-1/2 h-full min-h-dvh bg-indigo-400 absolute right-0 top-0 sm:hidden flex-col hidden" id="menu-list">
+                <div class="sm:hidden flex justify-end cursor-pointer pr-3 border-b border-white" onclick="toggleMenu('menu-list')">
+                    <span class="material-symbols-outlined text-4xl text-white">close</span>
+                </div>
+                <ul class="flex flex-col gap-5 text-sm text-white inter font-medium pr-3 pl-5 py-3">
+                    <li id="home"><a href="index.html">Home</a></li>
+                    <li id="about"><a href="about.html">About Us</a></li>
+                    <li id="service"><a href="service.html">Services</a></li>
+                    <li id="project"><a href="project.html">Project</a></li>
+                    <li id="member"><a href="member.html">Member</a></li>
+                </ul>
+            </div>
         </header>
         <main>
-            <section id="page" class="px-48 py-36 text-center" style="background-image: url('assets/images/gradient.jpg');">
-                <div class="text-4xl font-bold">Our Projects</div>
+            <section id="page" class="sm:px-48 px-5 sm:py-36 py-20 text-center bg-auto sm:bg-left-top bg-center bg-no-repeat" style="background-image: url('assets/images/gradient.jpg');">
+                <div class="sm:text-4xl text-2xl font-bold">Our Projects</div>
             </section>
-            <section id="info" class="px-48 flex flex-col bg-white">
-                <div class="grid grid-cols-2 gap-20 justify-center items-center py-20 border-b-2 border-indigo-400">
-                    <div class="flex flex-col gap-10 bg-white border border-gray-100 rounded-xl p-10 hover:bg-indigo-400 shadow-xl group justify-center min-h-[600px] max-h-[600px]">
+            <section id="info" class="sm:px-48 px-5 flex flex-col bg-white">
+                <div class="grid sm:grid-cols-2 grid-cols-1 sm:gap-20 gap-5 justify-center items-center sm:py-20 pt-5 sm:pb-0 pb-10 border-b-2 border-indigo-400">
+                    <div class="flex flex-col sm:gap-10 gap-6 bg-white border border-gray-100 rounded-xl sm:p-10 p-5 hover:bg-indigo-400 sm:shadow-xl shadow-md group justify-center sm:min-h-[600px] sm:max-h-[600px]">
                         <div class="flex flex-col gap-3">
                             <div class="text-sm text-indigo-400 group-hover:text-white font-bold">How We Works</div>
-                            <div class="text-3xl font-bold group-hover:text-white">Translate Your Problem <br> To Your Solution</div>
+                            <div class="sm:text-3xl text-xl font-bold group-hover:text-white">Translate Your Problem <br> To Your Solution</div>
                         </div>
                         <img src="assets/images/meeting.webp" class="w-full h-64 object-cover rounded-xl">
-                        <div class="text-sm text-gray-400 group-hover:text-white">Transform Your Problem into a Solution with Our Expertise. Our team is committed to understanding your unique challenges and delivering innovative, tailored solutions that drive success and growth.</div>
+                        <div class="sm:text-sm text-xs text-gray-400 group-hover:text-white">Transform Your Problem into a Solution with Our Expertise. Our team is committed to understanding your unique challenges and delivering innovative, tailored solutions that drive success and growth.</div>
                     </div>
-                    <div class="flex flex-col gap-10 bg-white border border-gray-100 rounded-xl p-10 hover:bg-indigo-400 shadow-xl group justify-center min-h-[600px] max-h-[600px]">
+                    <div class="flex flex-col sm:gap-10 gap-6 bg-white border border-gray-100 rounded-xl sm:p-10 p-5 hover:bg-indigo-400 sm:shadow-xl shadow-md group justify-center sm:min-h-[600px] sm:max-h-[600px]">
                         <div class="flex flex-col gap-3">
                             <div class="text-sm text-indigo-400 group-hover:text-white font-bold">Main Initiative</div>
-                            <div class="text-3xl font-bold group-hover:text-white">"Hear Your Problem, <br> Craft Your Solution"</div>
+                            <div class="sm:text-3xl text-xl font-bold group-hover:text-white">"Hear Your Problem, <br> Craft Your Solution"</div>
                         </div>
-                        <div class="text-sm text-gray-400 group-hover:text-white">
+                        <div class="sm:text-sm text-xs text-gray-400 group-hover:text-white">
                             We know that juggling everything on your own can be tough. That's why we're here to assist you in managing your business within the digital technology sphere. As your dedicated partner, we're always ready to listen to your challenges and turn them into opportunities for growth and success. Let us help you take your business to the next level.
                         </div>
                         <div class="flex items-start gap-4">
@@ -105,50 +119,67 @@
                     </div>
                 </div>
             </section>
-            <section id="projects" class="py-20 px-48 flex flex-col gap-10 inter">
-                <div class="grid grid-cols-2 gap-10 mt-3">
-                    <div class="flex flex-col gap-10">
-                        <span class="text-3xl font-bold">BelanjaKita</span>
-                        <span class="text-sm text-gray-400">
+            <section id="projects" class="sm:py-20 py-10 sm:px-48 px-5 flex flex-col sm:gap-10 gap-5 inter">
+                <div class="sm:hidden flex flex-col gap-3">
+                    <div class="flex justify-between gap-3 items-center">
+                        <span class="text-2xl font-bold">Our Projects</span>
+                        <button class="px-2.5 py-1.5 bg-indigo-400 hover:bg-indigo-500 text-white rounded h-fit text-xs rounded-md font-medium">See All Project</button>
+                    </div>
+                    <span class="text-gray-400 text-xs text-wrap max-w-[600px] text-pretty text-justify">At Codecraft, we bring ideas to life. Our projects cover various industries, using the latest technology to achieve great results. From start to finish, we ensure high quality and excellence. Learn how our projects are making a difference for our clients.</span>
+                </div>
+                <div class="sm:flex hidden justify-between items-center">
+                    <div class="flex flex-col gap-3">
+                        <span class="text-3xl font-bold">Our Projects</span>
+                        <span class="text-gray-400 text-sm text-wrap max-w-[600px]">At Codecraft, we bring ideas to life. Our projects cover various industries, using the latest technology to achieve great results. From start to finish, we ensure high quality and excellence. Learn how our projects are making a difference for our clients.</span>
+                    </div>
+                    <button class="px-5 py-2.5 bg-indigo-400 hover:bg-indigo-500 text-white rounded h-fit text-sm rounded-md font-medium">See All Project</button>
+                </div>
+                <div class="grid sm:grid-cols-2 grid-cols-1 sm:gap-10 gap-5 mt-3">
+                    <div class="flex flex-col sm:gap-5 gap-3 order-last">
+                        <span class="sm:text-3xl text-xl font-bold">BelanjaKita</span>
+                        <img src="assets/project/belanjapuas/summary.jpg" class="object-fill rounded-md shadow-md sm:hidden block">
+                        <span class="sm:text-sm text-xs text-gray-400 text-pretty text-justify">
                             BelanjaKita adalah platform e-commerce terkemuka yang menyediakan solusi jual beli online yang inovatif dan mudah digunakan. Kami menghubungkan penjual dan pembeli dari berbagai lokasi, menawarkan berbagai macam produk mulai dari elektronik, fashion, hingga kebutuhan rumah tangga. Dengan komitmen terhadap pelayanan pelanggan yang luar biasa dan pengiriman cepat, kami memastikan pengalaman belanja online yang aman, nyaman, dan memuaskan bagi semua pengguna. Melalui teknologi canggih dan metode pembayaran yang aman, [Nama Perusahaan] membantu mempermudah hidup Anda dengan menyediakan semua yang Anda butuhkan hanya dalam beberapa klik.
                         </span>
                         <span class="text-xs hover:underline cursor-pointer font-bold text-indigo-400">See More</span>
                     </div>
-                    <img src="assets/project/belanjapuas/summary.jpg" class="object-fill rounded-md shadow-xl">
+                    <img src="assets/project/belanjapuas/summary.jpg" class="object-fill rounded-md shadow-xl sm:block hidden">
                 </div>
-                <div class="grid grid-cols-2 gap-10 mt-3">
-                    <img src="assets/project/aneka-promosi/summary.jpg" class="object-fill rounded-md shadow-xl">
-                    <div class="flex flex-col gap-10">
-                        <span class="text-3xl font-bold">Aneka Promosi</span>
-                        <span class="text-sm text-gray-400">
+                <div class="grid sm:grid-cols-2 grid-cols-1 sm:gap-10 gap-5 mt-3">
+                    <div class="flex flex-col sm:gap-5 gap-3 order-first">
+                        <span class="sm:text-3xl text-xl font-bold">Aneka Promosi</span>
+                        <img src="assets/project/aneka-promosi/summary.jpg" class="object-fill rounded-md shadow-md sm:hidden block">
+                        <span class="sm:text-sm text-xs text-gray-400 text-pretty text-justify">
                             Aneka Promosi adalah perusahaan e-commerce terkemuka yang berspesialisasi dalam jual beli merchandise dan produk konveksi. Kami menawarkan berbagai macam produk, mulai dari pakaian, aksesori, hingga barang-barang promosi berkualitas tinggi. Dengan fokus pada kualitas dan kepuasan pelanggan, kami menyediakan solusi belanja online yang mudah dan terpercaya. Aneka Promosi juga menerima pesanan konveksi custom, memungkinkan pelanggan untuk mendesain dan memesan produk sesuai kebutuhan mereka. Dengan layanan pengiriman cepat dan metode pembayaran yang aman, kami memastikan pengalaman belanja yang nyaman dan memuaskan bagi semua pelanggan.
                         </span>
                         <span class="text-xs hover:underline cursor-pointer font-bold text-indigo-400">See More</span>
                     </div>
+                    <img src="assets/project/aneka-promosi/summary.jpg" class="object-fill rounded-md shadow-xl sm:block hidden">
                 </div>
             </section>
-            <section id="summary" class="py-10 px-48 bg-indigo-400 grid grid-cols-4 gap-10 justify-center">
+            <section id="summary" class="sm:py-10 py-2 sm:px-48 px-5 bg-indigo-400 grid grid-cols-4 sm:gap-10 gap-2 sm:justify-center">
                 <div class="text-white flex flex-col gap-2 text-center">
-                    <div>Clients</div>
-                    <div class="text-4xl font-bold">15+</div>
+                    <div class="sm:text-base text-xs">Clients</div>
+                    <div class="sm:text-4xl text-base font-bold">15+</div>
                 </div>
                 <div class="text-white flex flex-col gap-2 text-center">
-                    <div>Projects</div>
-                    <div class="text-4xl font-bold">50+</div>
+                    <div class="sm:text-base text-xs">Projects</div>
+                    <div class="sm:text-4xl text-base font-bold">50+</div>
                 </div>
                 <div class="text-white flex flex-col gap-2 text-center">
-                    <div>Followers</div>
-                    <div class="text-4xl font-bold">127+</div>
+                    <div class="sm:text-base text-xs">Followers</div>
+                    <div class="sm:text-4xl text-base font-bold">127+</div>
                 </div>
                 <div class="text-white flex flex-col gap-2 text-center">
-                    <div>Happy Clients</div>
-                    <div class="text-4xl font-bold">100%</div>
+                    <div class="sm:text-base text-xs">Happy Clients</div>
+                    <div class="sm:text-4xl text-base font-bold">100%</div>
                 </div>
             </section>
-            <section id="contact" class="px-48 py-24 bg-white flex gap-20 justify-around">
+            <section id="contact" class="sm:px-48 px-5 sm:py-24 py-10 bg-white flex sm:flex-row flex-col sm:gap-20 gap-10 sm:justify-around">
                 <div class="flex flex-col gap-4">
-                    <div class="text-4xl font-bold leading-tight capitalize">Let's start your <br> project with us</div>
-                    <div class="text-sm text-gray-400 max-w-[500px]">Kickstart Your Project with Our Expert Team and watch your vision come to life. We provide tailored solutions, expert guidance, and unwavering support to ensure your project's success from start to finish</div>
+                    <div class="sm:block hidden text-4xl font-bold leading-tight capitalize">Let's start your <br> project with us</div>
+                    <div class="sm:hidden block text-xl font-bold leading-tight capitalize">Let's start your project with us</div>
+                    <div class="sm:text-sm text-xs text-gray-400 max-w-[500px]">Kickstart Your Project with Our Expert Team and watch your vision come to life. We provide tailored solutions, expert guidance, and unwavering support to ensure your project's success from start to finish</div>
                 </div>
                 <div class="flex flex-col gap-4">
                     <input
@@ -170,69 +201,73 @@
                 </div>
             </section>
         </main>
-        <footer class="px-48 py-24 flex flex-col gap-5" style="background-image: url('assets/images/gradient.jpg');">
-            <div class="grid grid-cols-5 gap-10 border-b-2 border-white pb-14">
-                <div class="flex flex-col gap-6 col-span-2">
+        <footer class="sm:px-48 px-5 sm:py-24 py-10 flex flex-col gap-5 bg-auto sm:bg-left-top bg-center bg-no-repeat" style="background-image: url('assets/images/gradient.jpg');">
+            <div class="grid sm:grid-cols-5 grid-cols-1 gap-10 border-b-2 border-white pb-14">
+                <div class="flex flex-col sm:gap-6 gap-3 sm:col-span-2">
                     <div id="logo" class="w-16 h-8 object-cover flex items-end gap-3">
                         <span class="font-bold text-2xl text-gray-500">Codecraft</span>
                     </div>
-                    <div class="text-sm text-gray-400">
+                    <div class="sm:text-sm text-xs text-gray-400">
                         PT. Inti Teknologi Kreatif or known as Codecraft, we are at the forefront of innovation, crafting cutting-edge software solutions and applications for both Android and iOS platforms. Our team excels in developing sophisticated software that leverages the latest in IoT and AI technologies, providing intelligent and connected solutions for a smarter future.
                         <br><br>
                         Our exceptional talent pool comprises industry experts who bring a wealth of knowledge and skill to every project, ensuring top-notch quality and performance. With a passion for creativity and a commitment to excellence, PT. Inti Teknologi Kreatif is dedicated to transforming your visionary ideas into tangible, impactful realities.
                     </div>
                     <div class="flex gap-2">
-                        <div class="bg-indigo-400 group-hover:bg-white rounded-full px-2 py-1 flex items-center">
-                            <span class="text-white group-hover:text-indigo-400 text-sm">
+                        <div class="bg-indigo-400 group-hover:bg-white rounded-full sm:px-2 px-1.5 py-1 flex items-center">
+                            <span class="text-white group-hover:text-indigo-400 sm:text-sm text-xs">
                                 <i class="fa-brands fa-square-facebook"></i>
                             </span>
                         </div>
-                        <div class="bg-indigo-400 group-hover:bg-white rounded-full px-2 py-1 flex items-center">
-                            <span class="text-white group-hover:text-indigo-400 text-sm">
+                        <div class="bg-indigo-400 group-hover:bg-white rounded-full sm:px-2 px-1.5 py-1 flex items-center">
+                            <span class="text-white group-hover:text-indigo-400 sm:text-sm text-xs">
                                 <i class="fa-brands fa-instagram"></i>
                             </span>
                         </div>
-                        <div class="bg-indigo-400 group-hover:bg-white rounded-full px-2 py-1 flex items-center">
-                            <span class="text-white group-hover:text-indigo-400 text-sm">
+                        <div class="bg-indigo-400 group-hover:bg-white rounded-full sm:px-2 px-1.5 py-1 flex items-center">
+                            <span class="text-white group-hover:text-indigo-400 sm:text-sm text-xs">
                                 <i class="fa-brands fa-linkedin-in"></i>
                             </span>
                         </div>
                     </div>
                 </div>
                 <div class="flex flex-col gap-3">
-                    <span class="font-bold text-lg">Pages</span>
-                    <a class="font-medium text-sm text-gray-500 hover:underline" href="index.html">Home</a>
-                    <a class="font-medium text-sm text-gray-500 hover:underline" href="contact.html">Contact</a>
-                    <a class="font-medium text-sm text-gray-500 hover:underline" href="member.html">Member</a>
-                    <a class="font-medium text-sm text-gray-500 hover:underline" href="about.html">About Us</a>
+                    <span class="font-bold sm:text-lg text-sm">Pages</span>
+                    <div class="sm:flex grid grid-cols-2 flex-col gap-3">
+                        <a class="font-medium sm:text-sm text-xs text-gray-500 hover:underline" href="index.html">Home</a>
+                        <a class="font-medium sm:text-sm text-xs text-gray-500 hover:underline" href="contact.html">Contact</a>
+                        <a class="font-medium sm:text-sm text-xs text-gray-500 hover:underline" href="member.html">Member</a>
+                        <a class="font-medium sm:text-sm text-xs text-gray-500 hover:underline" href="about.html">About Us</a>
+                    </div>
                 </div>
                 <div class="flex flex-col gap-3">
-                    <span class="font-bold text-lg">Utility Pages</span>
-                    <a class="font-medium text-sm text-gray-500 hover:underline" href="service.html">Service</a>
-                    <a class="font-medium text-sm text-gray-500 hover:underline" href="project.html">Project</a>
-                    <a class="font-medium text-sm text-gray-500 hover:underline" href="product.html">Product</a>
-                    <a class="font-medium text-sm text-gray-500 hover:underline" href="review.html">Review</a>
+                    <span class="font-bold sm:text-lg text-sm">Utility Pages</span>
+                    <div class="sm:flex grid grid-cols-2 flex-col gap-3">
+                        <a class="font-medium sm:text-sm text-xs text-gray-500 hover:underline" href="service.html">Service</a>
+                        <a class="font-medium sm:text-sm text-xs text-gray-500 hover:underline" href="project.html">Project</a>
+                        <a class="font-medium sm:text-sm text-xs text-gray-500 hover:underline" href="product.html">Product</a>
+                        <a class="font-medium sm:text-sm text-xs text-gray-500 hover:underline" href="review.html">Review</a>
+                    </div>
                 </div>
                 <div class="flex flex-col gap-10">
-                    <div class="flex flex-col gap-3">
-                        <span class="font-bold text-lg">Our Address</span>
-                        <span class="text-sm text-gray-400">Jl. Vinolia No. 1, Lowokwaru, Malang</span>
+                    <div class="flex flex-col sm:gap-3 gap-2">
+                        <span class="font-bold sm:text-lg text-sm">Our Address</span>
+                        <span class="sm:text-sm text-xs text-gray-500">Jl. Vinolia No. 1, Lowokwaru, Malang</span>
                     </div>
                     <div class="flex flex-col gap-3 place-content-center">
-                        <span class="font-bold text-lg">Stay Connected</span>
+                        <span class="font-bold sm:text-lg text-sm">Stay Connected</span>
                         <div class="flex">
-                            <input type="text" class="bg-white/20 py-3 px-6 border border-indigo-400 rounded-l-lg text-sm placeholder:text-indigo-400 text-indigo-400 focus:outline-none" placeholder="Enter your email here">
-                            <button class="text-white text-sm bg-indigo-400 py-3 px-3 rounded-r-lg border border-indigo-400">Subscribe</button>
+                            <input type="text" class="bg-white/20 sm:py-3 py-1.5 sm:px-6 px-3 border border-indigo-400 sm:rounded-l-lg rounded-l-md sm:text-sm text-xs placeholder:text-indigo-400 text-indigo-400 focus:outline-none" placeholder="Enter your email here">
+                            <button class="text-white sm:text-sm text-xs bg-indigo-400 sm:py-3 sm:px-3 p-1.5 sm:rounded-r-lg rounded-r-md border border-indigo-400">Subscribe</button>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="flex justify-between pt-8">
-                <div class="text-sm text-gray-400">Copyright&copy; 2024 codecraft, All Rights Reserved, Made by ❤️</div>
+            <div class="flex sm:justify-between sm:flex-row flex-col-reverse sm:pt-8 pt-3 sm:gap-0 gap-8">
+                <div class="sm:text-sm text-xs text-gray-400">Copyright&copy; 2024 codecraft, All Rights Reserved, Made by ❤️</div>
                 <div class="flex gap-5">
-                    <a href="#" class="text-sm text-gray-400">Term of use</a>
-                    <a href="#" class="text-sm text-gray-400">Cookie Policy</a>
-                    <a href="#" class="text-sm text-gray-400">Privacy Policy</a>
+                    <a href="#" class="sm:text-sm text-xs text-gray-400">Term of use</a>
+                    <a href="#" class="sm:text-sm text-xs text-gray-400">Cookie Policy</a>
+                    <a href="#" class="sm:text-sm text-xs text-gray-400">Privacy Policy</a>
                 </div>
             </div>
         </footer>
