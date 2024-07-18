@@ -41,14 +41,14 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <header class="flex items-center py-4 sm:px-48 px-5 bg-white sticky top-0 z-50 drop-shadow-xl">
+        <header class="flex items-center py-4 px-5 md:px-10 lg:px-24 xl:px-48 2xl:px-96 bg-white sticky top-0 z-50 drop-shadow-xl">
             <div id="logo" class="sm:w-24 w-20 h-8 object-cover flex items-end gap-3 cursor-pointer" onclick="window.location.href = 'index.html'">
                 <img src="assets/images/logo.png">
             </div>
             <div class="sm:hidden flex flex-1 justify-end cursor-pointer" onclick="toggleMenu('menu-list')">
                 <span class="material-symbols-outlined text-4xl text-black">menu</span>
             </div>
-            <ul class="sm:flex hidden flex-1 gap-10 text-sm justify-center inter font-medium">
+            <ul class="sm:flex hidden flex-1 gap-5 xl:gap-10 text-sm justify-center inter font-medium">
                 <li id="home"><a href="index.html">Home</a></li>
                 <li id="about"><a href="about.html">About Us</a></li>
                 <li id="service"><a href="service.html">Services</a></li>
@@ -81,7 +81,7 @@
         <main>
             <section id="banner" class="sm:static relative">
                 <img src="assets/images/engineer.jpg" class="w-full sm:h-[800px] h-auto sm:object-cover object-fill">
-                <div class="absolute top-0 sm:px-48 px-5 sm:py-60 py-10 sm:w-1/2 w-full">
+                <div class="absolute top-0 px-5 md:px-10 lg:px-24 xl:px-48 2xl:px-96 sm:py-60 py-10 sm:w-1/2 w-full">
                     <div class="flex flex-col inter gap-3">
                         <span class="text-indigo-400 sm:text-sm text-xs font-bold">Softwrae Development Service</span>
                         <div class="flex flex-col sm:text-5xl text-lg">
@@ -91,11 +91,13 @@
                         <span class="text-[10px] text-gray-500 font-medium max-w-48 sm:hidden block text-pretty">
                             PT. Inti Teknologi Kreatif, known as Codecraft, leads in innovation by creating advanced software solutions for Website, Mobile Apps, IoT, and AI (Artificial Intelligence).
                         </span>
-                        <span class="text-sm text-gray-500 font-medium sm:block hidden">
+                        <p class="text-sm text-gray-500 font-medium sm:block hidden xl:max-h-40 overflow-y-auto">
                             PT. Inti Teknologi Kreatif or known as Codecraft, we are at the forefront of innovation, crafting cutting-edge software solutions and applications for both Android and iOS platforms. Our team excels in developing sophisticated software that leverages the latest in IoT and AI technologies, providing intelligent and connected solutions for a smarter future.
                             <br><br>
-                            Our exceptional talent pool comprises industry experts who bring a wealth of knowledge and skill to every project, ensuring top-notch quality and performance. With a passion for creativity and a commitment to excellence, PT. Inti Teknologi Kreatif is dedicated to transforming your visionary ideas into tangible, impactful realities.
-                        </span>
+                            <span class="xl:block hidden">
+                                Our exceptional talent pool comprises industry experts who bring a wealth of knowledge and skill to every project, ensuring top-notch quality and performance. With a passion for creativity and a commitment to excellence, PT. Inti Teknologi Kreatif is dedicated to transforming your visionary ideas into tangible, impactful realities.
+                            </span>
+                        </p>
                         <div class="flex sm:flex-row flex-col sm:gap-7 gap-4 sm:pt-5 pt-2">
                             <button
                                 class="bg-indigo-400 px-6 py-1 text-white rounded-md text-sm font-medium sm:block hidden"
@@ -117,8 +119,8 @@
                     </div>
                 </div>
             </section>
-            <section id="portofolio" class="flex flex-col sm:gap-10 gap-5 inter sm:px-48 px-5 sm:pb-24 pb-10">
-                <div class="absolute sm:top-[800px] sm:mt-0 mt-5 sm:left-72 left-0 sm:bg-indigo-400 rounded-xl">
+            <section id="portofolio" class="flex flex-col sm:gap-10 gap-5 inter px-5 md:px-10 lg:px-24 xl:px-48 2xl:px-96 sm:pb-24 pb-10">
+                <div class="xl:absolute xl:top-[800px] xl:mt-0 mt-5 xl:left-72 left-0 bg-indigo-400 rounded-xl">
                     <div class="sm:flex grid grid-cols-2 sm:gap-4 gap-2 sm:px-0 px-2">
                         <div class="flex flex-col text-center text-white sm:py-5 py-3 sm:px-10 px-3 items-center sm:max-w-64 sm:bg-transparent bg-indigo-400 rounded-xl">
                             <div class="sm:px-2.5 px-1 sm:py-2 rounded-full bg-white/70 flex items-center">
@@ -150,11 +152,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex sm:flex-row flex-col sm:justify-between sm:gap-10 gap-4 items-center sm:mt-56 mt-80">
+                <div class="flex sm:flex-row flex-col sm:justify-between sm:gap-10 gap-4 items-center xl:mt-56 mt-14">
                     <div class="sm:w-1/2 w-full sm:text-4xl text-md font-bold sm:leading-snug sm:text-left text-center">As a Software Development Service, We Focus on Producing Impactful and Creative Solution</div>
                     <div class="sm:w-1/2 w-full sm:text-sm text-xs text-gray-400 sm:text-left text-justify text-pretty">We're a passionate team of software developers focused on crafting impactful and ingenious solutions across mobile apps, websites, UI/UX, networks, security, AI, and IoT.  Looking to boost operational efficiency, expand customer reach, or create groundbreaking products? We'll tailor solutions to your specific needs, leveraging cutting-edge technologies and agile methodologies to deliver projects on time and within budget.  As your trusted partner, we prioritize exceptional customer service and ensure your satisfaction with our future-focused approach to software development. Let's unlock your business potential together.</div>
                 </div>
-                <div class="sm:flex grid grid-cols-2 sm:flex-wrap sm:max-w-1/2 gap-5 sm:justify-center sm:px-24">
+                <div class="xl:flex grid grid-cols-2 xl:flex-wrap xl:max-w-1/2 w-full gap-5 xl:justify-center xl:px-24 px-10">
                     <div class="group sm:p-5 p-3 sm:shadow-xl shadow-md border-2 border-gray-100 text-gray-400 rounded-xl flex sm:gap-5 gap-2 items-center justify-center hover:bg-indigo-400 hover:text-white hover:border-indigo-400">
                         <span class="material-symbols-outlined sm:text-4xl text-2xl">phone_iphone</span>
                         <span class="font-bold sm:text-xl text-sm">Mobile Apps</span>
@@ -187,10 +189,10 @@
                     </div>
                 </div>
             </section>
-            <section id="service" class="sm:py-24 py-10 sm:px-48 px-5 flex flex-col sm:gap-5 gap-2 items-center inter bg-auto bg-no-repeat bg-center sm:bg-left-top" style="background-image: url('assets/images/gradient.jpg');">
+            <section id="service" class="sm:py-24 py-10 px-5 md:px-10 lg:px-24 xl:px-48 2xl:px-96 flex flex-col sm:gap-5 gap-2 items-center inter bg-auto bg-no-repeat bg-center sm:bg-left-top" style="background-image: url('assets/images/gradient.jpg');">
                 <div class="sm:text-4xl text-lg font-bold text-center leading-tight">Get Better Result With Our Services</div>
                 <div class="sm:text-sm text-[8px] text-gray-400 text-center max-w-[40rem]">We champion collaboration. By truly understanding your initial ideas and challenges, we become your sounding board and strategic partner.  We don't simply develop what you envision; we leverage our expertise to refine and suggest the best choice solution, ensuring our solution delivers impactful results.</div>
-                <div class="grid sm:grid-cols-3 grid-cols-2 pt-5 gap-5 border-b">
+                <div class="grid xl:grid-cols-3 grid-cols-2 pt-5 gap-5 border-b">
                     <div class="flex sm:flex-row flex-col gap-4 sm:justify-between items-center px-4 py-5 bg-white/50 drop-shadow-xl rounded-xl group hover:bg-indigo-400">
                         <div class="bg-indigo-400 rounded-full flex items-center h-fit px-2.5 py-1.5 group-hover:bg-white/70">
                             <span class="material-symbols-outlined text-xl text-white group-hover:text-indigo-400">experiment</span>
@@ -284,21 +286,15 @@
                 </div>
                 <div class="w-full h-fit border-t border-white mt-5"></div>
             </section>
-            <section id="projects" class="sm:py-24 py-10 sm:px-48 px-5 flex flex-col sm:gap-10 gap-5 inter">
-                <div class="sm:hidden flex flex-col gap-3">
+            <section id="projects" class="sm:py-20 py-10 px-5 md:px-10 lg:px-24 xl:px-48 2xl:px-96 flex flex-col sm:gap-10 gap-5 inter">
+                <div class="flex flex-col gap-3">
                     <div class="flex justify-between gap-3 items-center">
                         <span class="text-2xl font-bold">Our Projects</span>
                         <button class="px-2.5 py-1.5 bg-indigo-400 hover:bg-indigo-500 text-white rounded h-fit text-xs rounded-md font-medium">See All Project</button>
                     </div>
-                    <span class="text-gray-400 text-xs text-wrap max-w-[600px] text-pretty text-justify">At Codecraft, we bring ideas to life. Our projects cover various industries, using the latest technology to achieve great results. From start to finish, we ensure high quality and excellence. Learn how our projects are making a difference for our clients.</span>
+                    <span class="text-gray-400 text-xs text-wrap max-w-full text-pretty text-justify">At Codecraft, we bring ideas to life. Our projects cover various industries, using the latest technology to achieve great results. From start to finish, we ensure high quality and excellence. Learn how our projects are making a difference for our clients.</span>
                 </div>
-                <div class="sm:flex hidden justify-between items-center">
-                    <div class="flex flex-col gap-3">
-                        <span class="text-3xl font-bold">Our Projects</span>
-                        <span class="text-gray-400 text-sm text-wrap max-w-[600px]">At Codecraft, we bring ideas to life. Our projects cover various industries, using the latest technology to achieve great results. From start to finish, we ensure high quality and excellence. Learn how our projects are making a difference for our clients.</span>
-                    </div>
-                    <button class="px-5 py-2.5 bg-indigo-400 hover:bg-indigo-500 text-white rounded h-fit text-sm rounded-md font-medium">See All Project</button>
-                </div>
+                
                 <div class="grid sm:grid-cols-2 grid-cols-1 sm:gap-10 gap-5 mt-3">
                     <div class="flex flex-col sm:gap-5 gap-3 order-last">
                         <span class="sm:text-3xl text-xl font-bold">BelanjaKita</span>
@@ -322,15 +318,15 @@
                     <img src="assets/project/aneka-promosi/summary.jpg" class="object-fill rounded-md shadow-xl sm:block hidden">
                 </div>
             </section>
-            <section id="achivement" class="sm:py-24 py-10 sm:px-48 px-5 bg-auto sm:bg-left-top bg-center bg-no-repeat" style="background-image: url('assets/images/gradient.jpg');">
-                <div class="grid sm:grid-cols-2 grid-cols-1 gap-10 items-center border-b-2 border-white pb-10">
+            <section id="achivement" class="sm:py-24 py-10 px-5 md:px-10 lg:px-24 xl:px-48 2xl:px-96 bg-auto sm:bg-left-top bg-center bg-no-repeat" style="background-image: url('assets/images/gradient.jpg');">
+                <div class="grid xl:grid-cols-2 grid-cols-1 xl:gap-3 gap-12 items-center border-b-2 border-white pb-10">
                     <div class="sm:text-3xl text-xl font-bold leading-tight capitalize sm:text-left text-center">
                         We have working foreign <br>
                         market 7 years successful <br>
                         developed 50+ projects
                     </div>
-                    <div class="grid grid-cols-2 gap-5">
-                        <div class="flex flex-col items-center gap-4 sm:px-10 px-5 sm:py-20 py-5 hover:bg-indigo-400 bg-white/40 rounded-xl group">
+                    <div class="grid grid-cols-2 gap-5 w-full">
+                        <div class="flex flex-col items-center gap-4 xl:px-10 px-5 sm:py-20 py-5 hover:bg-indigo-400 bg-white/40 rounded-xl group w-full duration-150">
                             <div class="bg-indigo-400 group-hover:bg-white/40 px-2.5 py-1.5 rounded-full flex items-center">
                                 <span class="material-symbols-outlined sm:text-3xl text-xl text-white group-hover:text-indigo-400">event_available</span>
                             </div>
@@ -339,7 +335,7 @@
                                 <span class="sm:text-sm text-xs text-gray-400 group-hover:text-white text-center text-pretty">We understand that your time is valuable. We always strive to complete our projects quickly and accurately</span>
                             </div>
                         </div>
-                        <div class="flex flex-col items-center gap-4 sm:px-10 px-5 sm:py-20 py-5 hover:bg-indigo-400 bg-white/40 rounded-xl group">
+                        <div class="flex flex-col items-center gap-4 xl:px-10 px-5 sm:py-20 py-5 hover:bg-indigo-400 bg-white/40 rounded-xl group w-full duration-150">
                             <div class="bg-indigo-400 group-hover:bg-white/40 px-2.5 py-1.5 rounded-full flex items-center">
                                 <span class="material-symbols-outlined sm:text-3xl text-xl text-white group-hover:text-indigo-400">person_check</span>
                             </div>
@@ -351,7 +347,7 @@
                     </div>
                 </div>
             </section>
-            <section id="summary" class="sm:py-10 py-2 sm:px-48 px-5 bg-indigo-400 grid grid-cols-4 sm:gap-10 gap-2 sm:justify-center">
+            <section id="summary" class="sm:py-10 py-2 px-5 md:px-10 lg:px-24 xl:px-48 2xl:px-96 bg-indigo-400 grid grid-cols-4 sm:gap-10 gap-2 sm:justify-center">
                 <div class="text-white flex flex-col gap-2 text-center">
                     <div class="sm:text-base text-xs">Clients</div>
                     <div class="sm:text-4xl text-base font-bold">15+</div>
@@ -369,13 +365,13 @@
                     <div class="sm:text-4xl text-base font-bold">100%</div>
                 </div>
             </section>
-            <section id="member" class="sm:px-48 px-5 sm:py-24 py-10 border-white flex flex-col gap-10 items-center">
+            <section id="member" class="px-5 md:px-10 lg:px-24 xl:px-48 2xl:px-96 sm:py-24 py-10 border-white flex flex-col gap-10 items-center">
                 <div class="flex flex-col sm:gap-5 gap-2">
                     <div class="sm:text-4xl text-xl font-bold text-center leading-tight">Our Teams Member</div>
                     <div class="sm:text-sm text-xs text-gray-400 text-center max-w-[40rem]">We only provide the best and most experienced talents to help deliver optimal solutions</div>
                 </div>
-                <div class="grid sm:grid-cols-4 grid-cols-2 sm:gap-5 gap-3">
-                    <div class="bg-white shadow-xl sm:px-8 sm:py-14 py-6 rounded-xl flex flex-col gap-3 items-center sm:min-w-60 min-w-40 sm:max-w-60 max-w-40 border border-gray-100 hover:bg-indigo-400 group">
+                <div class="grid xl:grid-cols-4 lg:grid-cols-3 grid-cols-2 lg:gap-5 gap-3 w-full">
+                    <div class="bg-white shadow-xl sm:px-8 sm:py-14 py-6 rounded-xl flex flex-col gap-3 items-center border border-gray-100 hover:bg-indigo-400 duration-150 cursor-pointer group">
                         <img src="assets/images/member-1.jpeg" class="sm:w-28 w-16 sm:h-28 h-16 object-cover rounded-full border-4 border-indigo-400">
                         <div class="flex flex-col text-center group-hover:text-white">
                             <div class="font-bold sm:text-base text-sm">M. Ilham Pratama</div>
@@ -399,7 +395,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="bg-white shadow-xl sm:px-8 sm:py-14 py-6 rounded-xl flex flex-col gap-3 items-center sm:min-w-60 min-w-40 sm:max-w-60 max-w-40 border border-gray-100 hover:bg-indigo-400 group">
+                    <div class="bg-white shadow-xl sm:px-8 sm:py-14 py-6 rounded-xl flex flex-col gap-3 items-center border border-gray-100 hover:bg-indigo-400 duration-150 cursor-pointer group">
                         <img src="assets/images/member-2.jpeg" class="sm:w-28 w-16 sm:h-28 h-16 object-cover rounded-full border-4 border-indigo-400">
                         <div class="flex flex-col text-center group-hover:text-white">
                             <div class="font-bold sm:text-base text-sm">Enita A. Dhea Lestari</div>
@@ -423,7 +419,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="bg-white shadow-xl sm:px-8 sm:py-14 py-6 rounded-xl flex flex-col gap-3 items-center sm:min-w-60 min-w-40 sm:max-w-60 max-w-40 border border-gray-100 hover:bg-indigo-400 group">
+                    <div class="bg-white shadow-xl sm:px-8 sm:py-14 py-6 rounded-xl flex flex-col gap-3 items-center border border-gray-100 hover:bg-indigo-400 duration-150 cursor-pointer group">
                         <img src="assets/images/member-3.jpg" class="sm:w-28 w-16 sm:h-28 h-16 object-cover rounded-full border-4 border-indigo-400">
                         <div class="flex flex-col text-center group-hover:text-white">
                             <div class="font-bold sm:text-base text-sm">Muhammad Ainul Aji</div>
@@ -447,7 +443,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="bg-white shadow-xl sm:px-8 sm:py-14 py-6 rounded-xl flex flex-col gap-3 items-center sm:min-w-60 min-w-40 sm:max-w-60 max-w-40 border border-gray-100 hover:bg-indigo-400 group">
+                    <div class="bg-white shadow-xl sm:px-8 sm:py-14 py-6 rounded-xl flex flex-col gap-3 items-center border border-gray-100 hover:bg-indigo-400 duration-150 cursor-pointer group">
                         <img src="assets/images/member-4.jpeg" class="sm:w-28 w-16 sm:h-28 h-16 object-cover rounded-full border-4 border-indigo-400">
                         <div class="flex flex-col text-center group-hover:text-white">
                             <div class="font-bold sm:text-base text-sm">Tedy Hidayat</div>
@@ -471,7 +467,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="bg-white shadow-xl sm:px-8 sm:py-14 py-6 rounded-xl flex flex-col gap-3 items-center sm:min-w-60 min-w-40 sm:max-w-60 max-w-40 border border-gray-100 hover:bg-indigo-400 group">
+                    <div class="bg-white shadow-xl sm:px-8 sm:py-14 py-6 rounded-xl flex flex-col gap-3 items-center border border-gray-100 hover:bg-indigo-400 duration-150 cursor-pointer group">
                         <img src="assets/images/member-5.jpeg" class="sm:w-28 w-16 sm:h-28 h-16 object-cover rounded-full border-4 border-indigo-400">
                         <div class="flex flex-col text-center group-hover:text-white">
                             <div class="font-bold sm:text-base text-sm">Thedy Fajar Adinata</div>
@@ -495,7 +491,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="bg-white shadow-xl sm:px-8 sm:py-14 py-6 rounded-xl flex flex-col gap-3 items-center sm:min-w-60 min-w-40 sm:max-w-60 max-w-40 border border-gray-100 hover:bg-indigo-400 group">
+                    <div class="bg-white shadow-xl sm:px-8 sm:py-14 py-6 rounded-xl flex flex-col gap-3 items-center border border-gray-100 hover:bg-indigo-400 duration-150 cursor-pointer group">
                         <img src="assets/images/member-6.png" class="sm:w-28 w-16 sm:h-28 h-16 object-cover rounded-full border-4 border-indigo-400">
                         <div class="flex flex-col text-center group-hover:text-white">
                             <div class="font-bold sm:text-base text-sm">Muhammad Ramdani</div>
@@ -519,7 +515,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="bg-white shadow-xl sm:px-8 sm:py-14 py-6 rounded-xl flex flex-col gap-3 items-center sm:min-w-60 min-w-40 sm:max-w-60 max-w-40 border border-gray-100 hover:bg-indigo-400 group">
+                    <div class="bg-white shadow-xl sm:px-8 sm:py-14 py-6 rounded-xl flex flex-col gap-3 items-center border border-gray-100 hover:bg-indigo-400 duration-150 cursor-pointer group">
                         <img src="assets/images/member-7.jpeg" class="sm:w-28 w-16 sm:h-28 h-16 object-cover rounded-full border-4 border-indigo-400">
                         <div class="flex flex-col text-center group-hover:text-white">
                             <div class="font-bold sm:text-base text-sm">Sinta Deviana</div>
@@ -545,12 +541,12 @@
                     </div>
                 </div>
             </section>
-            <section id="news" class="sm:px-48 px-5 sm:py-24 py-10 flex flex-col items-center gap-10 bg-auto sm:bg-left-top bg-center bg-no-repeat" style="background-image: url('assets/images/gradient.jpg');">
+            <section id="news" class="px-5 md:px-10 lg:px-24 xl:px-48 2xl:px-96 sm:py-24 py-10 flex flex-col items-center gap-10 bg-auto sm:bg-left-top bg-center bg-no-repeat" style="background-image: url('assets/images/gradient.jpg');">
                 <div class="flex flex-col gap-3 text-center">
                     <span class="sm:text-3xl text-xl font-bold">Latest News & Blogs</span>
                     <span class="text-gray-400 sm:text-sm text-xs text-wrap max-w-96">Bringing you interesting and unique news and facts about the world of technology.</span>
                 </div>
-                <div class="sm:px-24 px-5 sm:py-12 py-5 grid sm:grid-cols-3 grid-cols-1 sm:gap-5 gap-10 bg-white/40 rounded-xl">
+                <div class="xl:px-24 px-5 sm:py-12 py-5 grid sm:grid-cols-3 grid-cols-1 sm:gap-5 gap-10 bg-white/40 rounded-xl">
                     <div class="flex flex-col sm:gap-10 gap-5">
                         <img src="assets/news/vanila.jpeg" class="w-full h-56 object-cover rounded-xl">
                         <div class="flex flex-col gap-2">
@@ -595,7 +591,7 @@
                     </div>
                 </div>
             </section>
-            <section id="contact" class="sm:px-48 px-5 sm:py-24 py-10 bg-white">
+            <section id="contact" class="px-5 md:px-10 lg:px-24 xl:px-48 2xl:px-96 sm:py-24 py-10 bg-white">
                 <div class="rounded-xl sm:px-10 px-5 sm:py-20 py-5 flex flex-col gap-5 items-center bg-auto sm:bg-left-top bg-center bg-no-repeat" style="background-image: url('assets/images/gradient.jpg');">
                     <div class="sm:text-4xl text-xl font-bold leading-tight capitalize text-center">
                         Let's create unique and useful
@@ -611,17 +607,17 @@
                 </div>
             </section>
         </main>
-        <footer class="sm:px-48 px-5 sm:py-24 py-10 flex flex-col gap-5 bg-auto sm:bg-left-top bg-center bg-no-repeat" style="background-image: url('assets/images/gradient.jpg');">
-            <div class="grid sm:grid-cols-5 grid-cols-1 gap-10 border-b-2 border-white pb-14">
-                <div class="flex flex-col sm:gap-6 gap-3 sm:col-span-2">
+        <footer class="px-5 md:px-10 lg:px-24 xl:px-48 2xl:px-96 sm:py-24 py-10 flex flex-col gap-5 bg-auto sm:bg-left-top bg-center bg-no-repeat" style="background-image: url('assets/images/gradient.jpg');">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 border-b-2 pb-10 border-white">
+                <div class="flex flex-col sm:gap-6 gap-3">
                     <div id="logo" class="w-16 h-8 object-cover flex items-end gap-3">
                         <span class="font-bold text-2xl text-gray-500">Codecraft</span>
                     </div>
-                    <div class="sm:text-sm text-xs text-gray-400">
+                    <p class="sm:text-sm text-xs text-gray-400 text-justify">
                         PT. Inti Teknologi Kreatif or known as Codecraft, we are at the forefront of innovation, crafting cutting-edge software solutions and applications for both Android and iOS platforms. Our team excels in developing sophisticated software that leverages the latest in IoT and AI technologies, providing intelligent and connected solutions for a smarter future.
                         <br><br>
                         Our exceptional talent pool comprises industry experts who bring a wealth of knowledge and skill to every project, ensuring top-notch quality and performance. With a passion for creativity and a commitment to excellence, PT. Inti Teknologi Kreatif is dedicated to transforming your visionary ideas into tangible, impactful realities.
-                    </div>
+                    </p>
                     <div class="flex gap-2">
                         <div class="bg-indigo-400 group-hover:bg-white rounded-full sm:px-2 px-1.5 py-1 flex items-center">
                             <span class="text-white group-hover:text-indigo-400 sm:text-sm text-xs">
@@ -640,30 +636,32 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex flex-col gap-3">
-                    <span class="font-bold sm:text-lg text-sm">Pages</span>
-                    <div class="sm:flex grid grid-cols-2 flex-col gap-3">
-                        <a class="font-medium sm:text-sm text-xs text-gray-500 hover:underline" href="index.html">Home</a>
-                        <a class="font-medium sm:text-sm text-xs text-gray-500 hover:underline" href="contact.html">Contact</a>
-                        <a class="font-medium sm:text-sm text-xs text-gray-500 hover:underline" href="member.html">Member</a>
-                        <a class="font-medium sm:text-sm text-xs text-gray-500 hover:underline" href="about.html">About Us</a>
+                <div class="grid gird-cols-3 md:grid-cols-2 lg:grid-cols-3 col-span-2  gap-5 md:gap-8 xl:gap-10 pb-14">
+                    <div class="flex flex-col gap-3">
+                        <span class="font-bold sm:text-lg text-sm">Pages</span>
+                        <div class="flex flex-col gap-2">
+                            <a class="font-medium sm:text-sm text-xs text-gray-500 hover:underline" href="index.html">Home</a>
+                            <a class="font-medium sm:text-sm text-xs text-gray-500 hover:underline" href="contact.html">Contact</a>
+                            <a class="font-medium sm:text-sm text-xs text-gray-500 hover:underline" href="member.html">Member</a>
+                            <a class="font-medium sm:text-sm text-xs text-gray-500 hover:underline" href="about.html">About Us</a>
+                        </div>
                     </div>
-                </div>
-                <div class="flex flex-col gap-3">
-                    <span class="font-bold sm:text-lg text-sm">Utility Pages</span>
-                    <div class="sm:flex grid grid-cols-2 flex-col gap-3">
-                        <a class="font-medium sm:text-sm text-xs text-gray-500 hover:underline" href="service.html">Service</a>
-                        <a class="font-medium sm:text-sm text-xs text-gray-500 hover:underline" href="project.html">Project</a>
-                        <a class="font-medium sm:text-sm text-xs text-gray-500 hover:underline" href="product.html">Product</a>
-                        <a class="font-medium sm:text-sm text-xs text-gray-500 hover:underline" href="review.html">Review</a>
+                    <div class="flex flex-col gap-3">
+                        <span class="font-bold sm:text-lg text-sm">Utility Pages</span>
+                        <div class="flex flex-col gap-2">
+                            <a class="font-medium sm:text-sm text-xs text-gray-500 hover:underline" href="service.html">Service</a>
+                            <a class="font-medium sm:text-sm text-xs text-gray-500 hover:underline" href="project.html">Project</a>
+                            <a class="font-medium sm:text-sm text-xs text-gray-500 hover:underline" href="product.html">Product</a>
+                            <a class="font-medium sm:text-sm text-xs text-gray-500 hover:underline" href="review.html">Review</a>
+                        </div>
                     </div>
-                </div>
-                <div class="flex flex-col gap-10">
-                    <div class="flex flex-col sm:gap-3 gap-2">
-                        <span class="font-bold sm:text-lg text-sm">Our Address</span>
-                        <span class="sm:text-sm text-xs text-gray-500">Jl. Vinolia No. 1, Lowokwaru, Malang</span>
+                    <div class="flex flex-col gap-3">
+                        <div class="flex flex-col sm:gap-3 gap-2">
+                            <span class="font-bold sm:text-lg text-sm">Our Address</span>
+                            <span class="sm:text-sm text-xs text-gray-500">Jl. Vinolia No. 1, Lowokwaru, Malang</span>
+                        </div>
                     </div>
-                    <div class="flex flex-col gap-3 place-content-center">
+                    <div class="flex flex-col gap-3 col-span-2">
                         <span class="font-bold sm:text-lg text-sm">Stay Connected</span>
                         <div class="flex">
                             <input type="text" class="bg-white/20 sm:py-3 py-1.5 sm:px-6 px-3 border border-indigo-400 sm:rounded-l-lg rounded-l-md sm:text-sm text-xs placeholder:text-indigo-400 text-indigo-400 focus:outline-none" placeholder="Enter your email here">
