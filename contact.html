@@ -40,7 +40,7 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <header class="flex items-center py-4 sm:px-48 px-5 bg-white sticky top-0 z-50 drop-shadow-xl">
+        <header class="flex items-center py-4 px-5 md:px-10 lg:px-24 xl:px-48 2xl:px-96 bg-white sticky top-0 z-50 drop-shadow-xl">
             <div id="logo" class="sm:w-24 w-20 h-8 object-cover flex items-end gap-3 cursor-pointer" onclick="window.location.href = 'index.html'">
                 <img src="assets/images/logo.png">
             </div>
@@ -78,12 +78,12 @@
             </div>
         </header>
         <main>
-            <section id="page" class="sm:px-48 px-5 sm:py-36 py-20 text-center bg-auto sm:bg-left-top bg-center bg-no-repeat" style="background-image: url('assets/images/gradient.jpg');">
-                <div class="sm:text-4xl text-2xl font-bold">Contact</div>
+            <section id="page" class="px-5 md:px-10 lg:px-24 xl:px-48 sm:py-36 py-20 text-center bg-auto sm:bg-left-top bg-center bg-no-repeat" style="background-image: url('assets/images/gradient.jpg');">
+                <div class="text-4xl font-bold">Contact</div>
             </section>
-            <section id="contact" class="sm:px-48 px-5 sm:py-24 py-10 bg-white flex sm:flex-row flex-col sm:gap-20 gap-10 sm:justify-around">
+            <section id="contact" class="px-5 md:px-10 lg:px-24 xl:px-48 2xl:px-96 sm:py-24 py-10 bg-white flex sm:flex-row flex-col sm:gap-20 gap-10 sm:justify-around">
                 <div class="flex flex-col gap-4">
-                    <div class="sm:block hidden text-4xl font-bold leading-tight capitalize">Let's start your <br> project with us</div>
+                    <div class="sm:block hidden text-3xl md:text-3xl lg:text-4xl font-bold leading-tight capitalize">Let's start your <br> project with us</div>
                     <div class="sm:hidden block text-xl font-bold leading-tight capitalize">Let's start your project with us</div>
                     <div class="sm:text-sm text-xs text-gray-400 max-w-[500px]">Kickstart Your Project with Our Expert Team and watch your vision come to life. We provide tailored solutions, expert guidance, and unwavering support to ensure your project's success from start to finish</div>
                 </div>
@@ -106,7 +106,7 @@
                     <button type="button" class="px-10 py-2.5 w-fit text-xs text-white bg-indigo-400 rounded-md">Send Message</button>
                 </div>
             </section>
-            <section id="get-in-touch" class="sm:px-72 px-5 pb-14 bg-white">
+            <section id="get-in-touch" class="px-5 md:px-10 lg:px-24 xl:px-48 2xl:px-96 px-5 pb-14 bg-white">
                 <div class="bg-indigo-400 rounded-xl sm:p-16 p-5 flex sm:flex-row flex-col sm:gap-20 gap-10">
                     <div class="sm:w-96 w-full sm:h-96 h-auto object-cover">
                         <img src="assets/images/office.webp" class="rounded-xl">
@@ -162,17 +162,17 @@
                 </div>
             </section>
         </main>
-        <footer class="sm:px-48 px-5 sm:py-24 py-10 flex flex-col gap-5 bg-auto sm:bg-left-top bg-center bg-no-repeat" style="background-image: url('assets/images/gradient.jpg');">
-            <div class="grid sm:grid-cols-5 grid-cols-1 gap-10 border-b-2 border-white pb-14">
-                <div class="flex flex-col sm:gap-6 gap-3 sm:col-span-2">
+        <footer class="px-5 md:px-10 lg:px-24 xl:px-48 2xl:px-96 sm:py-24 py-10 flex flex-col gap-5 bg-auto sm:bg-left-top bg-center bg-no-repeat" style="background-image: url('assets/images/gradient.jpg');">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 border-b-2 pb-10 border-white">
+                <div class="flex flex-col sm:gap-6 gap-3">
                     <div id="logo" class="w-16 h-8 object-cover flex items-end gap-3">
                         <span class="font-bold text-2xl text-gray-500">Codecraft</span>
                     </div>
-                    <div class="sm:text-sm text-xs text-gray-400">
+                    <p class="sm:text-sm text-xs text-gray-400 text-justify">
                         PT. Inti Teknologi Kreatif or known as Codecraft, we are at the forefront of innovation, crafting cutting-edge software solutions and applications for both Android and iOS platforms. Our team excels in developing sophisticated software that leverages the latest in IoT and AI technologies, providing intelligent and connected solutions for a smarter future.
                         <br><br>
                         Our exceptional talent pool comprises industry experts who bring a wealth of knowledge and skill to every project, ensuring top-notch quality and performance. With a passion for creativity and a commitment to excellence, PT. Inti Teknologi Kreatif is dedicated to transforming your visionary ideas into tangible, impactful realities.
-                    </div>
+                    </p>
                     <div class="flex gap-2">
                         <div class="bg-indigo-400 group-hover:bg-white rounded-full sm:px-2 px-1.5 py-1 flex items-center">
                             <span class="text-white group-hover:text-indigo-400 sm:text-sm text-xs">
@@ -191,30 +191,32 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex flex-col gap-3">
-                    <span class="font-bold sm:text-lg text-sm">Pages</span>
-                    <div class="sm:flex grid grid-cols-2 flex-col gap-3">
-                        <a class="font-medium sm:text-sm text-xs text-gray-500 hover:underline" href="index.html">Home</a>
-                        <a class="font-medium sm:text-sm text-xs text-gray-500 hover:underline" href="contact.html">Contact</a>
-                        <a class="font-medium sm:text-sm text-xs text-gray-500 hover:underline" href="member.html">Member</a>
-                        <a class="font-medium sm:text-sm text-xs text-gray-500 hover:underline" href="about.html">About Us</a>
+                <div class="grid gird-cols-3 md:grid-cols-2 lg:grid-cols-3 col-span-2  gap-5 md:gap-8 xl:gap-10 pb-14">
+                    <div class="flex flex-col gap-3">
+                        <span class="font-bold sm:text-lg text-sm">Pages</span>
+                        <div class="flex flex-col gap-2">
+                            <a class="font-medium sm:text-sm text-xs text-gray-500 hover:underline" href="index.html">Home</a>
+                            <a class="font-medium sm:text-sm text-xs text-gray-500 hover:underline" href="contact.html">Contact</a>
+                            <a class="font-medium sm:text-sm text-xs text-gray-500 hover:underline" href="member.html">Member</a>
+                            <a class="font-medium sm:text-sm text-xs text-gray-500 hover:underline" href="about.html">About Us</a>
+                        </div>
                     </div>
-                </div>
-                <div class="flex flex-col gap-3">
-                    <span class="font-bold sm:text-lg text-sm">Utility Pages</span>
-                    <div class="sm:flex grid grid-cols-2 flex-col gap-3">
-                        <a class="font-medium sm:text-sm text-xs text-gray-500 hover:underline" href="service.html">Service</a>
-                        <a class="font-medium sm:text-sm text-xs text-gray-500 hover:underline" href="project.html">Project</a>
-                        <a class="font-medium sm:text-sm text-xs text-gray-500 hover:underline" href="product.html">Product</a>
-                        <a class="font-medium sm:text-sm text-xs text-gray-500 hover:underline" href="review.html">Review</a>
+                    <div class="flex flex-col gap-3">
+                        <span class="font-bold sm:text-lg text-sm">Utility Pages</span>
+                        <div class="flex flex-col gap-2">
+                            <a class="font-medium sm:text-sm text-xs text-gray-500 hover:underline" href="service.html">Service</a>
+                            <a class="font-medium sm:text-sm text-xs text-gray-500 hover:underline" href="project.html">Project</a>
+                            <a class="font-medium sm:text-sm text-xs text-gray-500 hover:underline" href="product.html">Product</a>
+                            <a class="font-medium sm:text-sm text-xs text-gray-500 hover:underline" href="review.html">Review</a>
+                        </div>
                     </div>
-                </div>
-                <div class="flex flex-col gap-10">
-                    <div class="flex flex-col sm:gap-3 gap-2">
-                        <span class="font-bold sm:text-lg text-sm">Our Address</span>
-                        <span class="sm:text-sm text-xs text-gray-500">Jl. Vinolia No. 1, Lowokwaru, Malang</span>
+                    <div class="flex flex-col gap-3">
+                        <div class="flex flex-col sm:gap-3 gap-2">
+                            <span class="font-bold sm:text-lg text-sm">Our Address</span>
+                            <span class="sm:text-sm text-xs text-gray-500">Jl. Vinolia No. 1, Lowokwaru, Malang</span>
+                        </div>
                     </div>
-                    <div class="flex flex-col gap-3 place-content-center">
+                    <div class="flex flex-col gap-3 col-span-2">
                         <span class="font-bold sm:text-lg text-sm">Stay Connected</span>
                         <div class="flex">
                             <input type="text" class="bg-white/20 sm:py-3 py-1.5 sm:px-6 px-3 border border-indigo-400 sm:rounded-l-lg rounded-l-md sm:text-sm text-xs placeholder:text-indigo-400 text-indigo-400 focus:outline-none" placeholder="Enter your email here">
