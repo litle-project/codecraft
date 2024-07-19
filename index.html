@@ -80,7 +80,7 @@
         </header>
         <main>
             <section id="banner" class="sm:static relative">
-                <img src="assets/images/engineer.jpg" class="w-full sm:h-[800px] h-auto sm:object-cover object-fill">
+                <img src="assets/images/engineer.jpg" class="w-full sm:h-[800px] h-auto sm:object-cover object-fill min-h-[240px]">
                 <div class="absolute top-0 px-5 md:px-10 xl:px-48 sm:py-60 py-5 sm:w-1/2 w-full">
                     <div class="flex flex-col inter gap-3">
                         <span class="text-indigo-400 sm:text-sm text-[10px] font-bold">Softwrae Development Service</span>
@@ -88,10 +88,10 @@
                             <span class="text-md text-wrap font-bold leading-tight">Hear Your Problem</span>
                             <span class="text-md text-wrap font-bold leading-tight">Craft Your Solution</span>
                         </div>
-                        <span class="text-[10px] text-gray-500 font-medium max-w-48 md:hidden block text-pretty">
+                        <span class="text-[10px] text-gray-500 font-medium max-w-48 sm:hidden block text-pretty">
                             PT. Inti Teknologi Kreatif, known as Codecraft, leads in innovation by creating advanced software solutions for Website, Mobile Apps, IoT, and AI (Artificial Intelligence).
                         </span>
-                        <p class="text-sm text-gray-500 font-medium md:block hidden">
+                        <p class="text-sm text-gray-500 font-medium sm:block hidden">
                             PT. Inti Teknologi Kreatif or known as Codecraft, we are at the forefront of innovation, crafting cutting-edge software solutions and applications for both Android and iOS platforms. Our team excels in developing sophisticated software that leverages the latest in IoT and AI technologies, providing intelligent and connected solutions for a smarter future.
                             <br><br>
                             Our exceptional talent pool comprises industry experts who bring a wealth of knowledge and skill to every project, ensuring top-notch quality and performance. With a passion for creativity and a commitment to excellence, PT. Inti Teknologi Kreatif is dedicated to transforming your visionary ideas into tangible, impactful realities.
@@ -119,7 +119,7 @@
             </section>
             <section id="portofolio" class="flex flex-col sm:gap-10 gap-5 inter px-5 md:px-10 xl:px-48 sm:pb-24 pb-10">
                 <div class="xl:absolute xl:top-[800px] xl:mt-0 mt-5 xl:left-72 left-0 xl:bg-indigo-400 bg-transparent rounded-xl">
-                    <div class="md:flex grid grid-cols-2 sm:gap-4 gap-2 sm:px-0 px-2">
+                    <div class="xl:flex grid sm:grid-cols-2 grid-cols-1 sm:gap-4 gap-2 sm:px-0 px-2">
                         <div class="flex flex-col text-center text-white sm:py-5 py-3 sm:px-10 px-3 items-center xl:max-w-64 xl:bg-transparent bg-indigo-400 rounded-xl">
                             <div class="sm:px-2.5 px-1 sm:py-2 rounded-full bg-white/70 flex items-center">
                                 <span class="material-symbols-outlined sm:text-4xl text-2xl text-indigo-400">schedule</span>
@@ -187,7 +187,7 @@
                     </div>
                 </div>
             </section>
-            <!-- <section id="service" class="sm:py-24 py-10 px-5 md:px-10 lg:px-24 xl:px-48 2xl:px-96 flex flex-col sm:gap-5 gap-2 items-center inter bg-auto bg-no-repeat bg-center sm:bg-left-top" style="background-image: url('assets/images/gradient.jpg');">
+            <section id="service" class="sm:py-24 py-10 px-5 md:px-10 xl:px-48 flex flex-col sm:gap-5 gap-2 items-center inter bg-auto bg-no-repeat bg-center lg:bg-left-top" style="background-image: url('assets/images/gradient.jpg');">
                 <div class="sm:text-4xl text-lg font-bold text-center leading-tight">Get Better Result With Our Services</div>
                 <div class="sm:text-sm text-[8px] text-gray-400 text-center max-w-[40rem]">We champion collaboration. By truly understanding your initial ideas and challenges, we become your sounding board and strategic partner.  We don't simply develop what you envision; we leverage our expertise to refine and suggest the best choice solution, ensuring our solution delivers impactful results.</div>
                 <div class="grid xl:grid-cols-3 grid-cols-2 pt-5 gap-5 border-b">
@@ -284,7 +284,7 @@
                 </div>
                 <div class="w-full h-fit border-t border-white mt-5"></div>
             </section>
-            <section id="projects" class="sm:py-20 py-10 px-5 md:px-10 lg:px-24 xl:px-48 2xl:px-96 flex flex-col sm:gap-10 gap-5 inter">
+            <section id="projects" class="sm:py-20 py-10 px-5 md:px-10 xl:px-48 flex flex-col sm:gap-10 gap-5 inter">
                 <div class="flex flex-col gap-3">
                     <div class="flex justify-between gap-3 items-center">
                         <span class="text-2xl font-bold">Our Projects</span>
@@ -293,35 +293,38 @@
                     <span class="text-gray-400 text-xs text-wrap max-w-full text-pretty text-justify">At Codecraft, we bring ideas to life. Our projects cover various industries, using the latest technology to achieve great results. From start to finish, we ensure high quality and excellence. Learn how our projects are making a difference for our clients.</span>
                 </div>
                 
-                <div class="grid sm:grid-cols-2 grid-cols-1 sm:gap-10 gap-5 mt-3">
-                    <div class="flex flex-col sm:gap-5 gap-3 order-last">
-                        <span class="sm:text-3xl text-xl font-bold">BelanjaKita</span>
-                        <img src="assets/project/belanjapuas/summary.jpg" class="object-fill rounded-md shadow-md sm:hidden block">
-                        <span class="sm:text-sm text-xs text-gray-400 text-pretty text-justify">
+                <div class="grid xl:grid-cols-2 grid-cols-1 xl:gap-10 gap-5 mt-3">
+                    <div class="flex flex-col xl:gap-5 gap-3 order-last">
+                        <span class="xl:text-3xl text-xl font-bold">BelanjaKita</span>
+                        <img src="assets/project/belanjapuas/summary.jpg" class="object-fill rounded-md shadow-md xl:hidden block">
+                        <span class="xl:text-sm text-xs text-gray-400 text-pretty text-justify">
                             BelanjaKita adalah platform e-commerce terkemuka yang menyediakan solusi jual beli online yang inovatif dan mudah digunakan. Kami menghubungkan penjual dan pembeli dari berbagai lokasi, menawarkan berbagai macam produk mulai dari elektronik, fashion, hingga kebutuhan rumah tangga. Dengan komitmen terhadap pelayanan pelanggan yang luar biasa dan pengiriman cepat, kami memastikan pengalaman belanja online yang aman, nyaman, dan memuaskan bagi semua pengguna. Melalui teknologi canggih dan metode pembayaran yang aman, [Nama Perusahaan] membantu mempermudah hidup Anda dengan menyediakan semua yang Anda butuhkan hanya dalam beberapa klik.
                         </span>
                         <span class="text-xs hover:underline cursor-pointer font-bold text-indigo-400">See More</span>
                     </div>
-                    <img src="assets/project/belanjapuas/summary.jpg" class="object-fill rounded-md shadow-xl sm:block hidden">
+                    <img src="assets/project/belanjapuas/summary.jpg" class="object-fill rounded-md shadow-xl xl:block hidden">
                 </div>
-                <div class="grid sm:grid-cols-2 grid-cols-1 sm:gap-10 gap-5 mt-3">
-                    <div class="flex flex-col sm:gap-5 gap-3 order-first">
-                        <span class="sm:text-3xl text-xl font-bold">Aneka Promosi</span>
-                        <img src="assets/project/aneka-promosi/summary.jpg" class="object-fill rounded-md shadow-md sm:hidden block">
-                        <span class="sm:text-sm text-xs text-gray-400 text-pretty text-justify">
+                <div class="grid xl:grid-cols-2 grid-cols-1 xl:gap-10 gap-5 mt-3">
+                    <div class="flex flex-col xl:gap-5 gap-3 order-first">
+                        <span class="xl:text-3xl text-xl font-bold">Aneka Promosi</span>
+                        <img src="assets/project/aneka-promosi/summary.jpg" class="object-fill rounded-md shadow-md xl:hidden block">
+                        <span class="xl:text-sm text-xs text-gray-400 text-pretty text-justify">
                             Aneka Promosi adalah perusahaan e-commerce terkemuka yang berspesialisasi dalam jual beli merchandise dan produk konveksi. Kami menawarkan berbagai macam produk, mulai dari pakaian, aksesori, hingga barang-barang promosi berkualitas tinggi. Dengan fokus pada kualitas dan kepuasan pelanggan, kami menyediakan solusi belanja online yang mudah dan terpercaya. Aneka Promosi juga menerima pesanan konveksi custom, memungkinkan pelanggan untuk mendesain dan memesan produk sesuai kebutuhan mereka. Dengan layanan pengiriman cepat dan metode pembayaran yang aman, kami memastikan pengalaman belanja yang nyaman dan memuaskan bagi semua pelanggan.
                         </span>
                         <span class="text-xs hover:underline cursor-pointer font-bold text-indigo-400">See More</span>
                     </div>
-                    <img src="assets/project/aneka-promosi/summary.jpg" class="object-fill rounded-md shadow-xl sm:block hidden">
+                    <img src="assets/project/aneka-promosi/summary.jpg" class="object-fill rounded-md shadow-xl xl:block hidden">
                 </div>
             </section>
-            <section id="achivement" class="sm:py-24 py-10 px-5 md:px-10 lg:px-24 xl:px-48 2xl:px-96 bg-auto sm:bg-left-top bg-center bg-no-repeat" style="background-image: url('assets/images/gradient.jpg');">
+            <section id="achivement" class="sm:py-24 py-10 px-5 md:px-10 xl:px-48 bg-auto lg:bg-left-top bg-center bg-no-repeat" style="background-image: url('assets/images/gradient.jpg');">
                 <div class="grid xl:grid-cols-2 grid-cols-1 xl:gap-3 gap-12 items-center border-b-2 border-white pb-10">
-                    <div class="sm:text-3xl text-xl font-bold leading-tight capitalize sm:text-left text-center">
+                    <div class="text-3xl font-bold leading-tight capitalize xl:block hidden">
                         We have working foreign <br>
                         market 7 years successful <br>
                         developed 50+ projects
+                    </div>
+                    <div class="xl:hidden block text-2xl text-center font-bold leading-tight capitalize">
+                        We have working foreign  market 7 years successful developed 50+ projects
                     </div>
                     <div class="grid grid-cols-2 gap-5 w-full">
                         <div class="flex flex-col items-center gap-4 xl:px-10 px-5 sm:py-20 py-5 hover:bg-indigo-400 bg-white/40 rounded-xl group w-full duration-150">
@@ -345,7 +348,7 @@
                     </div>
                 </div>
             </section>
-            <section id="summary" class="sm:py-10 py-2 px-5 md:px-10 lg:px-24 xl:px-48 2xl:px-96 bg-indigo-400 grid grid-cols-4 sm:gap-10 gap-2 sm:justify-center">
+            <section id="summary" class="sm:py-10 py-2 px-5 md:px-10 xl:px-48 bg-indigo-400 grid grid-cols-4 sm:gap-10 gap-2 sm:justify-center">
                 <div class="text-white flex flex-col gap-2 text-center">
                     <div class="sm:text-base text-xs">Clients</div>
                     <div class="sm:text-4xl text-base font-bold">15+</div>
@@ -363,7 +366,7 @@
                     <div class="sm:text-4xl text-base font-bold">100%</div>
                 </div>
             </section>
-            <section id="member" class="px-5 md:px-10 lg:px-24 xl:px-48 2xl:px-96 sm:py-24 py-10 border-white flex flex-col gap-10 items-center">
+            <section id="member" class="px-5 md:px-10 xl:px-48 sm:py-24 py-10 border-white flex flex-col gap-10 items-center">
                 <div class="flex flex-col sm:gap-5 gap-2">
                     <div class="sm:text-4xl text-xl font-bold text-center leading-tight">Our Teams Member</div>
                     <div class="sm:text-sm text-xs text-gray-400 text-center max-w-[40rem]">We only provide the best and most experienced talents to help deliver optimal solutions</div>
@@ -539,7 +542,7 @@
                     </div>
                 </div>
             </section>
-            <section id="news" class="px-5 md:px-10 lg:px-24 xl:px-48 2xl:px-96 sm:py-24 py-10 flex flex-col items-center gap-10 bg-auto sm:bg-left-top bg-center bg-no-repeat" style="background-image: url('assets/images/gradient.jpg');">
+            <section id="news" class="px-5 md:px-10 xl:px-48 sm:py-24 py-10 flex flex-col items-center gap-10 bg-auto lg:bg-left-top bg-center bg-no-repeat" style="background-image: url('assets/images/gradient.jpg');">
                 <div class="flex flex-col gap-3 text-center">
                     <span class="sm:text-3xl text-xl font-bold">Latest News & Blogs</span>
                     <span class="text-gray-400 sm:text-sm text-xs text-wrap max-w-96">Bringing you interesting and unique news and facts about the world of technology.</span>
@@ -589,8 +592,8 @@
                     </div>
                 </div>
             </section>
-            <section id="contact" class="px-5 md:px-10 lg:px-24 xl:px-48 2xl:px-96 sm:py-24 py-10 bg-white">
-                <div class="rounded-xl sm:px-10 px-5 sm:py-20 py-5 flex flex-col gap-5 items-center bg-auto sm:bg-left-top bg-center bg-no-repeat" style="background-image: url('assets/images/gradient.jpg');">
+            <section id="contact" class="px-5 md:px-10 xl:px-48 xl:py-24 md:py-14 py-10 bg-white">
+                <div class="rounded-xl sm:px-10 px-5 sm:py-20 py-5 flex flex-col gap-5 items-center bg-auto lg:bg-left-top bg-center bg-no-repeat" style="background-image: url('assets/images/gradient.jpg');">
                     <div class="sm:text-4xl text-xl font-bold leading-tight capitalize text-center">
                         Let's create unique and useful
                         <br> creative projects with us
@@ -603,19 +606,19 @@
                         Contact Us
                     </button>
                 </div>
-            </section> -->
+            </section>
         </main>
-        <!-- <footer class="px-5 md:px-10 lg:px-24 xl:px-48 2xl:px-96 sm:py-24 py-10 flex flex-col gap-5 bg-auto sm:bg-left-top bg-center bg-no-repeat" style="background-image: url('assets/images/gradient.jpg');">
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 border-b-2 pb-10 border-white">
-                <div class="flex flex-col sm:gap-6 gap-3">
+        <footer class="lg:px-48 md:px-16 px-5 lg:py-24 md:py-14 py-10 flex flex-col gap-5 bg-auto lg:bg-left-top bg-center bg-no-repeat" style="background-image: url('assets/images/gradient.jpg');">
+            <div class="grid lg:grid-cols-5 md:grid-cols-2 grid-cols-1 gap-10 border-b-2 border-white pb-14">
+                <div class="flex flex-col sm:gap-6 gap-3 sm:col-span-2">
                     <div id="logo" class="w-16 h-8 object-cover flex items-end gap-3">
                         <span class="font-bold text-2xl text-gray-500">Codecraft</span>
                     </div>
-                    <p class="sm:text-sm text-xs text-gray-400 text-justify">
+                    <div class="sm:text-sm text-xs text-gray-400">
                         PT. Inti Teknologi Kreatif or known as Codecraft, we are at the forefront of innovation, crafting cutting-edge software solutions and applications for both Android and iOS platforms. Our team excels in developing sophisticated software that leverages the latest in IoT and AI technologies, providing intelligent and connected solutions for a smarter future.
                         <br><br>
                         Our exceptional talent pool comprises industry experts who bring a wealth of knowledge and skill to every project, ensuring top-notch quality and performance. With a passion for creativity and a commitment to excellence, PT. Inti Teknologi Kreatif is dedicated to transforming your visionary ideas into tangible, impactful realities.
-                    </p>
+                    </div>
                     <div class="flex gap-2">
                         <div class="bg-indigo-400 group-hover:bg-white rounded-full sm:px-2 px-1.5 py-1 flex items-center">
                             <span class="text-white group-hover:text-indigo-400 sm:text-sm text-xs">
@@ -634,32 +637,30 @@
                         </div>
                     </div>
                 </div>
-                <div class="grid gird-cols-3 md:grid-cols-2 lg:grid-cols-3 col-span-2  gap-5 md:gap-8 xl:gap-10 pb-14">
-                    <div class="flex flex-col gap-3">
-                        <span class="font-bold sm:text-lg text-sm">Pages</span>
-                        <div class="flex flex-col gap-2">
-                            <a class="font-medium sm:text-sm text-xs text-gray-500 hover:underline" href="index.html">Home</a>
-                            <a class="font-medium sm:text-sm text-xs text-gray-500 hover:underline" href="contact.html">Contact</a>
-                            <a class="font-medium sm:text-sm text-xs text-gray-500 hover:underline" href="member.html">Member</a>
-                            <a class="font-medium sm:text-sm text-xs text-gray-500 hover:underline" href="about.html">About Us</a>
-                        </div>
+                <div class="flex flex-col gap-3">
+                    <span class="font-bold sm:text-lg text-sm">Pages</span>
+                    <div class="sm:flex grid grid-cols-2 flex-col gap-3">
+                        <a class="font-medium sm:text-sm text-xs text-gray-500 hover:underline" href="index.html">Home</a>
+                        <a class="font-medium sm:text-sm text-xs text-gray-500 hover:underline" href="contact.html">Contact</a>
+                        <a class="font-medium sm:text-sm text-xs text-gray-500 hover:underline" href="member.html">Member</a>
+                        <a class="font-medium sm:text-sm text-xs text-gray-500 hover:underline" href="about.html">About Us</a>
                     </div>
-                    <div class="flex flex-col gap-3">
-                        <span class="font-bold sm:text-lg text-sm">Utility Pages</span>
-                        <div class="flex flex-col gap-2">
-                            <a class="font-medium sm:text-sm text-xs text-gray-500 hover:underline" href="service.html">Service</a>
-                            <a class="font-medium sm:text-sm text-xs text-gray-500 hover:underline" href="project.html">Project</a>
-                            <a class="font-medium sm:text-sm text-xs text-gray-500 hover:underline" href="product.html">Product</a>
-                            <a class="font-medium sm:text-sm text-xs text-gray-500 hover:underline" href="review.html">Review</a>
-                        </div>
+                </div>
+                <div class="flex flex-col gap-3">
+                    <span class="font-bold sm:text-lg text-sm">Utility Pages</span>
+                    <div class="sm:flex grid grid-cols-2 flex-col gap-3">
+                        <a class="font-medium sm:text-sm text-xs text-gray-500 hover:underline" href="service.html">Service</a>
+                        <a class="font-medium sm:text-sm text-xs text-gray-500 hover:underline" href="project.html">Project</a>
+                        <a class="font-medium sm:text-sm text-xs text-gray-500 hover:underline" href="product.html">Product</a>
+                        <a class="font-medium sm:text-sm text-xs text-gray-500 hover:underline" href="review.html">Review</a>
                     </div>
-                    <div class="flex flex-col gap-3">
-                        <div class="flex flex-col sm:gap-3 gap-2">
-                            <span class="font-bold sm:text-lg text-sm">Our Address</span>
-                            <span class="sm:text-sm text-xs text-gray-500">Jl. Vinolia No. 1, Lowokwaru, Malang</span>
-                        </div>
+                </div>
+                <div class="flex flex-col gap-10">
+                    <div class="flex flex-col sm:gap-3 gap-2">
+                        <span class="font-bold sm:text-lg text-sm">Our Address</span>
+                        <span class="sm:text-sm text-xs text-gray-500">Jl. Vinolia No. 1, Lowokwaru, Malang</span>
                     </div>
-                    <div class="flex flex-col gap-3 col-span-2">
+                    <div class="flex flex-col gap-3 place-content-center">
                         <span class="font-bold sm:text-lg text-sm">Stay Connected</span>
                         <div class="flex">
                             <input type="text" class="bg-white/20 sm:py-3 py-1.5 sm:px-6 px-3 border border-indigo-400 sm:rounded-l-lg rounded-l-md sm:text-sm text-xs placeholder:text-indigo-400 text-indigo-400 focus:outline-none" placeholder="Enter your email here">
@@ -668,15 +669,15 @@
                     </div>
                 </div>
             </div>
-            <div class="flex sm:justify-between sm:flex-row flex-col-reverse sm:pt-8 pt-3 sm:gap-0 gap-8">
-                <div class="sm:text-sm text-xs text-gray-400">Copyright&copy; 2024 codecraft, All Rights Reserved, Made by ❤️</div>
+            <div class="flex lg:justify-between items-center lg:flex-row flex-col-reverse sm:pt-8 pt-3 lg:gap-0 gap-8">
+                <div class="sm:text-sm lg:text-left text-center text-xs text-gray-400">Copyright&copy; 2024 codecraft, All Rights Reserved, Made by ❤️</div>
                 <div class="flex gap-5">
                     <a href="#" class="sm:text-sm text-xs text-gray-400">Term of use</a>
                     <a href="#" class="sm:text-sm text-xs text-gray-400">Cookie Policy</a>
                     <a href="#" class="sm:text-sm text-xs text-gray-400">Privacy Policy</a>
                 </div>
             </div>
-        </footer> -->
+        </footer>
     </body>
 <script src="assets/script/script.js"></script>
 </html>
