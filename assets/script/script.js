@@ -64,11 +64,11 @@
     const currentdate = new Date(); 
     const datetime = currentdate.toISOString().replace("T"," ").substring(0, 19);
 
-    fetch('https://api.sheety.co/13e7e8c5ab29785dd8caf76587acdae5/visitor/codecraft', {
+    fetch('https://api.sheety.co/13e7e8c5ab29785dd8caf76587acdae5/codecraft/visitor', {
       method: 'POST',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({
-        codecraft: { datetime, ipAddress: ip.replace(/\n/g, '') }
+        visitor: { datetime, ipAddress: ip.replace(/\n/g, '') }
       })
     })
  }
