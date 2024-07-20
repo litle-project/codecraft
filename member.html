@@ -40,14 +40,14 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <header class="flex items-center py-4 sm:px-48 px-5 bg-white sticky top-0 z-50 drop-shadow-xl">
+        <header class="flex items-center py-4 px-5 md:px-10 xl:px-48 bg-white sticky top-0 z-50 drop-shadow-xl">
             <div id="logo" class="sm:w-24 w-20 h-8 object-cover flex items-end gap-3 cursor-pointer" onclick="window.location.href = 'index.html'">
                 <img src="assets/images/logo.png">
             </div>
             <div class="sm:hidden flex flex-1 justify-end cursor-pointer" onclick="toggleMenu('menu-list')">
                 <span class="material-symbols-outlined text-4xl text-black">menu</span>
             </div>
-            <ul class="sm:flex hidden flex-1 gap-10 text-sm justify-center inter font-medium">
+            <ul class="sm:flex hidden flex-1 gap-5 xl:gap-10 text-sm justify-center inter font-medium">
                 <li id="home"><a href="index.html">Home</a></li>
                 <li id="about"><a href="about.html">About Us</a></li>
                 <li id="service"><a href="service.html">Services</a></li>
@@ -78,15 +78,15 @@
             </div>
         </header>
         <main>
-            <section id="page" class="sm:px-48 px-5 sm:py-36 py-20 text-center bg-auto sm:bg-left-top bg-center bg-no-repeat" style="background-image: url('assets/images/gradient.jpg');">
-                <div class="sm:text-4xl text-2xl font-bold">Our Professional Team</div>
+            <section id="page" class="px-5 md:px-10 lg:px-24 xl:px-48 sm:py-36 py-20 text-center bg-auto lg:bg-left-top bg-center bg-no-repeat" style="background-image: url('assets/images/gradient.jpg');">
+                <div class="sm:text-4xl text-xl font-bold">Our Professional Teams</div>
             </section>
-            <section id="menu-service" class="sm:px-48 py-8 bg-indigo-400 flex sm:flex-row flex-col justify-center items-center gap-5">
+            <section id="menu-service" class="px-1 md:px-10 lg:px-24 xl:px-48 py-8 bg-indigo-400 flex flex-wrap justify-center items-center gap-2 lg:gap-5">
                 <button
                     id="all"
                     type="button"
                     onclick="toggleMember('all')"
-                    class="member-filter px-12 py-2.5 text-white text-sm bg-white/20 hover:bg-white hover:text-indigo-400 rounded-lg border border-white/80 font-medium"
+                    class="member-filter px-12 py-2.5 text-white text-xs lg:text-sm bg-white/20 hover:bg-white hover:text-indigo-400 rounded-lg border border-white/80 font-medium"
                 >
                     All
                 </button>
@@ -94,7 +94,7 @@
                     id="developer"
                     type="button"
                     onclick="toggleMember('developer')"
-                    class="member-filter px-12 py-2.5 text-white text-sm bg-white/20 hover:bg-white hover:text-indigo-400 rounded-lg border border-white/80 font-medium"
+                    class="member-filter px-12 py-2.5 text-white text-xs lg:text-sm bg-white/20 hover:bg-white hover:text-indigo-400 rounded-lg border border-white/80 font-medium"
                 >
                     Developer Team
                 </button>
@@ -102,7 +102,7 @@
                     id="business"
                     type="button"
                     onclick="toggleMember('business')"
-                    class="member-filter px-12 py-2.5 text-white text-sm bg-white/20 hover:bg-white hover:text-indigo-400 rounded-lg border border-white/80 font-medium"
+                    class="member-filter px-12 py-2.5 text-white text-xs lg:text-sm bg-white/20 hover:bg-white hover:text-indigo-400 rounded-lg border border-white/80 font-medium"
                 >
                     Business Team
                 </button>
@@ -110,18 +110,18 @@
                     id="designer"
                     type="button"
                     onclick="toggleMember('designer')"
-                    class="member-filter px-12 py-2.5 text-white text-sm bg-white/20 hover:bg-white hover:text-indigo-400 rounded-lg border border-white/80 font-medium"
+                    class="member-filter px-12 py-2.5 text-white text-xs lg:text-sm bg-white/20 hover:bg-white hover:text-indigo-400 rounded-lg border border-white/80 font-medium"
                 >
                     Designer Team
                 </button>
             </section>
-            <section id="member" class="sm:px-48 px-5 sm:py-24 py-10 border-white flex flex-col gap-10 items-center">
-                <div class="flex flex-col gap-5">
-                    <div class="sm:text-4xl text-xl font-bold text-center leading-tight">Meet Our Developer Teams <br> And Business Teams</div>
+            <section id="member" class="px-5 md:px-10 xl:px-48 sm:py-24 py-10 border-white flex flex-col gap-10 items-center">
+                <div class="flex flex-col sm:gap-5 gap-2">
+                    <div class="sm:text-4xl text-xl font-bold text-center leading-tight">Our Teams Member</div>
                     <div class="sm:text-sm text-xs text-gray-400 text-center max-w-[40rem]">We only provide the best and most experienced talents to help deliver optimal solutions</div>
                 </div>
-                <div class="grid sm:grid-cols-4 grid-cols-2 sm:gap-5 gap-3">
-                    <div class="bg-white shadow-xl sm:px-8 sm:py-14 py-6 rounded-xl flex flex-col gap-3 items-center sm:min-w-60 min-w-40 sm:max-w-60 max-w-40 border border-gray-100 hover:bg-indigo-400 group member" title="developer">
+                <div class="grid xl:grid-cols-4 lg:grid-cols-3 grid-cols-2 lg:gap-5 gap-3 w-full">
+                    <div class="bg-white shadow-xl sm:px-8 sm:py-14 py-6 rounded-xl flex flex-col gap-3 items-center border border-gray-100 hover:bg-indigo-400 duration-150 cursor-pointer group member" title="developer">
                         <img src="assets/images/member-1.jpeg" class="sm:w-28 w-16 sm:h-28 h-16 object-cover rounded-full border-4 border-indigo-400">
                         <div class="flex flex-col text-center group-hover:text-white">
                             <div class="font-bold sm:text-base text-sm">M. Ilham Pratama</div>
@@ -145,7 +145,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="bg-white shadow-xl sm:px-8 sm:py-14 py-6 rounded-xl flex flex-col gap-3 items-center sm:min-w-60 min-w-40 sm:max-w-60 max-w-40 border border-gray-100 hover:bg-indigo-400 group member" title="business">
+                    <div class="bg-white shadow-xl sm:px-8 sm:py-14 py-6 rounded-xl flex flex-col gap-3 items-center border border-gray-100 hover:bg-indigo-400 duration-150 cursor-pointer group member" title="business">
                         <img src="assets/images/member-2.jpeg" class="sm:w-28 w-16 sm:h-28 h-16 object-cover rounded-full border-4 border-indigo-400">
                         <div class="flex flex-col text-center group-hover:text-white">
                             <div class="font-bold sm:text-base text-sm">Enita A. Dhea Lestari</div>
@@ -169,7 +169,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="bg-white shadow-xl sm:px-8 sm:py-14 py-6 rounded-xl flex flex-col gap-3 items-center sm:min-w-60 min-w-40 sm:max-w-60 max-w-40 border border-gray-100 hover:bg-indigo-400 group member" title="designer">
+                    <div class="bg-white shadow-xl sm:px-8 sm:py-14 py-6 rounded-xl flex flex-col gap-3 items-center border border-gray-100 hover:bg-indigo-400 duration-150 cursor-pointer group member" title="designer">
                         <img src="assets/images/member-3.jpg" class="sm:w-28 w-16 sm:h-28 h-16 object-cover rounded-full border-4 border-indigo-400">
                         <div class="flex flex-col text-center group-hover:text-white">
                             <div class="font-bold sm:text-base text-sm">Muhammad Ainul Aji</div>
@@ -193,7 +193,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="bg-white shadow-xl sm:px-8 sm:py-14 py-6 rounded-xl flex flex-col gap-3 items-center sm:min-w-60 min-w-40 sm:max-w-60 max-w-40 border border-gray-100 hover:bg-indigo-400 group member" title="developer">
+                    <div class="bg-white shadow-xl sm:px-8 sm:py-14 py-6 rounded-xl flex flex-col gap-3 items-center border border-gray-100 hover:bg-indigo-400 duration-150 cursor-pointer group member" title="developer">
                         <img src="assets/images/member-4.jpeg" class="sm:w-28 w-16 sm:h-28 h-16 object-cover rounded-full border-4 border-indigo-400">
                         <div class="flex flex-col text-center group-hover:text-white">
                             <div class="font-bold sm:text-base text-sm">Tedy Hidayat</div>
@@ -217,7 +217,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="bg-white shadow-xl sm:px-8 sm:py-14 py-6 rounded-xl flex flex-col gap-3 items-center sm:min-w-60 min-w-40 sm:max-w-60 max-w-40 border border-gray-100 hover:bg-indigo-400 group member" title="developer">
+                    <div class="bg-white shadow-xl sm:px-8 sm:py-14 py-6 rounded-xl flex flex-col gap-3 items-center border border-gray-100 hover:bg-indigo-400 duration-150 cursor-pointer group member" title="developer">
                         <img src="assets/images/member-5.jpeg" class="sm:w-28 w-16 sm:h-28 h-16 object-cover rounded-full border-4 border-indigo-400">
                         <div class="flex flex-col text-center group-hover:text-white">
                             <div class="font-bold sm:text-base text-sm">Thedy Fajar Adinata</div>
@@ -241,7 +241,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="bg-white shadow-xl sm:px-8 sm:py-14 py-6 rounded-xl flex flex-col gap-3 items-center sm:min-w-60 min-w-40 sm:max-w-60 max-w-40 border border-gray-100 hover:bg-indigo-400 group member" title="developer">
+                    <div class="bg-white shadow-xl sm:px-8 sm:py-14 py-6 rounded-xl flex flex-col gap-3 items-center border border-gray-100 hover:bg-indigo-400 duration-150 cursor-pointer group member" title="developer">
                         <img src="assets/images/member-6.png" class="sm:w-28 w-16 sm:h-28 h-16 object-cover rounded-full border-4 border-indigo-400">
                         <div class="flex flex-col text-center group-hover:text-white">
                             <div class="font-bold sm:text-base text-sm">Muhammad Ramdani</div>
@@ -265,7 +265,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="bg-white shadow-xl sm:px-8 sm:py-14 py-6 rounded-xl flex flex-col gap-3 items-center sm:min-w-60 min-w-40 sm:max-w-60 max-w-40 border border-gray-100 hover:bg-indigo-400 group member" title="business">
+                    <div class="bg-white shadow-xl sm:px-8 sm:py-14 py-6 rounded-xl flex flex-col gap-3 items-center border border-gray-100 hover:bg-indigo-400 duration-150 cursor-pointer group member" title="business">
                         <img src="assets/images/member-7.jpeg" class="sm:w-28 w-16 sm:h-28 h-16 object-cover rounded-full border-4 border-indigo-400">
                         <div class="flex flex-col text-center group-hover:text-white">
                             <div class="font-bold sm:text-base text-sm">Sinta Deviana</div>
@@ -291,15 +291,18 @@
                     </div>
                 </div>
             </section>
-            <section id="achivement" class="sm:py-24 py-10 sm:px-48 px-5 bg-auto sm:bg-left-top bg-center bg-no-repeat" style="background-image: url('assets/images/gradient.jpg');">
-                <div class="grid sm:grid-cols-2 grid-cols-1 gap-10 items-center border-b-2 border-white pb-10">
-                    <div class="sm:text-3xl text-xl font-bold leading-tight capitalize sm:text-left text-center">
+            <section id="achivement" class="sm:py-24 py-10 px-5 md:px-10 xl:px-48 bg-auto lg:bg-left-top bg-center bg-no-repeat" style="background-image: url('assets/images/gradient.jpg');">
+                <div class="grid xl:grid-cols-2 grid-cols-1 xl:gap-3 gap-12 items-center border-b-2 border-white pb-10">
+                    <div class="text-3xl font-bold leading-tight capitalize xl:block hidden">
                         We have working foreign <br>
                         market 7 years successful <br>
                         developed 50+ projects
                     </div>
-                    <div class="grid grid-cols-2 gap-5">
-                        <div class="flex flex-col items-center gap-4 sm:px-10 px-5 sm:py-20 py-5 hover:bg-indigo-400 bg-white/40 rounded-xl group">
+                    <div class="xl:hidden block md:text-2xl text-base text-center font-bold leading-tight capitalize">
+                        We have working foreign  market 7 years successful developed 50+ projects
+                    </div>
+                    <div class="grid grid-cols-2 gap-5 w-full">
+                        <div class="flex flex-col items-center gap-4 xl:px-10 px-5 sm:py-20 py-5 hover:bg-indigo-400 bg-white/40 rounded-xl group w-full duration-150">
                             <div class="bg-indigo-400 group-hover:bg-white/40 px-2.5 py-1.5 rounded-full flex items-center">
                                 <span class="material-symbols-outlined sm:text-3xl text-xl text-white group-hover:text-indigo-400">event_available</span>
                             </div>
@@ -308,7 +311,7 @@
                                 <span class="sm:text-sm text-xs text-gray-400 group-hover:text-white text-center text-pretty">We understand that your time is valuable. We always strive to complete our projects quickly and accurately</span>
                             </div>
                         </div>
-                        <div class="flex flex-col items-center gap-4 sm:px-10 px-5 sm:py-20 py-5 hover:bg-indigo-400 bg-white/40 rounded-xl group">
+                        <div class="flex flex-col items-center gap-4 xl:px-10 px-5 sm:py-20 py-5 hover:bg-indigo-400 bg-white/40 rounded-xl group w-full duration-150">
                             <div class="bg-indigo-400 group-hover:bg-white/40 px-2.5 py-1.5 rounded-full flex items-center">
                                 <span class="material-symbols-outlined sm:text-3xl text-xl text-white group-hover:text-indigo-400">person_check</span>
                             </div>
@@ -320,7 +323,7 @@
                     </div>
                 </div>
             </section>
-            <section id="summary" class="sm:py-10 py-2 sm:px-48 px-5 bg-indigo-400 grid grid-cols-4 sm:gap-10 gap-2 sm:justify-center">
+            <section id="summary" class="sm:py-10 py-2 px-5 md:px-10 xl:px-48 bg-indigo-400 grid grid-cols-4 sm:gap-10 gap-2 sm:justify-center">
                 <div class="text-white flex flex-col gap-2 text-center">
                     <div class="sm:text-base text-xs">Clients</div>
                     <div class="sm:text-4xl text-base font-bold">15+</div>
@@ -338,7 +341,7 @@
                     <div class="sm:text-4xl text-base font-bold">100%</div>
                 </div>
             </section>
-            <section id="info" class="sm:px-48 px-5 flex flex-col bg-white">
+            <section id="info" class="px-5 md:px-10 lg:px-24 xl:px-48 flex flex-col bg-white">
                 <div class="flex sm:flex-row flex-col sm:justify-between gap-5 items-center border-b-2 border-indigo-400 sm:py-20 py-5">
                     <div class="flex flex-col sm:gap-10 gap-5 max-w-96">
                         <div class="flex flex-col gap-3">
@@ -349,8 +352,8 @@
                     </div>
                     <img src="assets/images/marketing-process.webp" class="sm:w-2/4 w-fit sm:h-fit h-auto object-cover rounded-xl">
                 </div>
-                <div class="grid sm:grid-cols-2 grid-cols-1 sm:gap-20 gap-5 justify-center items-center sm:py-20 py-5">
-                    <div class="flex flex-col sm:gap-10 gap-6 bg-white border border-gray-100 rounded-xl sm:p-10 p-5 hover:bg-indigo-400 sm:shadow-xl shadow-md group justify-center sm:min-h-[600px] sm:max-h-[600px]">
+                <div class="grid sm:grid-cols-2 grid-cols-1 xl:gap-20 gap-5 justify-center sm:py-20 py-5">
+                    <div class="flex flex-col sm:gap-10 gap-6 bg-white border border-gray-100 rounded-xl sm:p-10 p-5 hover:bg-indigo-400 sm:shadow-xl shadow-md group sm:min-h-[600px]">
                         <div class="flex flex-col gap-3">
                             <div class="text-sm text-indigo-400 group-hover:text-white font-bold">How We Works</div>
                             <div class="sm:text-3xl text-xl font-bold group-hover:text-white">Translate Your Problem <br> To Your Solution</div>
@@ -358,7 +361,7 @@
                         <img src="assets/images/meeting.webp" class="w-full h-64 object-cover rounded-xl">
                         <div class="sm:text-sm text-xs text-gray-400 group-hover:text-white">Transform Your Problem into a Solution with Our Expertise. Our team is committed to understanding your unique challenges and delivering innovative, tailored solutions that drive success and growth.</div>
                     </div>
-                    <div class="flex flex-col sm:gap-10 gap-6 bg-white border border-gray-100 rounded-xl sm:p-10 p-5 hover:bg-indigo-400 sm:shadow-xl shadow-md group justify-center sm:min-h-[600px] sm:max-h-[600px]">
+                    <div class="flex flex-col sm:gap-10 gap-6 bg-white border border-gray-100 rounded-xl sm:p-10 p-5 hover:bg-indigo-400 sm:shadow-xl shadow-md group sm:min-h-[600px]">
                         <div class="flex flex-col gap-3">
                             <div class="text-sm text-indigo-400 group-hover:text-white font-bold">Main Initiative</div>
                             <div class="sm:text-3xl text-xl font-bold group-hover:text-white">"Hear Your Problem, <br> Craft Your Solution"</div>
@@ -388,8 +391,8 @@
                 </div>
             </section>
         </main>
-        <footer class="sm:px-48 px-5 sm:py-24 py-10 flex flex-col gap-5 bg-auto sm:bg-left-top bg-center bg-no-repeat" style="background-image: url('assets/images/gradient.jpg');">
-            <div class="grid sm:grid-cols-5 grid-cols-1 gap-10 border-b-2 border-white pb-14">
+        <footer class="xl:px-48 md:px-10 px-5 lg:py-24 md:py-14 py-10 flex flex-col gap-5 bg-auto lg:bg-left-top bg-center bg-no-repeat" style="background-image: url('assets/images/gradient.jpg');">
+            <div class="grid xl:grid-cols-5 md:grid-cols-2 grid-cols-1 gap-10 border-b-2 border-white pb-14">
                 <div class="flex flex-col sm:gap-6 gap-3 sm:col-span-2">
                     <div id="logo" class="w-16 h-8 object-cover flex items-end gap-3">
                         <span class="font-bold text-2xl text-gray-500">Codecraft</span>
@@ -449,8 +452,8 @@
                     </div>
                 </div>
             </div>
-            <div class="flex sm:justify-between sm:flex-row flex-col-reverse sm:pt-8 pt-3 sm:gap-0 gap-8">
-                <div class="sm:text-sm text-xs text-gray-400">Copyright&copy; 2024 codecraft, All Rights Reserved, Made by ❤️</div>
+            <div class="flex lg:justify-between items-center lg:flex-row flex-col-reverse sm:pt-8 pt-3 lg:gap-0 gap-8">
+                <div class="sm:text-sm lg:text-left text-center text-xs text-gray-400">Copyright&copy; 2024 codecraft, All Rights Reserved, Made by ❤️</div>
                 <div class="flex gap-5">
                     <a href="#" class="sm:text-sm text-xs text-gray-400">Term of use</a>
                     <a href="#" class="sm:text-sm text-xs text-gray-400">Cookie Policy</a>
