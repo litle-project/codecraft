@@ -73,6 +73,70 @@
     })
  }
 
+ const sendMessage = () => {
+    const currentdate = new Date();
+    const notif = document.getElementById('notification')
+    const name = document.getElementById('name');
+    const email = document.getElementById('email');
+    const message = document.getElementById('message');
+    const datetime = currentdate.toISOString().replace("T"," ").substring(0, 19);
+
+    const validatorName = document.getElementById('validator-name')
+    const validatorEmail = document.getElementById('validator-email')
+    const validatorMessage = document.getElementById('validator-message')
+
+    validatorName.innerHTML = ''
+    validatorEmail.innerHTML = ''
+    validatorMessage.innerHTML = ''
+
+    if (name.value === '') {
+        validatorName.classList.remove('hidden')
+        validatorName.innerHTML = 'We need your name to know you better!'
+    }
+
+    if (email.value === '') {
+        validatorEmail.classList.remove('hidden')
+        validatorEmail.innerHTML = 'We need your email to reply your message!'
+    }
+
+    if (message.value === '') {
+        validatorMessage.classList.remove('hidden')
+        validatorMessage.innerHTML = 'We need your message to give you a solution to your business!'
+    }
+
+    if (message.value !== '' && message.value.length < 10) {
+        validatorMessage.classList.remove('hidden')
+        validatorMessage.innerHTML = "We don't know what's your problem with this message, your message too short!"
+    }
+
+    if (name.value === '' || email.value === '' || message.value === '') return void(0);
+
+    fetch('https://api.sheety.co/13e7e8c5ab29785dd8caf76587acdae5/codecraft/message', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({
+          message: {
+            name: name.value,
+            email: email.value,
+            message: message.value,
+            datetime,
+        }
+        })
+    }).then(() => {
+        name.value = ''
+        email.value = ''
+        message.value = ''
+        validatorName.innerHTML = ''
+        validatorEmail.innerHTML = ''
+        validatorMessage.innerHTML = ''
+        notif.classList.remove('hidden')
+
+        setTimeout(() => {
+            notif.classList.add('hidden')
+        }, 5000)
+    })
+ };
+
  (function() {
     const urls = window.location.pathname;
     const path = urls.split('/').pop();

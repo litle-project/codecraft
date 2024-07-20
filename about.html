@@ -466,22 +466,49 @@
                     <div class="md:text-sm text-xs text-gray-400 max-w-[500px]">Kickstart Your Project with Our Expert Team and watch your vision come to life. We provide tailored solutions, expert guidance, and unwavering support to ensure your project's success from start to finish</div>
                 </div>
                 <div class="flex flex-col gap-4">
-                    <input
-                        type="text"
-                        placeholder="Enter Your Name Here"
-                        class="bg-white rounded-md border border-indigo-400/70 px-3 py-2 md:min-w-96 placeholder:text-indigo-400/70 text-sm focus:outline-none text-indigo-400 shadow-2xl"
-                    />
-                    <input
-                        type="email"
-                        placeholder="Enter Your Email Here"
-                        class="bg-white rounded-md border border-indigo-400/70 px-3 py-2 md:min-w-96 placeholder:text-indigo-400/70 text-sm focus:outline-none text-indigo-400 shadow-2xl"
-                    />
-                    <textarea
-                        rows="5"
-                        placeholder="Enter Your Message Here"
-                        class="bg-white rounded-md border border-indigo-400/70 px-3 py-2 md:min-w-96 placeholder:text-indigo-400/70 text-sm focus:outline-none text-indigo-400 shadow-2xl"
-                    ></textarea>
-                    <button type="button" class="px-10 py-2.5 w-fit text-xs text-white bg-indigo-400 rounded-md">Send Message</button>
+                    <div class="flex flex-col gap-1">
+                        <input
+                            id="name"
+                            type="text"
+                            autocomplete="off"
+                            placeholder="Enter Your Name Here"
+                            class="bg-white rounded-md border border-indigo-400/70 px-3 py-2 md:min-w-96 placeholder:text-indigo-400/70 text-sm focus:outline-none text-indigo-400 shadow-md"
+                        />
+                        <span class="text-xs text-red-500 max-w-96" id="validator-name"></span>
+                    </div>
+                    <div class="flex flex-col gap-1">
+                        <input
+                            id="email"
+                            type="email"
+                            autocomplete="off"
+                            placeholder="Enter Your Email Here"
+                            class="bg-white rounded-md border border-indigo-400/70 px-3 py-2 md:min-w-96 placeholder:text-indigo-400/70 text-sm focus:outline-none text-indigo-400 shadow-md"
+                        />
+                        <span class="text-xs text-red-500 max-w-96" id="validator-email"></span>
+                    </div>
+                    <div class="flex flex-col gap-1">
+                        <textarea
+                            id="message"
+                            rows="5"
+                            autocomplete="off"
+                            placeholder="Enter Your Message Here"
+                            class="bg-white rounded-md border border-indigo-400/70 px-3 py-2 md:min-w-96 placeholder:text-indigo-400/70 text-sm focus:outline-none text-indigo-400 shadow-md"
+                        ></textarea>
+                        <span class="text-xs text-red-500 max-w-96" id="validator-message"></span>
+                    </div>
+                    <div class="flex flex-col gap-3">
+                        <button
+                            onclick="sendMessage()"
+                            type="button"
+                            class="px-10 py-2.5 w-fit text-xs text-white bg-indigo-400 rounded-md"
+                        >
+                            Send Message
+                        </button>
+                        <span class="text-xs text-green-500 font-medium max-w-96 hidden" id="notification">
+                            <span class="text-sm text-gray-500">Thank you to cheers with us!</span> <br>
+                            Your message has been sent! Our team will reply within 1x24 hours to your email.
+                        </span>
+                    </div>
                 </div>
             </section>
         </main>
