@@ -61,8 +61,11 @@
  }
 
  const logVistor = (ip) => {
-    const currentdate = new Date(); 
+    const currentdate = new Date();
     const datetime = currentdate.toISOString().replace("T"," ").substring(0, 19);
+
+    const hasExist = existChecker(ip)
+    if (hasExist) return void(0);
 
     fetch('https://api.sheety.co/13e7e8c5ab29785dd8caf76587acdae5/codecraft/visitor', {
       method: 'POST',
@@ -71,6 +74,23 @@
         visitor: { datetime, ipAddress: ip.replace(/\n/g, '') }
       })
     })
+ }
+
+ const existChecker = (ip) => {
+    fetch('https://api.sheety.co/13e7e8c5ab29785dd8caf76587acdae5/codecraft/visitor')
+        .then((response) => response.json())
+        .then((visitors) => {
+            const currentdate = new Date();
+            const datetime = currentdate.toISOString().replace("T"," ").substring(0, 19);
+            const dateChecker = datetime.split(' ')[0]
+            
+            return visitors.visitor.filter((visitor) => {
+                const date = visitor.datetime.split(' ')[0]
+                if (visitor.ipAddress.includes(ip)) console.log('ada')
+
+                return visitor.ipAddress.includes(ip) && date.includes(dateChecker)
+            })
+        })
  }
 
  const sendMessage = () => {
